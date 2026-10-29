@@ -1,0 +1,12 @@
+atlasiq:
+  target: local
+  outputs:
+    local:
+      type: postgres
+      host: "{{ env_var('DBT_HOST', '127.0.0.1') }}"
+      port: "{{ env_var('DBT_PORT', '5544') | int }}"
+      user: "{{ env_var('DBT_USER', 'atlasiq') }}"
+      password: "{{ env_var('DBT_PASSWORD', 'atlasiq_local') }}"
+      dbname: "{{ env_var('DBT_DATABASE', 'atlasiq') }}"
+      schema: marts
+      threads: 2

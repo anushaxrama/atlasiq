@@ -1,0 +1,36 @@
+version: 2
+models:
+  - name: fct_trips
+    description: One accepted exact-payload fingerprint per source month; sampled yellow-taxi trips only. Pickup times are NYC wall clock; weather joins on derived UTC reporting date.
+    columns:
+      - name: trip_id
+        data_tests: [not_null]
+      - name: date_key
+        data_tests: [{relationships: {arguments: {to: "ref('dim_date')", field: date_key}}}]
+      - name: pickup_zone
+        data_tests: [not_null, {relationships: {arguments: {to: "ref('dim_zone')", field: zone_id}}}]
+      - name: dropoff_zone
+        data_tests: [{relationships: {arguments: {to: "ref('dim_zone')", field: zone_id}}}]
+  - name: dim_zone
+    description: Current TLC lookup, Type 1 overwrite. No historical effective dates are supplied.
+    columns:
+      - name: zone_id
+        data_tests: [unique, not_null]
+  - name: dim_date
+    description: NYC pickup calendar dates in successfully loaded source partitions; federal observed holiday labels only.
+    columns:
+      - name: date_key
+        data_tests: [unique, not_null]
+  - name: dim_weather
+    description: One LaGuardia NOAA GSOD reporting date; UTC daily proxy, not zone-level weather.
+    columns:
+      - name: weather_key
+        data_tests: [unique, not_null]
+  - name: mart_daily_zone
+    description: Zone by local calendar date including observed zero counts; not a population demand estimate.
+  - name: mart_hourly_demand
+    description: NYC pickup date/hour/zone aggregate.
+  - name: mart_weather_demand
+    description: Counts by UTC weather date; descriptive association only.
+  - name: mart_demand_anomalies
+    description: Prior same-weekday median/MAD; >=3 prior dates, 56-day lookback, MAD floor 2 trips, absolute score >=3.5, volume >=10. Short samples are exploratory.

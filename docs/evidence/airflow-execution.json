@@ -1,0 +1,41 @@
+{
+  "dag_runs": [
+    {
+      "dag_id": "atlasiq_monthly",
+      "run_id": "manual__2025-03-15T00:00:00+00:00",
+      "state": "success"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "bootstrap",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-29 05:00:20.094739"
+    },
+    {
+      "task_id": "ingest",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-29 05:00:27.535100"
+    },
+    {
+      "task_id": "publish",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-29 05:00:37.793092"
+    },
+    {
+      "task_id": "transform",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-29 05:00:36.867529"
+    },
+    {
+      "task_id": "validate",
+      "state": "success",
+      "start_date": null,
+      "end_date": "2026-10-29 05:00:37.343914"
+    }
+  ]
+}

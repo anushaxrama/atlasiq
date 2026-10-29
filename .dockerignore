@@ -1,0 +1,11 @@
+.git
+.venv
+.bootstrap
+node_modules
+data
+artifacts
+warehouse/target
+warehouse/logs
+__pycache__
+.pytest_cache
+.env

@@ -1,0 +1,45 @@
+name: AtlasIQ warehouse quality
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: atlasiq
+          POSTGRES_PASSWORD: atlasiq_local
+          POSTGRES_DB: atlasiq_test
+        ports: ['5544:5432']
+        options: >-
+          --health-cmd 'pg_isready -U atlasiq -d atlasiq_test'
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      TEST_ATLAS_DATABASE_URL: postgresql://atlasiq:atlasiq_local@127.0.0.1:5544/atlasiq_test
+      DBT_SEND_ANONYMOUS_USAGE_STATS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.13.6'
+          python-version: '3.12'
+          enable-cache: true
+      - run: uv sync --frozen --extra dev
+      - run: uv run ruff check src tests orchestration
+      - run: uv run ruff format --check src tests orchestration
+      - run: uv run mypy src
+      - run: uv run pytest -q
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.25.0'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm format:check && pnpm typecheck && pnpm build
+      - run: docker compose config --quiet
+      - run: docker build -t atlasiq-airflow -f orchestration/Dockerfile .
+      - name: Parse DAG without source-network calls
+        run: docker run --rm --entrypoint python atlasiq-airflow -c "from airflow.models import DagBag; b=DagBag('/home/airflow/atlas/orchestration', include_examples=False); assert not b.import_errors,b.import_errors; assert len(b.dags['atlasiq_monthly'].tasks)==5"

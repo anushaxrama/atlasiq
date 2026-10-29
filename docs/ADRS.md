@@ -1,0 +1,11 @@
+# Architecture decisions
+
+1. **Monthly batch, not streaming.** TLC publishes monthly with a typical two-month delay. A low-frequency Airflow DAG and explicit partition backfills match reality; Kafka would add cost without source-level freshness.
+2. **PostgreSQL warehouse; DuckDB Parquet scanner.** SQL constraints, transactions and dbt-postgres provide a reproducible warehouse. DuckDB scans a 59 MB Parquet file without decoding millions of rows through Python. Only the selected rows enter validation/COPY.
+3. **Immutable raw landing.** SHA-256 bytes and URL pointer metadata permit replay and checksummed cache reuse. Corrected upstream files create new immutable hashes when `--refresh` is explicit. A corrupted cache fails closed.
+4. **Atomic partition replacement.** No stable TLC trip ID exists. Exact-payload hashes plus monthly replacement are more defensible than guessing a business key from timestamps/fares. Revision/deletion handling is tested. Full source raw bytes remain available.
+5. **Incremental changed-partition dbt.** Run IDs determine refresh scope. Pre-hook deletion and incremental insertion share the fact model transaction. This costs one partition rewrite but correctly removes vanished records.
+6. **Current zone lookup, no fake SCD.** There are no source effective dates in the chosen lookup. Type 1 overwrite is honest; historical zone changes remain a limitation.
+7. **One NOAA station/date proxy.** Daily weather can support descriptive comparisons with clear coverage limits. Joining a unique UTC reporting-day dimension prevents double counting. Neighborhood/weather granularity is not invented.
+8. **Lean TypeScript frontend.** A strict TypeScript, dependency-free SVG dashboard prioritizes warehouse reliability while retaining filters, drilldowns, comparisons and accessible navigation. FastAPI serves the built assets and real typed endpoints; no separate frontend server or database is needed.
+9. **Publication gate.** Active raw partitions must pass dbt and checks before metric endpoints serve them. Operational endpoints remain visible during failure/recovery. This trades a brief analytics pause for clear freshness semantics; versioned serving schemas would improve availability at larger scale.

@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-10-29T05:01:32.242819+00:00",
+  "environment": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.12.14"
+  },
+  "warehouse": {
+    "raw_rows": 95783
+  },
+  "checks": [
+    {
+      "status": "pass",
+      "checks": 44
+    },
+    {
+      "status": "warning",
+      "checks": 6
+    }
+  ],
+  "runs": [
+    {
+      "partition_month": "2025-01-01",
+      "status": "published",
+      "source_rows": 3475226,
+      "selected_rows": 100000,
+      "accepted_rows": 95783,
+      "rejected_rows": 4217,
+      "duplicate_rows": 0,
+      "elapsed_seconds": 6.50756649998948
+    },
+    {
+      "partition_month": "2025-01-01",
+      "status": "published",
+      "source_rows": 3475226,
+      "selected_rows": 100000,
+      "accepted_rows": 95783,
+      "rejected_rows": 4217,
+      "duplicate_rows": 0,
+      "elapsed_seconds": 7.213903293999465
+    },
+    {
+      "partition_month": "2025-01-01",
+      "status": "published",
+      "source_rows": 3475226,
+      "selected_rows": 100000,
+      "accepted_rows": 95783,
+      "rejected_rows": 4217,
+      "duplicate_rows": 0,
+      "elapsed_seconds": 7.0874060850001115
+    }
+  ],
+  "queries": {
+    "01_zone_ranking": {
+      "seconds": 0.039323,
+      "row_count": 20
+    },
+    "02_weekday_hour": {
+      "seconds": 0.07138,
+      "row_count": 168
+    },
+    "03_rolling_demand": {
+      "seconds": 0.014638,
+      "row_count": 93
+    },
+    "04_fare_distribution": {
+      "seconds": 0.028916,
+      "row_count": 8
+    },
+    "05_trip_efficiency": {
+      "seconds": 0.0091,
+      "row_count": 20
+    },
+    "06_weather_association": {
+      "seconds": 0.0056,
+      "row_count": 2
+    },
+    "07_holiday_comparison": {
+      "seconds": 0.008883,
+      "row_count": 2
+    },
+    "08_week_over_week": {
+      "seconds": 0.007223,
+      "row_count": 30
+    },
+    "09_unusual_demand": {
+      "seconds": 0.006686,
+      "row_count": 30
+    },
+    "10_zone_flow": {
+      "seconds": 0.016845,
+      "row_count": 43
+    },
+    "11_provider_mix": {
+      "seconds": 0.012074,
+      "row_count": 75
+    },
+    "12_refresh_and_rejections": {
+      "seconds": 0.005692,
+      "row_count": 1
+    }
+  }
+}

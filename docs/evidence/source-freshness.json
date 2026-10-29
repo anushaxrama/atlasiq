@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "dbt_schema_version": "https://schemas.getdbt.com/dbt/sources/v3.json",
+    "dbt_version": "1.12.6",
+    "generated_at": "2026-10-29T05:02:26.997998Z",
+    "invocation_id": "164aeaa7-d52e-48f6-987c-863a22d1d23d",
+    "invocation_started_at": "2026-10-29T05:02:26.095492Z",
+    "env": {}
+  },
+  "results": [
+    {
+      "unique_id": "source.atlasiq.raw.partitions",
+      "max_loaded_at": "2026-10-29T05:00:24.276926+00:00",
+      "snapshotted_at": "2026-10-29T05:02:26.989030+00:00",
+      "max_loaded_at_time_ago_in_s": 122.712104,
+      "status": "pass",
+      "criteria": {
+        "warn_after": {
+          "count": 48,
+          "period": "hour"
+        },
+        "error_after": {
+          "count": 168,
+          "period": "hour"
+        },
+        "filter": null
+      },
+      "adapter_response": {
+        "_message": "SELECT 1",
+        "code": "SELECT",
+        "rows_affected": 1
+      },
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2026-10-29T05:02:26.981586Z",
+          "completed_at": "2026-10-29T05:02:26.981592Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2026-10-29T05:02:26.981680Z",
+          "completed_at": "2026-10-29T05:02:26.991693Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.010396957397460938
+    }
+  ],
+  "elapsed_time": 0.10906505584716797
+}

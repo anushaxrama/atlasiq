@@ -1,0 +1,21 @@
+name: atlasiq
+version: '1.0.0'
+config-version: 2
+profile: atlasiq
+model-paths: [models]
+seed-paths: [seeds]
+test-paths: [tests]
+models:
+  atlasiq:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
+seeds:
+  atlasiq:
+    +schema: staging

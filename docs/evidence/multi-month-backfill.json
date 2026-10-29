@@ -1,0 +1,448 @@
+{
+  "verified_at_utc": "2026-10-29T20:55:54.260921+00:00",
+  "scope": "2025-01 through 2025-03; deterministic bottom-k 100000 source records selected per month",
+  "before_backfill": {
+    "raw.trips": [
+      {
+        "month": "2025-01-01",
+        "rows": 95783,
+        "trip_fingerprint": "dcb16c34a5930be0e3cea627ed7961f5"
+      }
+    ],
+    "marts.fct_trips": [
+      {
+        "month": "2025-01-01",
+        "rows": 95783,
+        "trip_fingerprint": "dcb16c34a5930be0e3cea627ed7961f5"
+      }
+    ],
+    "partitions": [
+      {
+        "month": "2025-01-01",
+        "run_id": "21b6fa5a-3858-4349-874c-c419fa878671",
+        "source_hash": "9af277e4c0d3f9deb30644da822981e1e7df6af58313170fd3aa8a474485488a",
+        "source_rows": 3475226,
+        "accepted_rows": 95783
+      }
+    ]
+  },
+  "after_backfill": {
+    "raw.trips": [
+      {
+        "month": "2025-01-01",
+        "rows": 95783,
+        "trip_fingerprint": "dcb16c34a5930be0e3cea627ed7961f5"
+      },
+      {
+        "month": "2025-02-01",
+        "rows": 94764,
+        "trip_fingerprint": "f9926b195a909415324a805254f23aaa"
+      },
+      {
+        "month": "2025-03-01",
+        "rows": 94352,
+        "trip_fingerprint": "6554bc381c7086baf1e13f63e1b36fc9"
+      }
+    ],
+    "marts.fct_trips": [
+      {
+        "month": "2025-01-01",
+        "rows": 95783,
+        "trip_fingerprint": "dcb16c34a5930be0e3cea627ed7961f5"
+      },
+      {
+        "month": "2025-02-01",
+        "rows": 94764,
+        "trip_fingerprint": "f9926b195a909415324a805254f23aaa"
+      },
+      {
+        "month": "2025-03-01",
+        "rows": 94352,
+        "trip_fingerprint": "6554bc381c7086baf1e13f63e1b36fc9"
+      }
+    ],
+    "partitions": [
+      {
+        "month": "2025-01-01",
+        "run_id": "21b6fa5a-3858-4349-874c-c419fa878671",
+        "source_hash": "9af277e4c0d3f9deb30644da822981e1e7df6af58313170fd3aa8a474485488a",
+        "source_rows": 3475226,
+        "accepted_rows": 95783,
+        "status": "published",
+        "selected_rows": 100000,
+        "rejected_rows": 4217,
+        "duplicate_rows": 0,
+        "elapsed_seconds": 7.0874060850001115
+      },
+      {
+        "month": "2025-02-01",
+        "run_id": "b0a8a64a-99fc-458b-9f50-efa02a427c2f",
+        "source_hash": "037cba555a73663f3a51a2c27816e40e3feb364769942bdf122b9da31e377bd3",
+        "source_rows": 3577543,
+        "accepted_rows": 94764,
+        "status": "published",
+        "selected_rows": 100000,
+        "rejected_rows": 5236,
+        "duplicate_rows": 0,
+        "elapsed_seconds": 7.693112169999949
+      },
+      {
+        "month": "2025-03-01",
+        "run_id": "7b137564-f62a-496f-9492-fdf551d23221",
+        "source_hash": "20c4b77cce457b7cfdae77c5069ca7dc91c167f876a41467f4502ab69487a186",
+        "source_rows": 4145257,
+        "accepted_rows": 94352,
+        "status": "published",
+        "selected_rows": 100000,
+        "rejected_rows": 5648,
+        "duplicate_rows": 0,
+        "elapsed_seconds": 7.2082261290015595
+      }
+    ]
+  },
+  "after_february_replay": {
+    "raw.trips": [
+      {
+        "month": "2025-01-01",
+        "rows": 95783,
+        "trip_fingerprint": "dcb16c34a5930be0e3cea627ed7961f5"
+      },
+      {
+        "month": "2025-02-01",
+        "rows": 94764,
+        "trip_fingerprint": "f9926b195a909415324a805254f23aaa"
+      },
+      {
+        "month": "2025-03-01",
+        "rows": 94352,
+        "trip_fingerprint": "6554bc381c7086baf1e13f63e1b36fc9"
+      }
+    ],
+    "marts.fct_trips": [
+      {
+        "month": "2025-01-01",
+        "rows": 95783,
+        "trip_fingerprint": "dcb16c34a5930be0e3cea627ed7961f5"
+      },
+      {
+        "month": "2025-02-01",
+        "rows": 94764,
+        "trip_fingerprint": "f9926b195a909415324a805254f23aaa"
+      },
+      {
+        "month": "2025-03-01",
+        "rows": 94352,
+        "trip_fingerprint": "6554bc381c7086baf1e13f63e1b36fc9"
+      }
+    ],
+    "partitions": [
+      {
+        "month": "2025-01-01",
+        "run_id": "21b6fa5a-3858-4349-874c-c419fa878671",
+        "source_hash": "9af277e4c0d3f9deb30644da822981e1e7df6af58313170fd3aa8a474485488a",
+        "source_rows": 3475226,
+        "accepted_rows": 95783,
+        "status": "published",
+        "selected_rows": 100000,
+        "rejected_rows": 4217,
+        "duplicate_rows": 0,
+        "elapsed_seconds": 7.0874060850001115
+      },
+      {
+        "month": "2025-02-01",
+        "run_id": "ac34efe7-97a2-4e77-a065-65eb0bf8b04c",
+        "source_hash": "037cba555a73663f3a51a2c27816e40e3feb364769942bdf122b9da31e377bd3",
+        "source_rows": 3577543,
+        "accepted_rows": 94764,
+        "status": "published",
+        "selected_rows": 100000,
+        "rejected_rows": 5236,
+        "duplicate_rows": 0,
+        "elapsed_seconds": 4.939753876999021
+      },
+      {
+        "month": "2025-03-01",
+        "run_id": "7b137564-f62a-496f-9492-fdf551d23221",
+        "source_hash": "20c4b77cce457b7cfdae77c5069ca7dc91c167f876a41467f4502ab69487a186",
+        "source_rows": 4145257,
+        "accepted_rows": 94352,
+        "status": "published",
+        "selected_rows": 100000,
+        "rejected_rows": 5648,
+        "duplicate_rows": 0,
+        "elapsed_seconds": 7.2082261290015595
+      }
+    ]
+  },
+  "verification": {
+    "raw_and_fact_row_counts_and_sorted_trip_id_fingerprints_unchanged_on_replay": true,
+    "january_and_march_active_run_ids_preserved_on_replay": true,
+    "february_active_run_replaced": true,
+    "all_active_partitions_published": true,
+    "total_accepted_trips": 284899,
+    "daily_api_rows": 90
+  },
+  "validation": {
+    "status": "pass",
+    "checks": [
+      {
+        "check": "fact_raw_reconciliation",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 0
+      },
+      {
+        "check": "weather_missing_fraction",
+        "status": "pass",
+        "value": 0.0,
+        "threshold": 0.05
+      },
+      {
+        "check": "passenger_null_fraction",
+        "status": "pass",
+        "value": 0.1785194051225171,
+        "threshold": 0.2
+      },
+      {
+        "check": "unknown_zone_fraction",
+        "status": "pass",
+        "value": 0.002485091207761347,
+        "threshold": 0.1
+      },
+      {
+        "check": "refresh_age_hours",
+        "status": "pass",
+        "value": 0.019404392222222223,
+        "threshold": 168
+      }
+    ]
+  },
+  "weather_by_month": [
+    {
+      "partition_month": "2025-01-01",
+      "fact_rows": 95783,
+      "unmatched_weather_rows": 0
+    },
+    {
+      "partition_month": "2025-02-01",
+      "fact_rows": 94764,
+      "unmatched_weather_rows": 0
+    },
+    {
+      "partition_month": "2025-03-01",
+      "fact_rows": 94352,
+      "unmatched_weather_rows": 0
+    }
+  ],
+  "source_files": [
+    {
+      "month": "2025-01-01",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet",
+      "sha256": "9af277e4c0d3f9deb30644da822981e1e7df6af58313170fd3aa8a474485488a",
+      "bytes": 59158238
+    },
+    {
+      "month": "2025-02-01",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet",
+      "sha256": "037cba555a73663f3a51a2c27816e40e3feb364769942bdf122b9da31e377bd3",
+      "bytes": 60343086
+    },
+    {
+      "month": "2025-03-01",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet",
+      "sha256": "20c4b77cce457b7cfdae77c5069ca7dc91c167f876a41467f4502ab69487a186",
+      "bytes": 69964745
+    }
+  ],
+  "dbt_replay": {
+    "elapsed_seconds": 27.70000433921814,
+    "results": [
+      {
+        "unique_id": "model.atlasiq.dim_time",
+        "status": "success",
+        "execution_time": 0.07017636299133301
+      },
+      {
+        "unique_id": "model.atlasiq.dim_zone",
+        "status": "success",
+        "execution_time": 0.06951689720153809
+      },
+      {
+        "unique_id": "model.atlasiq.stg_weather",
+        "status": "success",
+        "execution_time": 0.02077341079711914
+      },
+      {
+        "unique_id": "model.atlasiq.stg_trips",
+        "status": "success",
+        "execution_time": 0.02934885025024414
+      },
+      {
+        "unique_id": "test.atlasiq.not_null_dim_zone_zone_id.3a05163d64",
+        "status": "pass",
+        "execution_time": 0.054908037185668945
+      },
+      {
+        "unique_id": "test.atlasiq.unique_dim_zone_zone_id.1c0e8418c5",
+        "status": "pass",
+        "execution_time": 0.05239558219909668
+      },
+      {
+        "unique_id": "seed.atlasiq.federal_holidays",
+        "status": "success",
+        "execution_time": 0.11888885498046875
+      },
+      {
+        "unique_id": "model.atlasiq.dim_weather",
+        "status": "success",
+        "execution_time": 0.013961553573608398
+      },
+      {
+        "unique_id": "model.atlasiq.dim_date",
+        "status": "success",
+        "execution_time": 0.014386177062988281
+      },
+      {
+        "unique_id": "model.atlasiq.dim_vendor",
+        "status": "success",
+        "execution_time": 0.03473782539367676
+      },
+      {
+        "unique_id": "test.atlasiq.not_null_dim_weather_weather_key.a28481207b",
+        "status": "pass",
+        "execution_time": 0.013554096221923828
+      },
+      {
+        "unique_id": "test.atlasiq.not_null_dim_date_date_key.881d0a31b6",
+        "status": "pass",
+        "execution_time": 0.008454322814941406
+      },
+      {
+        "unique_id": "test.atlasiq.unique_dim_weather_weather_key.74dbf3874c",
+        "status": "pass",
+        "execution_time": 0.015758275985717773
+      },
+      {
+        "unique_id": "test.atlasiq.unique_dim_date_date_key.0869fd48f9",
+        "status": "pass",
+        "execution_time": 0.017312288284301758
+      },
+      {
+        "unique_id": "model.atlasiq.fct_trips",
+        "status": "success",
+        "execution_time": 0.47582411766052246
+      },
+      {
+        "unique_id": "test.atlasiq.no_weather_fanout",
+        "status": "pass",
+        "execution_time": 0.032845497131347656
+      },
+      {
+        "unique_id": "test.atlasiq.not_null_fct_trips_pickup_zone.6c37b1bc02",
+        "status": "pass",
+        "execution_time": 0.01262354850769043
+      },
+      {
+        "unique_id": "test.atlasiq.not_null_fct_trips_trip_id.df65bf8c1d",
+        "status": "pass",
+        "execution_time": 0.01725935935974121
+      },
+      {
+        "unique_id": "test.atlasiq.partition_reconciliation",
+        "status": "pass",
+        "execution_time": 0.04237794876098633
+      },
+      {
+        "unique_id": "test.atlasiq.no_duplicate_facts",
+        "status": "pass",
+        "execution_time": 0.11644768714904785
+      },
+      {
+        "unique_id": "test.atlasiq.positive_duration",
+        "status": "pass",
+        "execution_time": 0.01988053321838379
+      },
+      {
+        "unique_id": "test.atlasiq.relationships_fct_trips_date_key__date_key__ref_dim_date_.2cf194bac1",
+        "status": "pass",
+        "execution_time": 0.03663802146911621
+      },
+      {
+        "unique_id": "test.atlasiq.relationships_fct_trips_dropoff_zone__zone_id__ref_dim_zone_.807b67bb3d",
+        "status": "pass",
+        "execution_time": 0.024995088577270508
+      },
+      {
+        "unique_id": "test.atlasiq.relationships_fct_trips_pickup_zone__zone_id__ref_dim_zone_.376d0c35b1",
+        "status": "pass",
+        "execution_time": 0.03681683540344238
+      },
+      {
+        "unique_id": "model.atlasiq.mart_hourly_demand",
+        "status": "success",
+        "execution_time": 0.14187145233154297
+      },
+      {
+        "unique_id": "model.atlasiq.mart_refresh_health",
+        "status": "success",
+        "execution_time": 0.1459674835205078
+      },
+      {
+        "unique_id": "model.atlasiq.mart_weather_demand",
+        "status": "success",
+        "execution_time": 0.04320263862609863
+      },
+      {
+        "unique_id": "model.atlasiq.int_daily_zone",
+        "status": "success",
+        "execution_time": 0.010668754577636719
+      },
+      {
+        "unique_id": "model.atlasiq.mart_trip_efficiency",
+        "status": "success",
+        "execution_time": 0.11539030075073242
+      },
+      {
+        "unique_id": "model.atlasiq.mart_daily_zone",
+        "status": "success",
+        "execution_time": 0.24071955680847168
+      },
+      {
+        "unique_id": "test.atlasiq.daily_reconciliation",
+        "status": "pass",
+        "execution_time": 0.01802539825439453
+      },
+      {
+        "unique_id": "model.atlasiq.mart_demand_anomalies",
+        "status": "success",
+        "execution_time": 26.233850717544556
+      },
+      {
+        "unique_id": "test.atlasiq.anomaly_contract",
+        "status": "pass",
+        "execution_time": 0.00772857666015625
+      }
+    ]
+  },
+  "limits": [
+    "Capped deterministic samples are not city-wide demand totals or a probability sample.",
+    "Trip-ID fingerprints verify identity sets, not every transformed field.",
+    "Three historical months do not establish annual seasonality or production-scale operation."
+  ],
+  "browser_verification": {
+    "passed": 12,
+    "skipped": 0,
+    "projects": [
+      "desktop Chrome",
+      "mobile Chrome emulation"
+    ],
+    "checks": [
+      "seven real-data routes and overflow",
+      "zone/date filters and reset",
+      "zone comparison and methodology",
+      "outage/retry recovery",
+      "coverage-relative date shortcuts, keyboard chart inspection and CSV reconciliation",
+      "cross-month daily counts reconcile with displayed total"
+    ]
+  }
+}

@@ -75,10 +75,15 @@ test('date shortcuts, chart inspection and CSV export preserve the selected data
 }) => {
   await page.goto('/');
   await settled(page);
+  const meta = await (await page.request.get('/api/meta')).json();
+  const end = meta.coverage.end;
+  const week = new Date(end + 'T12:00:00Z');
+  week.setUTCDate(week.getUTCDate() - 6);
+  const start = [meta.coverage.start, week.toISOString().slice(0, 10)].sort().at(-1);
   await page.getByRole('button', { name: 'Last 7 days', exact: true }).click();
   await settled(page);
-  await expect(page.getByLabel('From', { exact: true })).toHaveValue('2025-01-25');
-  await expect(page.getByLabel('Through', { exact: true })).toHaveValue('2025-01-31');
+  await expect(page.getByLabel('From', { exact: true })).toHaveValue(start);
+  await expect(page.getByLabel('Through', { exact: true })).toHaveValue(end);
   await expect(page.getByRole('button', { name: 'Last 7 days', exact: true })).toHaveAttribute(
     'aria-pressed',
     'true',
@@ -86,7 +91,7 @@ test('date shortcuts, chart inspection and CSV export preserve the selected data
   await page.getByLabel('Pickup zone', { exact: true }).selectOption('161');
   await page.getByRole('button', { name: 'Apply view' }).click();
   await settled(page);
-  const response = await page.request.get('/api/summary?start=2025-01-25&end=2025-01-31&zone=161');
+  const response = await page.request.get(`/api/summary?start=${start}&end=${end}&zone=161`);
   const summary = await response.json();
   await page.getByRole('button', { name: 'Cumulative', exact: true }).click();
   await expect(page.locator('.chart-readout')).toContainText(
@@ -94,11 +99,17 @@ test('date shortcuts, chart inspection and CSV export preserve the selected data
   );
   await expect(page.getByRole('button', { name: 'Cumulative', exact: true })).toBeFocused();
   await page.locator('[data-chart-date]').first().focus();
-  await expect(page.locator('.chart-readout')).toContainText('Jan 25');
+  await expect(page.locator('.chart-readout')).toContainText(
+    new Date(start + 'T12:00:00Z').toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      timeZone: 'UTC',
+    }),
+  );
   const downloaded = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Export daily data' }).click();
   const file = await downloaded;
-  expect(file.suggestedFilename()).toBe('atlasiq-daily-2025-01-25-2025-01-31-zone-161.csv');
+  expect(file.suggestedFilename()).toBe(`atlasiq-daily-${start}-${end}-zone-161.csv`);
   const { readFile } = await import('node:fs/promises');
   const csv = await readFile(await file.path(), 'utf8');
   const rows = csv.trim().split(/\r?\n/);
@@ -109,5 +120,31 @@ test('date shortcuts, chart inspection and CSV export preserve the selected data
   );
   await page.getByRole('button', { name: 'Full coverage', exact: true }).click();
   await settled(page);
-  await expect(page.getByLabel('From', { exact: true })).toHaveValue('2025-01-01');
+  await expect(page.getByLabel('From', { exact: true })).toHaveValue(meta.coverage.start);
+});
+
+test('a cross-month view reconciles daily results with the displayed total', async ({ page }) => {
+  await page.goto('/');
+  await settled(page);
+  const meta = await (await page.request.get('/api/meta')).json();
+  const partitions = [...meta.partitions].sort((a, b) => a.month.localeCompare(b.month));
+  test.skip(partitions.length < 2, 'Requires the documented multi-month backfill.');
+  const boundary = new Date(partitions[1].month.slice(0, 10) + 'T12:00:00Z');
+  const end = boundary.toISOString().slice(0, 10);
+  boundary.setUTCDate(boundary.getUTCDate() - 1);
+  const start = boundary.toISOString().slice(0, 10);
+  await page.getByLabel('From', { exact: true }).fill(start);
+  await page.getByLabel('Through', { exact: true }).fill(end);
+  await page.getByRole('button', { name: 'Apply view' }).click();
+  await settled(page);
+  const trends = await (await page.request.get(`/api/trends?start=${start}&end=${end}`)).json();
+  expect(trends.map((r) => r.date)).toEqual([start, end]);
+  const count = trends.reduce((sum, r) => sum + r.observed_trips, 0);
+  expect(count).toBeGreaterThan(0);
+  await expect(page.locator('.kpi-value').first()).toHaveText(count.toLocaleString('en-US'));
+  await expect(page.locator('[data-chart-date]')).toHaveCount(2);
+  await page.getByRole('button', { name: 'Reset', exact: true }).click();
+  await settled(page);
+  await expect(page.getByLabel('From', { exact: true })).toHaveValue(meta.coverage.start);
+  await expect(page.getByLabel('Through', { exact: true })).toHaveValue(meta.coverage.end);
 });

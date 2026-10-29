@@ -1,6 +1,6 @@
 # Executed verification
 
-Local development evidence, October 28, 2026 (source/run artifacts record exact UTC timestamps). AtlasIQ remains in development. No public deployment, professional engineering employment, production scheduler history or remote GitHub Actions success is claimed.
+Initial local development evidence: October 28, 2026; the multi-month extension below was verified October 29, 2026. Source/run artifacts record exact UTC timestamps. AtlasIQ remains an independent project with no hosted application deployment, professional engineering employment, or production scheduler history claimed. The public GitHub repository has passed Actions checks; see the repository for current build status.
 
 ## Real source slice
 
@@ -22,10 +22,10 @@ Local development evidence, October 28, 2026 (source/run artifacts record exact 
 
 ## Verification limits
 
-- One historical month and bounded sample; no full-scale or sustained throughput benchmark.
+- Initial evidence used one historical month; the subsequent verified backfill covers January–March with bounded samples. No full-scale or sustained throughput benchmark.
 - Browser mobile emulation, not real-device Safari testing.
 - Lighthouse is a local lab audit; no WCAG certification or field performance claim is made.
-- No external alert delivery, cloud deployment, public repository or remote CI run verified.
+- No external alert delivery or cloud application deployment verified. Source is published on GitHub with passing CI history.
 - Airflow tested through a real DAG execution in its own container, not a long-running production scheduler.
 - Modern NOAA GSOD archive coverage may require a successor source adapter for later backfills; missing weather is not fabricated.
 
@@ -42,3 +42,11 @@ dbt source freshness also passed for the loaded partition manifest; the actual f
 ## Product interface refinement
 
 The redesigned interface was rebuilt into the local API image and verified against the existing real-data warehouse. All **10 desktop/mobile Playwright checks passed**, including all seven routes, bounded filters, zone comparisons, empty states, and outage recovery. New checks verify that the seven-day shortcut selects the expected dates, the cumulative chart agrees with the filtered API total, keyboard inspection updates the chart readout, and exported CSV rows sum to that same filtered total. TypeScript build/type checks and formatting passed. Screenshots in `portfolio/screenshots/` were refreshed from the running application. Earlier Lighthouse results above describe the previous interface; they are not a measurement of this redesign.
+
+## January–March 2025 backfill and middle-partition replay
+
+See [machine-readable execution evidence](evidence/multi-month-backfill.json). Three official files contain **11,198,026 source rows**; selecting 100,000 records per month produced **284,899 accepted trips** and **15,101 rejected rows** across the active runs. January retained 95,783 accepted trips; February added 94,764; March added 94,352. Both the initial combined build and February replay passed all 17 dbt tests. Custom publication validation passed, with zero unmatched weather keys in each month.
+
+Before/after comparisons verified that all three raw/fact row counts and sorted trip-ID fingerprints stayed identical on February replay, the February active run was replaced, and January/March active run IDs were preserved. The serving API reports 90 daily rows and the same 284,899-trip total. This verifies bounded multi-partition behavior, including a March DST transition, without claiming a complete DST correctness audit, unbiased sampling, city-wide demand growth, sustained throughput, or production scheduler history.
+
+The multi-month serving regression passed **12 desktop/mobile Playwright checks** with no skips, including a January/February boundary filter and coverage-relative seven-day exports. The TypeScript build, formatting, Python type check and regenerated SQL analysis report passed.

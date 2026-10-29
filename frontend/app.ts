@@ -326,7 +326,7 @@ function zoneTable(zones: Zone[]): string {
   );
 }
 function context(): string {
-  return `<div class="context-band"><div><strong>Observed, not extrapolated.</strong><p>This deterministic sample represents accepted yellow-taxi records. Counts are not expanded to all trips or city-wide mobility.</p></div><div><strong>Place has a definition.</strong><p>Pickup/dropoff zones come from the official TLC lookup. Unknown locations remain explicitly labeled.</p></div><div><strong>A batch perspective.</strong><p>Source files publish monthly, typically two months later. Refresh time and source coverage measure different things.</p></div></div>`;
+  return `<div class="context-band"><div><strong>Observed, not extrapolated.</strong><p>This deterministic sample represents accepted yellow-taxi records. Counts are not expanded to all trips or city-wide mobility. Equal monthly sample caps are not evidence of equal city-wide demand.</p></div><div><strong>Place has a definition.</strong><p>Pickup/dropoff zones come from the official TLC lookup. Unknown locations remain explicitly labeled.</p></div><div><strong>A batch perspective.</strong><p>Source files publish monthly, typically two months later. Refresh time and source coverage measure different things.</p></div></div>`;
 }
 function scatter(rows: Weather[]): string {
   const points = rows.filter((r): r is Weather & { temp_c: number } => r.temp_c !== null);
@@ -721,8 +721,17 @@ async function initialize(): Promise<void> {
       .at(-1);
     $('coverage-note').textContent =
       `${fmt(meta.coverage.observed_trips)} accepted sample trips · ${fmt(sourceRows)} source records scanned · pickup coverage ${meta.coverage.start} – ${meta.coverage.end} · warehouse refreshed ${last ? new Date(last).toISOString().slice(0, 16).replace('T', ' ') + ' UTC' : 'not yet'}. No city-wide extrapolation.`;
+    const coverageFormat = new Intl.DateTimeFormat('en-US', {
+      month: 'short',
+      year: 'numeric',
+      timeZone: 'UTC',
+    });
+    const coverageStart = new Date((meta.coverage.start ?? '2025-01-01') + 'T12:00:00Z');
+    const coverageEnd = new Date(
+      (meta.coverage.end ?? meta.coverage.start ?? '2025-01-01') + 'T12:00:00Z',
+    );
     $('dataset-label').innerHTML =
-      `<i></i><strong>${esc(new Date((meta.coverage.start ?? '2025-01-01') + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' }))}</strong><span>Yellow taxi · accepted sample · NYC</span>`;
+      `<i></i><strong>${esc(coverageFormat.formatRange(coverageStart, coverageEnd))}</strong><span>Yellow taxi · accepted sample · NYC</span>`;
     $('filters').addEventListener('submit', (event) => {
       event.preventDefault();
       if (start.value > end.value) {

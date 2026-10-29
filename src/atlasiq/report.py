@@ -28,6 +28,9 @@ def generate() -> dict[str, Any]:
     )
     (output / "query-plan.json").write_text(json.dumps(plans, indent=2, default=str))
     counts = query("select count(*) as raw_rows from raw.trips")[0]
+    coverage = query(
+        "select min(pickup_date) as start, max(pickup_date) as end, count(distinct partition_month) as months from marts.fct_trips"
+    )[0]
     checks = query("select status,count(*) as checks from raw.quality_checks group by status")
     best = evidence["01_zone_ranking"]["rows"][0]
     weather = evidence["06_weather_association"]["rows"]
@@ -42,6 +45,7 @@ def generate() -> dict[str, Any]:
             "python": platform.python_version(),
         },
         "warehouse": counts,
+        "coverage": coverage,
         "checks": checks,
         "runs": runs,
         "queries": {
@@ -65,7 +69,7 @@ def generate() -> dict[str, Any]:
 
 Generated from actual SQL queries. See [full results](evidence/analyses.json), [verification](evidence/verification.json) and [measured query plan](evidence/query-plan.json).
 
-- The warehouse contains **{counts["raw_rows"]:,} accepted sampled trips**. Rejected rows are retained in quarantine. This is not the full TLC month or all NYC mobility.
+- The warehouse contains **{counts["raw_rows"]:,} accepted sampled trips**. Rejected rows are retained in quarantine. Coverage is **{coverage["start"]} through {coverage["end"]}** across **{coverage["months"]} monthly partitions**. These are capped deterministic samples, not full TLC months or all NYC mobility. Equal monthly sample caps do not establish equal population demand.
 - The highest-count pickup zone in this sample is **{best["zone_name"]} ({best["borough"]})**, with **{best["observed_trips"]:,} observed trips**, according to analysis 01. This ranking is conditional on deterministic sampling and exclusions.
 - Weather-day group comparisons from analysis 06 are listed below. They are descriptive, include partial UTC days at local filter edges and do not isolate a causal weather effect.
 
@@ -74,6 +78,6 @@ Generated from actual SQL queries. See [full results](evidence/analyses.json), [
 """
     for row in weather:
         text += f"| {row['precipitation_class']} | {row['reporting_days']} | {row['mean_daily_observed_trips']:.2f} |\n"
-    text += "\n![Observed demand](demand-chart.svg)\n\nNo business optimization, savings, performance improvement or causal effect is claimed. Query timings include connection overhead on the recorded local environment; they are not cloud production latency. One month cannot support seasonality claims.\n"
+    text += "\n![Observed demand](demand-chart.svg)\n\nNo business optimization, savings, performance improvement or causal effect is claimed. Query timings include connection overhead on the recorded local environment; they are not cloud production latency. This limited historical window cannot establish annual seasonality or city-wide demand growth.\n"
     (ROOT / "docs/INSIGHTS.md").write_text(text)
     return record

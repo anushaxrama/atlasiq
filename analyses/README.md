@@ -15,4 +15,4 @@ Each numbered SQL file includes the question, expected columns and interpretatio
 11. Provider mix — within-day composition using a partitioned window denominator.
 12. Refresh and rejections — source/sample/accepted/modeled reconciliation and load duration.
 
-Run the SQL unchanged through a parameterized application helper or psql. The committed analyses use no user-provided SQL fragments. They operate on accepted sample rows, so negative/refund exclusions, deterministic selection, one taxi type, one month and weather coverage materially limit inference. No city-wide economic, causal or optimization conclusion is justified by these queries alone.
+Run the SQL unchanged through a parameterized application helper or psql. The committed analyses use no user-provided SQL fragments. They operate on accepted sample rows, so negative/refund exclusions, deterministic selection, one taxi type, a limited historical window and weather coverage materially limit inference. No city-wide economic, causal or optimization conclusion is justified by these queries alone.

@@ -8,6 +8,12 @@ AtlasIQ is **in development**, with a verified local vertical slice and containe
 
 The dashboard includes daily/cumulative demand charts, keyboard point inspection, date shortcuts, filtered CSV exports, zone comparisons, and inspectable quality checks. All counts remain explicitly labeled as observations from the accepted sample.
 
+## Verified multi-month backfill
+
+The local warehouse now covers **January–March 2025**: **284,899 accepted sample trips** from three 100,000-record selections of **11,198,026 source rows**. February was replayed through the full pipeline: all raw/fact counts and sorted trip-ID fingerprints remained identical, while January and March retained their active run IDs. All 17 dbt tests passed, all active partitions are published, and all facts matched a NOAA reporting date. See [execution evidence](docs/evidence/multi-month-backfill.json) and [the backfill runbook](docs/MULTI_MONTH_BACKFILL.md).
+
+Each month has a fixed sample cap. Differences in sample counts do not estimate city-wide demand growth, and three months do not establish annual seasonality. The one-month quickstart remains a smaller starting point; run the documented backfill to reproduce the wider coverage.
+
 ## Quickstart
 
 Requirements: Docker Compose; Python 3.12+ with uv; Node 24/pnpm 11.25 for frontend development. The committed compiled dashboard assets also work in Docker without a local Node install.
@@ -54,7 +60,7 @@ The lean strict TypeScript/SVG frontend is deliberate: it consumes the real API 
 uv run atlasiq bootstrap
 uv run atlasiq ingest --month 2025-01 --limit 100000
 uv run atlasiq ingest --month 2025-01 --limit 100000 --refresh
-uv run atlasiq backfill --start 2025-01 --end 2025-02 --limit 100000
+uv run atlasiq backfill --start 2025-01 --end 2025-03 --limit 100000
 uv run atlasiq transform
 uv run atlasiq validate
 uv run atlasiq publish

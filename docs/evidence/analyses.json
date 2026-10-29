@@ -4,125 +4,125 @@
       {
         "zone_name": "Midtown Center",
         "borough": "Manhattan",
-        "observed_trips": 4676,
+        "observed_trips": 13260,
         "demand_rank": 1
       },
       {
         "zone_name": "Upper East Side South",
         "borough": "Manhattan",
-        "observed_trips": 4604,
+        "observed_trips": 12876,
         "demand_rank": 2
       },
       {
         "zone_name": "Upper East Side North",
         "borough": "Manhattan",
-        "observed_trips": 4306,
+        "observed_trips": 11918,
         "demand_rank": 3
       },
       {
         "zone_name": "JFK Airport",
         "borough": "Queens",
-        "observed_trips": 3942,
+        "observed_trips": 10879,
         "demand_rank": 4
-      },
-      {
-        "zone_name": "Penn Station/Madison Sq West",
-        "borough": "Manhattan",
-        "observed_trips": 3414,
-        "demand_rank": 5
       },
       {
         "zone_name": "Times Sq/Theatre District",
         "borough": "Manhattan",
-        "observed_trips": 3396,
-        "demand_rank": 6
+        "observed_trips": 9569,
+        "demand_rank": 5
       },
       {
         "zone_name": "Midtown East",
         "borough": "Manhattan",
-        "observed_trips": 3351,
+        "observed_trips": 9525,
+        "demand_rank": 6
+      },
+      {
+        "zone_name": "Penn Station/Madison Sq West",
+        "borough": "Manhattan",
+        "observed_trips": 9455,
         "demand_rank": 7
       },
       {
         "zone_name": "Lincoln Square East",
         "borough": "Manhattan",
-        "observed_trips": 3110,
+        "observed_trips": 8701,
         "demand_rank": 8
       },
       {
-        "zone_name": "Upper West Side South",
+        "zone_name": "Union Sq",
         "borough": "Manhattan",
-        "observed_trips": 2684,
+        "observed_trips": 8070,
         "demand_rank": 9
       },
       {
         "zone_name": "Murray Hill",
         "borough": "Manhattan",
-        "observed_trips": 2680,
+        "observed_trips": 7723,
         "demand_rank": 10
       },
       {
         "zone_name": "Midtown North",
         "borough": "Manhattan",
-        "observed_trips": 2670,
+        "observed_trips": 7603,
         "demand_rank": 11
       },
       {
-        "zone_name": "Union Sq",
+        "zone_name": "Upper West Side South",
         "borough": "Manhattan",
-        "observed_trips": 2633,
+        "observed_trips": 7529,
         "demand_rank": 12
-      },
-      {
-        "zone_name": "LaGuardia Airport",
-        "borough": "Queens",
-        "observed_trips": 2552,
-        "demand_rank": 13
       },
       {
         "zone_name": "East Chelsea",
         "borough": "Manhattan",
-        "observed_trips": 2465,
+        "observed_trips": 7507,
+        "demand_rank": 13
+      },
+      {
+        "zone_name": "LaGuardia Airport",
+        "borough": "Queens",
+        "observed_trips": 7428,
         "demand_rank": 14
-      },
-      {
-        "zone_name": "Clinton East",
-        "borough": "Manhattan",
-        "observed_trips": 2431,
-        "demand_rank": 15
-      },
-      {
-        "zone_name": "Lenox Hill West",
-        "borough": "Manhattan",
-        "observed_trips": 2208,
-        "demand_rank": 16
       },
       {
         "zone_name": "East Village",
         "borough": "Manhattan",
-        "observed_trips": 2199,
-        "demand_rank": 17
+        "observed_trips": 7193,
+        "demand_rank": 15
       },
       {
-        "zone_name": "Midtown South",
+        "zone_name": "Clinton East",
         "borough": "Manhattan",
-        "observed_trips": 2192,
-        "demand_rank": 18
+        "observed_trips": 7070,
+        "demand_rank": 16
       },
       {
         "zone_name": "West Village",
         "borough": "Manhattan",
-        "observed_trips": 2141,
+        "observed_trips": 6879,
+        "demand_rank": 17
+      },
+      {
+        "zone_name": "Lenox Hill West",
+        "borough": "Manhattan",
+        "observed_trips": 6450,
+        "demand_rank": 18
+      },
+      {
+        "zone_name": "Midtown South",
+        "borough": "Manhattan",
+        "observed_trips": 6383,
         "demand_rank": 19
       },
       {
         "zone_name": "Lenox Hill East",
         "borough": "Manhattan",
-        "observed_trips": 2046,
+        "observed_trips": 5791,
         "demand_rank": 20
       }
     ],
-    "seconds": 0.039323,
+    "seconds": 0.028137,
     "row_count": 20
   },
   "02_weekday_hour": {
@@ -130,1013 +130,1013 @@
       {
         "weekday": 1,
         "pickup_hour": 0,
-        "observed_trips": 177,
-        "trips_per_covered_day": "44.2500000000000000"
+        "observed_trips": 593,
+        "trips_per_covered_day": "45.6153846153846154"
       },
       {
         "weekday": 1,
         "pickup_hour": 1,
-        "observed_trips": 113,
-        "trips_per_covered_day": "28.2500000000000000"
+        "observed_trips": 320,
+        "trips_per_covered_day": "24.6153846153846154"
       },
       {
         "weekday": 1,
         "pickup_hour": 2,
-        "observed_trips": 53,
-        "trips_per_covered_day": "13.2500000000000000"
+        "observed_trips": 151,
+        "trips_per_covered_day": "11.6153846153846154"
       },
       {
         "weekday": 1,
         "pickup_hour": 3,
-        "observed_trips": 41,
-        "trips_per_covered_day": "10.2500000000000000"
+        "observed_trips": 110,
+        "trips_per_covered_day": "8.4615384615384615"
       },
       {
         "weekday": 1,
         "pickup_hour": 4,
-        "observed_trips": 41,
-        "trips_per_covered_day": "10.2500000000000000"
+        "observed_trips": 156,
+        "trips_per_covered_day": "12.0000000000000000"
       },
       {
         "weekday": 1,
         "pickup_hour": 5,
-        "observed_trips": 98,
-        "trips_per_covered_day": "24.5000000000000000"
+        "observed_trips": 303,
+        "trips_per_covered_day": "23.3076923076923077"
       },
       {
         "weekday": 1,
         "pickup_hour": 6,
-        "observed_trips": 190,
-        "trips_per_covered_day": "47.5000000000000000"
+        "observed_trips": 640,
+        "trips_per_covered_day": "49.2307692307692308"
       },
       {
         "weekday": 1,
         "pickup_hour": 7,
-        "observed_trips": 374,
-        "trips_per_covered_day": "93.5000000000000000"
+        "observed_trips": 1274,
+        "trips_per_covered_day": "98.0000000000000000"
       },
       {
         "weekday": 1,
         "pickup_hour": 8,
-        "observed_trips": 555,
-        "trips_per_covered_day": "138.7500000000000000"
+        "observed_trips": 1755,
+        "trips_per_covered_day": "135.0000000000000000"
       },
       {
         "weekday": 1,
         "pickup_hour": 9,
-        "observed_trips": 483,
-        "trips_per_covered_day": "120.7500000000000000"
+        "observed_trips": 1659,
+        "trips_per_covered_day": "127.6153846153846154"
       },
       {
         "weekday": 1,
         "pickup_hour": 10,
-        "observed_trips": 513,
-        "trips_per_covered_day": "128.2500000000000000"
+        "observed_trips": 1696,
+        "trips_per_covered_day": "130.4615384615384615"
       },
       {
         "weekday": 1,
         "pickup_hour": 11,
-        "observed_trips": 557,
-        "trips_per_covered_day": "139.2500000000000000"
+        "observed_trips": 1755,
+        "trips_per_covered_day": "135.0000000000000000"
       },
       {
         "weekday": 1,
         "pickup_hour": 12,
-        "observed_trips": 520,
-        "trips_per_covered_day": "130.0000000000000000"
+        "observed_trips": 1657,
+        "trips_per_covered_day": "127.4615384615384615"
       },
       {
         "weekday": 1,
         "pickup_hour": 13,
-        "observed_trips": 542,
-        "trips_per_covered_day": "135.5000000000000000"
+        "observed_trips": 1795,
+        "trips_per_covered_day": "138.0769230769230769"
       },
       {
         "weekday": 1,
         "pickup_hour": 14,
-        "observed_trips": 629,
-        "trips_per_covered_day": "157.2500000000000000"
+        "observed_trips": 2031,
+        "trips_per_covered_day": "156.2307692307692308"
       },
       {
         "weekday": 1,
         "pickup_hour": 15,
-        "observed_trips": 708,
-        "trips_per_covered_day": "177.0000000000000000"
+        "observed_trips": 2195,
+        "trips_per_covered_day": "168.8461538461538462"
       },
       {
         "weekday": 1,
         "pickup_hour": 16,
-        "observed_trips": 697,
-        "trips_per_covered_day": "174.2500000000000000"
+        "observed_trips": 2213,
+        "trips_per_covered_day": "170.2307692307692308"
       },
       {
         "weekday": 1,
         "pickup_hour": 17,
-        "observed_trips": 719,
-        "trips_per_covered_day": "179.7500000000000000"
+        "observed_trips": 2341,
+        "trips_per_covered_day": "180.0769230769230769"
       },
       {
         "weekday": 1,
         "pickup_hour": 18,
-        "observed_trips": 775,
-        "trips_per_covered_day": "193.7500000000000000"
+        "observed_trips": 2504,
+        "trips_per_covered_day": "192.6153846153846154"
       },
       {
         "weekday": 1,
         "pickup_hour": 19,
-        "observed_trips": 616,
-        "trips_per_covered_day": "154.0000000000000000"
+        "observed_trips": 2028,
+        "trips_per_covered_day": "156.0000000000000000"
       },
       {
         "weekday": 1,
         "pickup_hour": 20,
-        "observed_trips": 557,
-        "trips_per_covered_day": "139.2500000000000000"
+        "observed_trips": 1847,
+        "trips_per_covered_day": "142.0769230769230769"
       },
       {
         "weekday": 1,
         "pickup_hour": 21,
-        "observed_trips": 520,
-        "trips_per_covered_day": "130.0000000000000000"
+        "observed_trips": 1825,
+        "trips_per_covered_day": "140.3846153846153846"
       },
       {
         "weekday": 1,
         "pickup_hour": 22,
-        "observed_trips": 406,
-        "trips_per_covered_day": "101.5000000000000000"
+        "observed_trips": 1469,
+        "trips_per_covered_day": "113.0000000000000000"
       },
       {
         "weekday": 1,
         "pickup_hour": 23,
-        "observed_trips": 235,
-        "trips_per_covered_day": "58.7500000000000000"
+        "observed_trips": 874,
+        "trips_per_covered_day": "67.2307692307692308"
       },
       {
         "weekday": 2,
         "pickup_hour": 0,
-        "observed_trips": 129,
-        "trips_per_covered_day": "32.2500000000000000"
+        "observed_trips": 410,
+        "trips_per_covered_day": "34.1666666666666667"
       },
       {
         "weekday": 2,
         "pickup_hour": 1,
-        "observed_trips": 63,
-        "trips_per_covered_day": "15.7500000000000000"
+        "observed_trips": 171,
+        "trips_per_covered_day": "14.2500000000000000"
       },
       {
         "weekday": 2,
         "pickup_hour": 2,
-        "observed_trips": 28,
-        "trips_per_covered_day": "7.0000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 3,
-        "observed_trips": 21,
-        "trips_per_covered_day": "5.2500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 4,
-        "observed_trips": 22,
-        "trips_per_covered_day": "5.5000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 5,
-        "observed_trips": 78,
-        "trips_per_covered_day": "19.5000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 6,
-        "observed_trips": 213,
-        "trips_per_covered_day": "53.2500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 7,
-        "observed_trips": 529,
-        "trips_per_covered_day": "132.2500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 8,
-        "observed_trips": 683,
-        "trips_per_covered_day": "170.7500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 9,
-        "observed_trips": 652,
-        "trips_per_covered_day": "163.0000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 10,
-        "observed_trips": 609,
-        "trips_per_covered_day": "152.2500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 11,
-        "observed_trips": 588,
-        "trips_per_covered_day": "147.0000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 12,
-        "observed_trips": 675,
-        "trips_per_covered_day": "168.7500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 13,
-        "observed_trips": 690,
-        "trips_per_covered_day": "172.5000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 14,
-        "observed_trips": 722,
-        "trips_per_covered_day": "180.5000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 15,
-        "observed_trips": 780,
-        "trips_per_covered_day": "195.0000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 16,
-        "observed_trips": 786,
-        "trips_per_covered_day": "196.5000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 17,
-        "observed_trips": 997,
-        "trips_per_covered_day": "249.2500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 18,
-        "observed_trips": 1002,
-        "trips_per_covered_day": "250.5000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 19,
-        "observed_trips": 823,
-        "trips_per_covered_day": "205.7500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 20,
-        "observed_trips": 755,
-        "trips_per_covered_day": "188.7500000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 21,
-        "observed_trips": 856,
-        "trips_per_covered_day": "214.0000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 22,
-        "observed_trips": 582,
-        "trips_per_covered_day": "145.5000000000000000"
-      },
-      {
-        "weekday": 2,
-        "pickup_hour": 23,
-        "observed_trips": 315,
-        "trips_per_covered_day": "78.7500000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 0,
-        "observed_trips": 316,
-        "trips_per_covered_day": "63.2000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 1,
-        "observed_trips": 260,
-        "trips_per_covered_day": "52.0000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 2,
-        "observed_trips": 197,
-        "trips_per_covered_day": "39.4000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 3,
-        "observed_trips": 135,
-        "trips_per_covered_day": "27.0000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 4,
-        "observed_trips": 118,
-        "trips_per_covered_day": "23.6000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 5,
-        "observed_trips": 107,
-        "trips_per_covered_day": "21.4000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 6,
-        "observed_trips": 235,
-        "trips_per_covered_day": "47.0000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 7,
-        "observed_trips": 524,
-        "trips_per_covered_day": "104.8000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 8,
-        "observed_trips": 758,
-        "trips_per_covered_day": "151.6000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 9,
-        "observed_trips": 718,
-        "trips_per_covered_day": "143.6000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 10,
-        "observed_trips": 708,
-        "trips_per_covered_day": "141.6000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 11,
-        "observed_trips": 644,
-        "trips_per_covered_day": "128.8000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 12,
-        "observed_trips": 814,
-        "trips_per_covered_day": "162.8000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 13,
-        "observed_trips": 835,
-        "trips_per_covered_day": "167.0000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 14,
-        "observed_trips": 857,
-        "trips_per_covered_day": "171.4000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 15,
-        "observed_trips": 990,
-        "trips_per_covered_day": "198.0000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 16,
-        "observed_trips": 1037,
-        "trips_per_covered_day": "207.4000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 17,
-        "observed_trips": 1173,
-        "trips_per_covered_day": "234.6000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 18,
-        "observed_trips": 1222,
-        "trips_per_covered_day": "244.4000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 19,
-        "observed_trips": 1034,
-        "trips_per_covered_day": "206.8000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 20,
-        "observed_trips": 939,
-        "trips_per_covered_day": "187.8000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 21,
-        "observed_trips": 1039,
-        "trips_per_covered_day": "207.8000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 22,
-        "observed_trips": 810,
-        "trips_per_covered_day": "162.0000000000000000"
-      },
-      {
-        "weekday": 3,
-        "pickup_hour": 23,
-        "observed_trips": 406,
-        "trips_per_covered_day": "81.2000000000000000"
-      },
-      {
-        "weekday": 4,
-        "pickup_hour": 0,
-        "observed_trips": 207,
-        "trips_per_covered_day": "41.4000000000000000"
-      },
-      {
-        "weekday": 4,
-        "pickup_hour": 1,
         "observed_trips": 88,
-        "trips_per_covered_day": "17.6000000000000000"
+        "trips_per_covered_day": "7.3333333333333333"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 3,
+        "observed_trips": 75,
+        "trips_per_covered_day": "6.2500000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 4,
+        "observed_trips": 85,
+        "trips_per_covered_day": "7.0833333333333333"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 5,
+        "observed_trips": 226,
+        "trips_per_covered_day": "18.8333333333333333"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 6,
+        "observed_trips": 603,
+        "trips_per_covered_day": "50.2500000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 7,
+        "observed_trips": 1442,
+        "trips_per_covered_day": "120.1666666666666667"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 8,
+        "observed_trips": 2007,
+        "trips_per_covered_day": "167.2500000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 9,
+        "observed_trips": 1855,
+        "trips_per_covered_day": "154.5833333333333333"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 10,
+        "observed_trips": 1736,
+        "trips_per_covered_day": "144.6666666666666667"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 11,
+        "observed_trips": 1704,
+        "trips_per_covered_day": "142.0000000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 12,
+        "observed_trips": 1959,
+        "trips_per_covered_day": "163.2500000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 13,
+        "observed_trips": 1993,
+        "trips_per_covered_day": "166.0833333333333333"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 14,
+        "observed_trips": 2098,
+        "trips_per_covered_day": "174.8333333333333333"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 15,
+        "observed_trips": 2214,
+        "trips_per_covered_day": "184.5000000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 16,
+        "observed_trips": 2247,
+        "trips_per_covered_day": "187.2500000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 17,
+        "observed_trips": 2739,
+        "trips_per_covered_day": "228.2500000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 18,
+        "observed_trips": 2822,
+        "trips_per_covered_day": "235.1666666666666667"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 19,
+        "observed_trips": 2451,
+        "trips_per_covered_day": "204.2500000000000000"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 20,
+        "observed_trips": 2396,
+        "trips_per_covered_day": "199.6666666666666667"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 21,
+        "observed_trips": 2633,
+        "trips_per_covered_day": "219.4166666666666667"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 22,
+        "observed_trips": 1907,
+        "trips_per_covered_day": "158.9166666666666667"
+      },
+      {
+        "weekday": 2,
+        "pickup_hour": 23,
+        "observed_trips": 994,
+        "trips_per_covered_day": "82.8333333333333333"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 0,
+        "observed_trips": 634,
+        "trips_per_covered_day": "48.7692307692307692"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 1,
+        "observed_trips": 391,
+        "trips_per_covered_day": "30.0769230769230769"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 2,
+        "observed_trips": 257,
+        "trips_per_covered_day": "19.7692307692307692"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 3,
+        "observed_trips": 188,
+        "trips_per_covered_day": "14.4615384615384615"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 4,
+        "observed_trips": 176,
+        "trips_per_covered_day": "13.5384615384615385"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 5,
+        "observed_trips": 255,
+        "trips_per_covered_day": "19.6153846153846154"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 6,
+        "observed_trips": 631,
+        "trips_per_covered_day": "48.5384615384615385"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 7,
+        "observed_trips": 1474,
+        "trips_per_covered_day": "113.3846153846153846"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 8,
+        "observed_trips": 2034,
+        "trips_per_covered_day": "156.4615384615384615"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 9,
+        "observed_trips": 2011,
+        "trips_per_covered_day": "154.6923076923076923"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 10,
+        "observed_trips": 1853,
+        "trips_per_covered_day": "142.5384615384615385"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 11,
+        "observed_trips": 1818,
+        "trips_per_covered_day": "139.8461538461538462"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 12,
+        "observed_trips": 2065,
+        "trips_per_covered_day": "158.8461538461538462"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 13,
+        "observed_trips": 2211,
+        "trips_per_covered_day": "170.0769230769230769"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 14,
+        "observed_trips": 2293,
+        "trips_per_covered_day": "176.3846153846153846"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 15,
+        "observed_trips": 2520,
+        "trips_per_covered_day": "193.8461538461538462"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 16,
+        "observed_trips": 2632,
+        "trips_per_covered_day": "202.4615384615384615"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 17,
+        "observed_trips": 3073,
+        "trips_per_covered_day": "236.3846153846153846"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 18,
+        "observed_trips": 3311,
+        "trips_per_covered_day": "254.6923076923076923"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 19,
+        "observed_trips": 2891,
+        "trips_per_covered_day": "222.3846153846153846"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 20,
+        "observed_trips": 2643,
+        "trips_per_covered_day": "203.3076923076923077"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 21,
+        "observed_trips": 2989,
+        "trips_per_covered_day": "229.9230769230769231"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 22,
+        "observed_trips": 2423,
+        "trips_per_covered_day": "186.3846153846153846"
+      },
+      {
+        "weekday": 3,
+        "pickup_hour": 23,
+        "observed_trips": 1301,
+        "trips_per_covered_day": "100.0769230769230769"
+      },
+      {
+        "weekday": 4,
+        "pickup_hour": 0,
+        "observed_trips": 615,
+        "trips_per_covered_day": "47.3076923076923077"
+      },
+      {
+        "weekday": 4,
+        "pickup_hour": 1,
+        "observed_trips": 247,
+        "trips_per_covered_day": "19.0000000000000000"
       },
       {
         "weekday": 4,
         "pickup_hour": 2,
-        "observed_trips": 52,
-        "trips_per_covered_day": "10.4000000000000000"
+        "observed_trips": 137,
+        "trips_per_covered_day": "10.5384615384615385"
       },
       {
         "weekday": 4,
         "pickup_hour": 3,
-        "observed_trips": 52,
-        "trips_per_covered_day": "10.4000000000000000"
+        "observed_trips": 121,
+        "trips_per_covered_day": "9.3076923076923077"
       },
       {
         "weekday": 4,
         "pickup_hour": 4,
-        "observed_trips": 39,
-        "trips_per_covered_day": "7.8000000000000000"
+        "observed_trips": 154,
+        "trips_per_covered_day": "11.8461538461538462"
       },
       {
         "weekday": 4,
         "pickup_hour": 5,
-        "observed_trips": 103,
-        "trips_per_covered_day": "20.6000000000000000"
+        "observed_trips": 290,
+        "trips_per_covered_day": "22.3076923076923077"
       },
       {
         "weekday": 4,
         "pickup_hour": 6,
-        "observed_trips": 294,
-        "trips_per_covered_day": "58.8000000000000000"
+        "observed_trips": 796,
+        "trips_per_covered_day": "61.2307692307692308"
       },
       {
         "weekday": 4,
         "pickup_hour": 7,
-        "observed_trips": 584,
-        "trips_per_covered_day": "116.8000000000000000"
+        "observed_trips": 1570,
+        "trips_per_covered_day": "120.7692307692307692"
       },
       {
         "weekday": 4,
         "pickup_hour": 8,
-        "observed_trips": 790,
-        "trips_per_covered_day": "158.0000000000000000"
+        "observed_trips": 2178,
+        "trips_per_covered_day": "167.5384615384615385"
       },
       {
         "weekday": 4,
         "pickup_hour": 9,
-        "observed_trips": 770,
-        "trips_per_covered_day": "154.0000000000000000"
+        "observed_trips": 2114,
+        "trips_per_covered_day": "162.6153846153846154"
       },
       {
         "weekday": 4,
         "pickup_hour": 10,
-        "observed_trips": 725,
-        "trips_per_covered_day": "145.0000000000000000"
+        "observed_trips": 1898,
+        "trips_per_covered_day": "146.0000000000000000"
       },
       {
         "weekday": 4,
         "pickup_hour": 11,
-        "observed_trips": 794,
-        "trips_per_covered_day": "158.8000000000000000"
+        "observed_trips": 1992,
+        "trips_per_covered_day": "153.2307692307692308"
       },
       {
         "weekday": 4,
         "pickup_hour": 12,
-        "observed_trips": 774,
-        "trips_per_covered_day": "154.8000000000000000"
+        "observed_trips": 2084,
+        "trips_per_covered_day": "160.3076923076923077"
       },
       {
         "weekday": 4,
         "pickup_hour": 13,
-        "observed_trips": 786,
-        "trips_per_covered_day": "157.2000000000000000"
+        "observed_trips": 2158,
+        "trips_per_covered_day": "166.0000000000000000"
       },
       {
         "weekday": 4,
         "pickup_hour": 14,
-        "observed_trips": 937,
-        "trips_per_covered_day": "187.4000000000000000"
+        "observed_trips": 2448,
+        "trips_per_covered_day": "188.3076923076923077"
       },
       {
         "weekday": 4,
         "pickup_hour": 15,
-        "observed_trips": 1031,
-        "trips_per_covered_day": "206.2000000000000000"
+        "observed_trips": 2529,
+        "trips_per_covered_day": "194.5384615384615385"
       },
       {
         "weekday": 4,
         "pickup_hour": 16,
-        "observed_trips": 1039,
-        "trips_per_covered_day": "207.8000000000000000"
+        "observed_trips": 2587,
+        "trips_per_covered_day": "199.0000000000000000"
       },
       {
         "weekday": 4,
         "pickup_hour": 17,
-        "observed_trips": 1397,
-        "trips_per_covered_day": "279.4000000000000000"
+        "observed_trips": 3332,
+        "trips_per_covered_day": "256.3076923076923077"
       },
       {
         "weekday": 4,
         "pickup_hour": 18,
-        "observed_trips": 1486,
-        "trips_per_covered_day": "297.2000000000000000"
+        "observed_trips": 3733,
+        "trips_per_covered_day": "287.1538461538461538"
       },
       {
         "weekday": 4,
         "pickup_hour": 19,
-        "observed_trips": 1183,
-        "trips_per_covered_day": "236.6000000000000000"
+        "observed_trips": 3217,
+        "trips_per_covered_day": "247.4615384615384615"
       },
       {
         "weekday": 4,
         "pickup_hour": 20,
-        "observed_trips": 1038,
-        "trips_per_covered_day": "207.6000000000000000"
+        "observed_trips": 2995,
+        "trips_per_covered_day": "230.3846153846153846"
       },
       {
         "weekday": 4,
         "pickup_hour": 21,
-        "observed_trips": 1145,
-        "trips_per_covered_day": "229.0000000000000000"
+        "observed_trips": 3276,
+        "trips_per_covered_day": "252.0000000000000000"
       },
       {
         "weekday": 4,
         "pickup_hour": 22,
-        "observed_trips": 1003,
-        "trips_per_covered_day": "200.6000000000000000"
+        "observed_trips": 2864,
+        "trips_per_covered_day": "220.3076923076923077"
       },
       {
         "weekday": 4,
         "pickup_hour": 23,
-        "observed_trips": 615,
-        "trips_per_covered_day": "123.0000000000000000"
+        "observed_trips": 1943,
+        "trips_per_covered_day": "149.4615384615384615"
       },
       {
         "weekday": 5,
         "pickup_hour": 0,
-        "observed_trips": 293,
-        "trips_per_covered_day": "58.6000000000000000"
+        "observed_trips": 1002,
+        "trips_per_covered_day": "77.0769230769230769"
       },
       {
         "weekday": 5,
         "pickup_hour": 1,
-        "observed_trips": 184,
-        "trips_per_covered_day": "36.8000000000000000"
+        "observed_trips": 580,
+        "trips_per_covered_day": "44.6153846153846154"
       },
       {
         "weekday": 5,
         "pickup_hour": 2,
-        "observed_trips": 81,
-        "trips_per_covered_day": "16.2000000000000000"
+        "observed_trips": 324,
+        "trips_per_covered_day": "24.9230769230769231"
       },
       {
         "weekday": 5,
         "pickup_hour": 3,
-        "observed_trips": 67,
-        "trips_per_covered_day": "13.4000000000000000"
+        "observed_trips": 203,
+        "trips_per_covered_day": "15.6153846153846154"
       },
       {
         "weekday": 5,
         "pickup_hour": 4,
-        "observed_trips": 63,
-        "trips_per_covered_day": "12.6000000000000000"
+        "observed_trips": 199,
+        "trips_per_covered_day": "15.3076923076923077"
       },
       {
         "weekday": 5,
         "pickup_hour": 5,
-        "observed_trips": 134,
-        "trips_per_covered_day": "26.8000000000000000"
+        "observed_trips": 349,
+        "trips_per_covered_day": "26.8461538461538462"
       },
       {
         "weekday": 5,
         "pickup_hour": 6,
-        "observed_trips": 224,
-        "trips_per_covered_day": "44.8000000000000000"
+        "observed_trips": 659,
+        "trips_per_covered_day": "50.6923076923076923"
       },
       {
         "weekday": 5,
         "pickup_hour": 7,
-        "observed_trips": 474,
-        "trips_per_covered_day": "94.8000000000000000"
+        "observed_trips": 1277,
+        "trips_per_covered_day": "98.2307692307692308"
       },
       {
         "weekday": 5,
         "pickup_hour": 8,
-        "observed_trips": 677,
-        "trips_per_covered_day": "135.4000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 9,
-        "observed_trips": 652,
-        "trips_per_covered_day": "130.4000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 10,
-        "observed_trips": 705,
+        "observed_trips": 1833,
         "trips_per_covered_day": "141.0000000000000000"
       },
       {
         "weekday": 5,
-        "pickup_hour": 11,
-        "observed_trips": 731,
-        "trips_per_covered_day": "146.2000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 12,
-        "observed_trips": 783,
-        "trips_per_covered_day": "156.6000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 13,
-        "observed_trips": 890,
-        "trips_per_covered_day": "178.0000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 14,
-        "observed_trips": 967,
-        "trips_per_covered_day": "193.4000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 15,
-        "observed_trips": 1009,
-        "trips_per_covered_day": "201.8000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 16,
-        "observed_trips": 997,
-        "trips_per_covered_day": "199.4000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 17,
-        "observed_trips": 1222,
-        "trips_per_covered_day": "244.4000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 18,
-        "observed_trips": 1329,
-        "trips_per_covered_day": "265.8000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 19,
-        "observed_trips": 1098,
-        "trips_per_covered_day": "219.6000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 20,
-        "observed_trips": 837,
-        "trips_per_covered_day": "167.4000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 21,
-        "observed_trips": 864,
-        "trips_per_covered_day": "172.8000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 22,
-        "observed_trips": 925,
-        "trips_per_covered_day": "185.0000000000000000"
-      },
-      {
-        "weekday": 5,
-        "pickup_hour": 23,
-        "observed_trips": 956,
-        "trips_per_covered_day": "191.2000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 0,
-        "observed_trips": 588,
-        "trips_per_covered_day": "147.0000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 1,
-        "observed_trips": 466,
-        "trips_per_covered_day": "116.5000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 2,
-        "observed_trips": 332,
-        "trips_per_covered_day": "83.0000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 3,
-        "observed_trips": 206,
-        "trips_per_covered_day": "51.5000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 4,
-        "observed_trips": 116,
-        "trips_per_covered_day": "29.0000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 5,
-        "observed_trips": 54,
-        "trips_per_covered_day": "13.5000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 6,
-        "observed_trips": 76,
-        "trips_per_covered_day": "19.0000000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 7,
-        "observed_trips": 131,
-        "trips_per_covered_day": "32.7500000000000000"
-      },
-      {
-        "weekday": 6,
-        "pickup_hour": 8,
-        "observed_trips": 219,
-        "trips_per_covered_day": "54.7500000000000000"
-      },
-      {
-        "weekday": 6,
         "pickup_hour": 9,
-        "observed_trips": 365,
-        "trips_per_covered_day": "91.2500000000000000"
+        "observed_trips": 1726,
+        "trips_per_covered_day": "132.7692307692307692"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 10,
-        "observed_trips": 504,
-        "trips_per_covered_day": "126.0000000000000000"
+        "observed_trips": 1727,
+        "trips_per_covered_day": "132.8461538461538462"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 11,
-        "observed_trips": 619,
-        "trips_per_covered_day": "154.7500000000000000"
+        "observed_trips": 1850,
+        "trips_per_covered_day": "142.3076923076923077"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 12,
-        "observed_trips": 682,
-        "trips_per_covered_day": "170.5000000000000000"
+        "observed_trips": 2021,
+        "trips_per_covered_day": "155.4615384615384615"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 13,
-        "observed_trips": 699,
-        "trips_per_covered_day": "174.7500000000000000"
+        "observed_trips": 2242,
+        "trips_per_covered_day": "172.4615384615384615"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 14,
-        "observed_trips": 738,
-        "trips_per_covered_day": "184.5000000000000000"
+        "observed_trips": 2481,
+        "trips_per_covered_day": "190.8461538461538462"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 15,
-        "observed_trips": 777,
-        "trips_per_covered_day": "194.2500000000000000"
+        "observed_trips": 2594,
+        "trips_per_covered_day": "199.5384615384615385"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 16,
-        "observed_trips": 849,
-        "trips_per_covered_day": "212.2500000000000000"
+        "observed_trips": 2651,
+        "trips_per_covered_day": "203.9230769230769231"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 17,
-        "observed_trips": 856,
-        "trips_per_covered_day": "214.0000000000000000"
+        "observed_trips": 3121,
+        "trips_per_covered_day": "240.0769230769230769"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 18,
-        "observed_trips": 854,
-        "trips_per_covered_day": "213.5000000000000000"
+        "observed_trips": 3517,
+        "trips_per_covered_day": "270.5384615384615385"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 19,
-        "observed_trips": 841,
-        "trips_per_covered_day": "210.2500000000000000"
+        "observed_trips": 3176,
+        "trips_per_covered_day": "244.3076923076923077"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 20,
-        "observed_trips": 639,
-        "trips_per_covered_day": "159.7500000000000000"
+        "observed_trips": 2649,
+        "trips_per_covered_day": "203.7692307692307692"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 21,
-        "observed_trips": 732,
-        "trips_per_covered_day": "183.0000000000000000"
+        "observed_trips": 2539,
+        "trips_per_covered_day": "195.3076923076923077"
       },
       {
-        "weekday": 6,
+        "weekday": 5,
         "pickup_hour": 22,
-        "observed_trips": 755,
-        "trips_per_covered_day": "188.7500000000000000"
+        "observed_trips": 2674,
+        "trips_per_covered_day": "205.6923076923076923"
+      },
+      {
+        "weekday": 5,
+        "pickup_hour": 23,
+        "observed_trips": 2689,
+        "trips_per_covered_day": "206.8461538461538462"
       },
       {
         "weekday": 6,
-        "pickup_hour": 23,
-        "observed_trips": 896,
-        "trips_per_covered_day": "224.0000000000000000"
-      },
-      {
-        "weekday": 7,
         "pickup_hour": 0,
-        "observed_trips": 761,
-        "trips_per_covered_day": "190.2500000000000000"
+        "observed_trips": 2363,
+        "trips_per_covered_day": "181.7692307692307692"
       },
       {
-        "weekday": 7,
+        "weekday": 6,
         "pickup_hour": 1,
-        "observed_trips": 610,
-        "trips_per_covered_day": "152.5000000000000000"
+        "observed_trips": 1831,
+        "trips_per_covered_day": "140.8461538461538462"
       },
       {
-        "weekday": 7,
+        "weekday": 6,
         "pickup_hour": 2,
-        "observed_trips": 382,
-        "trips_per_covered_day": "95.5000000000000000"
+        "observed_trips": 1247,
+        "trips_per_covered_day": "95.9230769230769231"
       },
       {
-        "weekday": 7,
+        "weekday": 6,
         "pickup_hour": 3,
-        "observed_trips": 254,
-        "trips_per_covered_day": "63.5000000000000000"
+        "observed_trips": 777,
+        "trips_per_covered_day": "59.7692307692307692"
       },
       {
-        "weekday": 7,
+        "weekday": 6,
         "pickup_hour": 4,
-        "observed_trips": 143,
-        "trips_per_covered_day": "35.7500000000000000"
+        "observed_trips": 499,
+        "trips_per_covered_day": "38.3846153846153846"
       },
       {
-        "weekday": 7,
+        "weekday": 6,
         "pickup_hour": 5,
-        "observed_trips": 82,
-        "trips_per_covered_day": "20.5000000000000000"
+        "observed_trips": 227,
+        "trips_per_covered_day": "17.4615384615384615"
       },
       {
-        "weekday": 7,
+        "weekday": 6,
         "pickup_hour": 6,
-        "observed_trips": 92,
+        "observed_trips": 299,
         "trips_per_covered_day": "23.0000000000000000"
       },
       {
+        "weekday": 6,
+        "pickup_hour": 7,
+        "observed_trips": 482,
+        "trips_per_covered_day": "37.0769230769230769"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 8,
+        "observed_trips": 763,
+        "trips_per_covered_day": "58.6923076923076923"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 9,
+        "observed_trips": 1201,
+        "trips_per_covered_day": "92.3846153846153846"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 10,
+        "observed_trips": 1526,
+        "trips_per_covered_day": "117.3846153846153846"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 11,
+        "observed_trips": 1881,
+        "trips_per_covered_day": "144.6923076923076923"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 12,
+        "observed_trips": 2135,
+        "trips_per_covered_day": "164.2307692307692308"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 13,
+        "observed_trips": 2335,
+        "trips_per_covered_day": "179.6153846153846154"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 14,
+        "observed_trips": 2326,
+        "trips_per_covered_day": "178.9230769230769231"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 15,
+        "observed_trips": 2494,
+        "trips_per_covered_day": "191.8461538461538462"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 16,
+        "observed_trips": 2749,
+        "trips_per_covered_day": "211.4615384615384615"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 17,
+        "observed_trips": 2806,
+        "trips_per_covered_day": "215.8461538461538462"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 18,
+        "observed_trips": 3105,
+        "trips_per_covered_day": "238.8461538461538462"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 19,
+        "observed_trips": 3246,
+        "trips_per_covered_day": "249.6923076923076923"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 20,
+        "observed_trips": 2746,
+        "trips_per_covered_day": "211.2307692307692308"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 21,
+        "observed_trips": 2725,
+        "trips_per_covered_day": "209.6153846153846154"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 22,
+        "observed_trips": 3005,
+        "trips_per_covered_day": "231.1538461538461538"
+      },
+      {
+        "weekday": 6,
+        "pickup_hour": 23,
+        "observed_trips": 3121,
+        "trips_per_covered_day": "240.0769230769230769"
+      },
+      {
+        "weekday": 7,
+        "pickup_hour": 0,
+        "observed_trips": 2719,
+        "trips_per_covered_day": "209.1538461538461538"
+      },
+      {
+        "weekday": 7,
+        "pickup_hour": 1,
+        "observed_trips": 2243,
+        "trips_per_covered_day": "172.5384615384615385"
+      },
+      {
+        "weekday": 7,
+        "pickup_hour": 2,
+        "observed_trips": 1406,
+        "trips_per_covered_day": "117.1666666666666667"
+      },
+      {
+        "weekday": 7,
+        "pickup_hour": 3,
+        "observed_trips": 1022,
+        "trips_per_covered_day": "78.6153846153846154"
+      },
+      {
+        "weekday": 7,
+        "pickup_hour": 4,
+        "observed_trips": 616,
+        "trips_per_covered_day": "47.3846153846153846"
+      },
+      {
+        "weekday": 7,
+        "pickup_hour": 5,
+        "observed_trips": 289,
+        "trips_per_covered_day": "22.2307692307692308"
+      },
+      {
+        "weekday": 7,
+        "pickup_hour": 6,
+        "observed_trips": 369,
+        "trips_per_covered_day": "28.3846153846153846"
+      },
+      {
         "weekday": 7,
         "pickup_hour": 7,
-        "observed_trips": 128,
-        "trips_per_covered_day": "32.0000000000000000"
+        "observed_trips": 469,
+        "trips_per_covered_day": "36.0769230769230769"
       },
       {
         "weekday": 7,
         "pickup_hour": 8,
-        "observed_trips": 193,
-        "trips_per_covered_day": "48.2500000000000000"
+        "observed_trips": 676,
+        "trips_per_covered_day": "52.0000000000000000"
       },
       {
         "weekday": 7,
         "pickup_hour": 9,
-        "observed_trips": 343,
-        "trips_per_covered_day": "85.7500000000000000"
+        "observed_trips": 1123,
+        "trips_per_covered_day": "86.3846153846153846"
       },
       {
         "weekday": 7,
         "pickup_hour": 10,
-        "observed_trips": 425,
-        "trips_per_covered_day": "106.2500000000000000"
+        "observed_trips": 1510,
+        "trips_per_covered_day": "116.1538461538461538"
       },
       {
         "weekday": 7,
         "pickup_hour": 11,
-        "observed_trips": 524,
-        "trips_per_covered_day": "131.0000000000000000"
+        "observed_trips": 1805,
+        "trips_per_covered_day": "138.8461538461538462"
       },
       {
         "weekday": 7,
         "pickup_hour": 12,
-        "observed_trips": 591,
-        "trips_per_covered_day": "147.7500000000000000"
+        "observed_trips": 2077,
+        "trips_per_covered_day": "159.7692307692307692"
       },
       {
         "weekday": 7,
         "pickup_hour": 13,
-        "observed_trips": 662,
-        "trips_per_covered_day": "165.5000000000000000"
+        "observed_trips": 2193,
+        "trips_per_covered_day": "168.6923076923076923"
       },
       {
         "weekday": 7,
         "pickup_hour": 14,
-        "observed_trips": 772,
-        "trips_per_covered_day": "193.0000000000000000"
+        "observed_trips": 2301,
+        "trips_per_covered_day": "177.0000000000000000"
       },
       {
         "weekday": 7,
         "pickup_hour": 15,
-        "observed_trips": 674,
-        "trips_per_covered_day": "168.5000000000000000"
+        "observed_trips": 2102,
+        "trips_per_covered_day": "161.6923076923076923"
       },
       {
         "weekday": 7,
         "pickup_hour": 16,
-        "observed_trips": 713,
-        "trips_per_covered_day": "178.2500000000000000"
+        "observed_trips": 2235,
+        "trips_per_covered_day": "171.9230769230769231"
       },
       {
         "weekday": 7,
         "pickup_hour": 17,
-        "observed_trips": 690,
-        "trips_per_covered_day": "172.5000000000000000"
+        "observed_trips": 2373,
+        "trips_per_covered_day": "182.5384615384615385"
       },
       {
         "weekday": 7,
         "pickup_hour": 18,
-        "observed_trips": 711,
-        "trips_per_covered_day": "177.7500000000000000"
+        "observed_trips": 2272,
+        "trips_per_covered_day": "174.7692307692307692"
       },
       {
         "weekday": 7,
         "pickup_hour": 19,
-        "observed_trips": 599,
-        "trips_per_covered_day": "149.7500000000000000"
+        "observed_trips": 1942,
+        "trips_per_covered_day": "149.3846153846153846"
       },
       {
         "weekday": 7,
         "pickup_hour": 20,
-        "observed_trips": 510,
-        "trips_per_covered_day": "127.5000000000000000"
+        "observed_trips": 1692,
+        "trips_per_covered_day": "130.1538461538461538"
       },
       {
         "weekday": 7,
         "pickup_hour": 21,
-        "observed_trips": 516,
-        "trips_per_covered_day": "129.0000000000000000"
+        "observed_trips": 1669,
+        "trips_per_covered_day": "128.3846153846153846"
       },
       {
         "weekday": 7,
         "pickup_hour": 22,
-        "observed_trips": 431,
-        "trips_per_covered_day": "107.7500000000000000"
+        "observed_trips": 1406,
+        "trips_per_covered_day": "108.1538461538461538"
       },
       {
         "weekday": 7,
         "pickup_hour": 23,
-        "observed_trips": 296,
-        "trips_per_covered_day": "74.0000000000000000"
+        "observed_trips": 1020,
+        "trips_per_covered_day": "78.4615384615384615"
       }
     ],
-    "seconds": 0.07138,
+    "seconds": 0.092003,
     "row_count": 168
   },
   "03_rolling_demand": {
@@ -1328,6 +1328,360 @@
         "rolling_7day_trips": "162.1428571428571429"
       },
       {
+        "date": "2025-02-01",
+        "zone_name": "Midtown Center",
+        "observed_trips": 107,
+        "rolling_7day_trips": "158.7142857142857143"
+      },
+      {
+        "date": "2025-02-02",
+        "zone_name": "Midtown Center",
+        "observed_trips": 70,
+        "rolling_7day_trips": "158.1428571428571429"
+      },
+      {
+        "date": "2025-02-03",
+        "zone_name": "Midtown Center",
+        "observed_trips": 144,
+        "rolling_7day_trips": "157.7142857142857143"
+      },
+      {
+        "date": "2025-02-04",
+        "zone_name": "Midtown Center",
+        "observed_trips": 200,
+        "rolling_7day_trips": "155.7142857142857143"
+      },
+      {
+        "date": "2025-02-05",
+        "zone_name": "Midtown Center",
+        "observed_trips": 210,
+        "rolling_7day_trips": "157.1428571428571429"
+      },
+      {
+        "date": "2025-02-06",
+        "zone_name": "Midtown Center",
+        "observed_trips": 215,
+        "rolling_7day_trips": "159.0000000000000000"
+      },
+      {
+        "date": "2025-02-07",
+        "zone_name": "Midtown Center",
+        "observed_trips": 167,
+        "rolling_7day_trips": "159.0000000000000000"
+      },
+      {
+        "date": "2025-02-08",
+        "zone_name": "Midtown Center",
+        "observed_trips": 114,
+        "rolling_7day_trips": "160.0000000000000000"
+      },
+      {
+        "date": "2025-02-09",
+        "zone_name": "Midtown Center",
+        "observed_trips": 73,
+        "rolling_7day_trips": "160.4285714285714286"
+      },
+      {
+        "date": "2025-02-10",
+        "zone_name": "Midtown Center",
+        "observed_trips": 156,
+        "rolling_7day_trips": "162.1428571428571429"
+      },
+      {
+        "date": "2025-02-11",
+        "zone_name": "Midtown Center",
+        "observed_trips": 192,
+        "rolling_7day_trips": "161.0000000000000000"
+      },
+      {
+        "date": "2025-02-12",
+        "zone_name": "Midtown Center",
+        "observed_trips": 200,
+        "rolling_7day_trips": "159.5714285714285714"
+      },
+      {
+        "date": "2025-02-13",
+        "zone_name": "Midtown Center",
+        "observed_trips": 207,
+        "rolling_7day_trips": "158.4285714285714286"
+      },
+      {
+        "date": "2025-02-14",
+        "zone_name": "Midtown Center",
+        "observed_trips": 159,
+        "rolling_7day_trips": "157.2857142857142857"
+      },
+      {
+        "date": "2025-02-15",
+        "zone_name": "Midtown Center",
+        "observed_trips": 115,
+        "rolling_7day_trips": "157.4285714285714286"
+      },
+      {
+        "date": "2025-02-16",
+        "zone_name": "Midtown Center",
+        "observed_trips": 89,
+        "rolling_7day_trips": "159.7142857142857143"
+      },
+      {
+        "date": "2025-02-17",
+        "zone_name": "Midtown Center",
+        "observed_trips": 98,
+        "rolling_7day_trips": "151.4285714285714286"
+      },
+      {
+        "date": "2025-02-18",
+        "zone_name": "Midtown Center",
+        "observed_trips": 196,
+        "rolling_7day_trips": "152.0000000000000000"
+      },
+      {
+        "date": "2025-02-19",
+        "zone_name": "Midtown Center",
+        "observed_trips": 212,
+        "rolling_7day_trips": "153.7142857142857143"
+      },
+      {
+        "date": "2025-02-20",
+        "zone_name": "Midtown Center",
+        "observed_trips": 211,
+        "rolling_7day_trips": "154.2857142857142857"
+      },
+      {
+        "date": "2025-02-21",
+        "zone_name": "Midtown Center",
+        "observed_trips": 142,
+        "rolling_7day_trips": "151.8571428571428571"
+      },
+      {
+        "date": "2025-02-22",
+        "zone_name": "Midtown Center",
+        "observed_trips": 90,
+        "rolling_7day_trips": "148.2857142857142857"
+      },
+      {
+        "date": "2025-02-23",
+        "zone_name": "Midtown Center",
+        "observed_trips": 64,
+        "rolling_7day_trips": "144.7142857142857143"
+      },
+      {
+        "date": "2025-02-24",
+        "zone_name": "Midtown Center",
+        "observed_trips": 146,
+        "rolling_7day_trips": "151.5714285714285714"
+      },
+      {
+        "date": "2025-02-25",
+        "zone_name": "Midtown Center",
+        "observed_trips": 193,
+        "rolling_7day_trips": "151.1428571428571429"
+      },
+      {
+        "date": "2025-02-26",
+        "zone_name": "Midtown Center",
+        "observed_trips": 191,
+        "rolling_7day_trips": "148.1428571428571429"
+      },
+      {
+        "date": "2025-02-27",
+        "zone_name": "Midtown Center",
+        "observed_trips": 222,
+        "rolling_7day_trips": "149.7142857142857143"
+      },
+      {
+        "date": "2025-02-28",
+        "zone_name": "Midtown Center",
+        "observed_trips": 171,
+        "rolling_7day_trips": "153.8571428571428571"
+      },
+      {
+        "date": "2025-03-01",
+        "zone_name": "Midtown Center",
+        "observed_trips": 111,
+        "rolling_7day_trips": "156.8571428571428571"
+      },
+      {
+        "date": "2025-03-02",
+        "zone_name": "Midtown Center",
+        "observed_trips": 78,
+        "rolling_7day_trips": "158.8571428571428571"
+      },
+      {
+        "date": "2025-03-03",
+        "zone_name": "Midtown Center",
+        "observed_trips": 133,
+        "rolling_7day_trips": "157.0000000000000000"
+      },
+      {
+        "date": "2025-03-04",
+        "zone_name": "Midtown Center",
+        "observed_trips": 154,
+        "rolling_7day_trips": "151.4285714285714286"
+      },
+      {
+        "date": "2025-03-05",
+        "zone_name": "Midtown Center",
+        "observed_trips": 183,
+        "rolling_7day_trips": "150.2857142857142857"
+      },
+      {
+        "date": "2025-03-06",
+        "zone_name": "Midtown Center",
+        "observed_trips": 178,
+        "rolling_7day_trips": "144.0000000000000000"
+      },
+      {
+        "date": "2025-03-07",
+        "zone_name": "Midtown Center",
+        "observed_trips": 122,
+        "rolling_7day_trips": "137.0000000000000000"
+      },
+      {
+        "date": "2025-03-08",
+        "zone_name": "Midtown Center",
+        "observed_trips": 99,
+        "rolling_7day_trips": "135.2857142857142857"
+      },
+      {
+        "date": "2025-03-09",
+        "zone_name": "Midtown Center",
+        "observed_trips": 65,
+        "rolling_7day_trips": "133.4285714285714286"
+      },
+      {
+        "date": "2025-03-10",
+        "zone_name": "Midtown Center",
+        "observed_trips": 134,
+        "rolling_7day_trips": "133.5714285714285714"
+      },
+      {
+        "date": "2025-03-11",
+        "zone_name": "Midtown Center",
+        "observed_trips": 184,
+        "rolling_7day_trips": "137.8571428571428571"
+      },
+      {
+        "date": "2025-03-12",
+        "zone_name": "Midtown Center",
+        "observed_trips": 177,
+        "rolling_7day_trips": "137.0000000000000000"
+      },
+      {
+        "date": "2025-03-13",
+        "zone_name": "Midtown Center",
+        "observed_trips": 203,
+        "rolling_7day_trips": "140.5714285714285714"
+      },
+      {
+        "date": "2025-03-14",
+        "zone_name": "Midtown Center",
+        "observed_trips": 132,
+        "rolling_7day_trips": "142.0000000000000000"
+      },
+      {
+        "date": "2025-03-15",
+        "zone_name": "Midtown Center",
+        "observed_trips": 113,
+        "rolling_7day_trips": "144.0000000000000000"
+      },
+      {
+        "date": "2025-03-16",
+        "zone_name": "Midtown Center",
+        "observed_trips": 71,
+        "rolling_7day_trips": "144.8571428571428571"
+      },
+      {
+        "date": "2025-03-17",
+        "zone_name": "Midtown Center",
+        "observed_trips": 104,
+        "rolling_7day_trips": "140.5714285714285714"
+      },
+      {
+        "date": "2025-03-18",
+        "zone_name": "Midtown Center",
+        "observed_trips": 164,
+        "rolling_7day_trips": "137.7142857142857143"
+      },
+      {
+        "date": "2025-03-19",
+        "zone_name": "Midtown Center",
+        "observed_trips": 155,
+        "rolling_7day_trips": "134.5714285714285714"
+      },
+      {
+        "date": "2025-03-20",
+        "zone_name": "Midtown Center",
+        "observed_trips": 200,
+        "rolling_7day_trips": "134.1428571428571429"
+      },
+      {
+        "date": "2025-03-21",
+        "zone_name": "Midtown Center",
+        "observed_trips": 118,
+        "rolling_7day_trips": "132.1428571428571429"
+      },
+      {
+        "date": "2025-03-22",
+        "zone_name": "Midtown Center",
+        "observed_trips": 99,
+        "rolling_7day_trips": "130.1428571428571429"
+      },
+      {
+        "date": "2025-03-23",
+        "zone_name": "Midtown Center",
+        "observed_trips": 81,
+        "rolling_7day_trips": "131.5714285714285714"
+      },
+      {
+        "date": "2025-03-24",
+        "zone_name": "Midtown Center",
+        "observed_trips": 115,
+        "rolling_7day_trips": "133.1428571428571429"
+      },
+      {
+        "date": "2025-03-25",
+        "zone_name": "Midtown Center",
+        "observed_trips": 160,
+        "rolling_7day_trips": "132.5714285714285714"
+      },
+      {
+        "date": "2025-03-26",
+        "zone_name": "Midtown Center",
+        "observed_trips": 195,
+        "rolling_7day_trips": "138.2857142857142857"
+      },
+      {
+        "date": "2025-03-27",
+        "zone_name": "Midtown Center",
+        "observed_trips": 202,
+        "rolling_7day_trips": "138.5714285714285714"
+      },
+      {
+        "date": "2025-03-28",
+        "zone_name": "Midtown Center",
+        "observed_trips": 141,
+        "rolling_7day_trips": "141.8571428571428571"
+      },
+      {
+        "date": "2025-03-29",
+        "zone_name": "Midtown Center",
+        "observed_trips": 135,
+        "rolling_7day_trips": "147.0000000000000000"
+      },
+      {
+        "date": "2025-03-30",
+        "zone_name": "Midtown Center",
+        "observed_trips": 71,
+        "rolling_7day_trips": "145.5714285714285714"
+      },
+      {
+        "date": "2025-03-31",
+        "zone_name": "Midtown Center",
+        "observed_trips": 153,
+        "rolling_7day_trips": "151.0000000000000000"
+      },
+      {
         "date": "2025-01-01",
         "zone_name": "Upper East Side North",
         "observed_trips": 55,
@@ -1514,6 +1868,360 @@
         "rolling_7day_trips": "150.4285714285714286"
       },
       {
+        "date": "2025-02-01",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 163,
+        "rolling_7day_trips": "152.2857142857142857"
+      },
+      {
+        "date": "2025-02-02",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 104,
+        "rolling_7day_trips": "154.4285714285714286"
+      },
+      {
+        "date": "2025-02-03",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 139,
+        "rolling_7day_trips": "153.1428571428571429"
+      },
+      {
+        "date": "2025-02-04",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 188,
+        "rolling_7day_trips": "156.4285714285714286"
+      },
+      {
+        "date": "2025-02-05",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 159,
+        "rolling_7day_trips": "156.0000000000000000"
+      },
+      {
+        "date": "2025-02-06",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 171,
+        "rolling_7day_trips": "155.2857142857142857"
+      },
+      {
+        "date": "2025-02-07",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 175,
+        "rolling_7day_trips": "157.0000000000000000"
+      },
+      {
+        "date": "2025-02-08",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 139,
+        "rolling_7day_trips": "153.5714285714285714"
+      },
+      {
+        "date": "2025-02-09",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 127,
+        "rolling_7day_trips": "156.8571428571428571"
+      },
+      {
+        "date": "2025-02-10",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 157,
+        "rolling_7day_trips": "159.4285714285714286"
+      },
+      {
+        "date": "2025-02-11",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 148,
+        "rolling_7day_trips": "153.7142857142857143"
+      },
+      {
+        "date": "2025-02-12",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 139,
+        "rolling_7day_trips": "150.8571428571428571"
+      },
+      {
+        "date": "2025-02-13",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 213,
+        "rolling_7day_trips": "156.8571428571428571"
+      },
+      {
+        "date": "2025-02-14",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 172,
+        "rolling_7day_trips": "156.4285714285714286"
+      },
+      {
+        "date": "2025-02-15",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 120,
+        "rolling_7day_trips": "153.7142857142857143"
+      },
+      {
+        "date": "2025-02-16",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 73,
+        "rolling_7day_trips": "146.0000000000000000"
+      },
+      {
+        "date": "2025-02-17",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 70,
+        "rolling_7day_trips": "133.5714285714285714"
+      },
+      {
+        "date": "2025-02-18",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 127,
+        "rolling_7day_trips": "130.5714285714285714"
+      },
+      {
+        "date": "2025-02-19",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 173,
+        "rolling_7day_trips": "135.4285714285714286"
+      },
+      {
+        "date": "2025-02-20",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 154,
+        "rolling_7day_trips": "127.0000000000000000"
+      },
+      {
+        "date": "2025-02-21",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 177,
+        "rolling_7day_trips": "127.7142857142857143"
+      },
+      {
+        "date": "2025-02-22",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 116,
+        "rolling_7day_trips": "127.1428571428571429"
+      },
+      {
+        "date": "2025-02-23",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 74,
+        "rolling_7day_trips": "127.2857142857142857"
+      },
+      {
+        "date": "2025-02-24",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 131,
+        "rolling_7day_trips": "136.0000000000000000"
+      },
+      {
+        "date": "2025-02-25",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 156,
+        "rolling_7day_trips": "140.1428571428571429"
+      },
+      {
+        "date": "2025-02-26",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 169,
+        "rolling_7day_trips": "139.5714285714285714"
+      },
+      {
+        "date": "2025-02-27",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 177,
+        "rolling_7day_trips": "142.8571428571428571"
+      },
+      {
+        "date": "2025-02-28",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 188,
+        "rolling_7day_trips": "144.4285714285714286"
+      },
+      {
+        "date": "2025-03-01",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 101,
+        "rolling_7day_trips": "142.2857142857142857"
+      },
+      {
+        "date": "2025-03-02",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 90,
+        "rolling_7day_trips": "144.5714285714285714"
+      },
+      {
+        "date": "2025-03-03",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 105,
+        "rolling_7day_trips": "140.8571428571428571"
+      },
+      {
+        "date": "2025-03-04",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 146,
+        "rolling_7day_trips": "139.4285714285714286"
+      },
+      {
+        "date": "2025-03-05",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 168,
+        "rolling_7day_trips": "139.2857142857142857"
+      },
+      {
+        "date": "2025-03-06",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 144,
+        "rolling_7day_trips": "134.5714285714285714"
+      },
+      {
+        "date": "2025-03-07",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 155,
+        "rolling_7day_trips": "129.8571428571428571"
+      },
+      {
+        "date": "2025-03-08",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 132,
+        "rolling_7day_trips": "134.2857142857142857"
+      },
+      {
+        "date": "2025-03-09",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 78,
+        "rolling_7day_trips": "132.5714285714285714"
+      },
+      {
+        "date": "2025-03-10",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 127,
+        "rolling_7day_trips": "135.7142857142857143"
+      },
+      {
+        "date": "2025-03-11",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 141,
+        "rolling_7day_trips": "135.0000000000000000"
+      },
+      {
+        "date": "2025-03-12",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 138,
+        "rolling_7day_trips": "130.7142857142857143"
+      },
+      {
+        "date": "2025-03-13",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 148,
+        "rolling_7day_trips": "131.2857142857142857"
+      },
+      {
+        "date": "2025-03-14",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 135,
+        "rolling_7day_trips": "128.4285714285714286"
+      },
+      {
+        "date": "2025-03-15",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 80,
+        "rolling_7day_trips": "121.0000000000000000"
+      },
+      {
+        "date": "2025-03-16",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 74,
+        "rolling_7day_trips": "120.4285714285714286"
+      },
+      {
+        "date": "2025-03-17",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 124,
+        "rolling_7day_trips": "120.0000000000000000"
+      },
+      {
+        "date": "2025-03-18",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 110,
+        "rolling_7day_trips": "115.5714285714285714"
+      },
+      {
+        "date": "2025-03-19",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 123,
+        "rolling_7day_trips": "113.4285714285714286"
+      },
+      {
+        "date": "2025-03-20",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 132,
+        "rolling_7day_trips": "111.1428571428571429"
+      },
+      {
+        "date": "2025-03-21",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 122,
+        "rolling_7day_trips": "109.2857142857142857"
+      },
+      {
+        "date": "2025-03-22",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 83,
+        "rolling_7day_trips": "109.7142857142857143"
+      },
+      {
+        "date": "2025-03-23",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 54,
+        "rolling_7day_trips": "106.8571428571428571"
+      },
+      {
+        "date": "2025-03-24",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 90,
+        "rolling_7day_trips": "102.0000000000000000"
+      },
+      {
+        "date": "2025-03-25",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 110,
+        "rolling_7day_trips": "102.0000000000000000"
+      },
+      {
+        "date": "2025-03-26",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 114,
+        "rolling_7day_trips": "100.7142857142857143"
+      },
+      {
+        "date": "2025-03-27",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 101,
+        "rolling_7day_trips": "96.2857142857142857"
+      },
+      {
+        "date": "2025-03-28",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 102,
+        "rolling_7day_trips": "93.4285714285714286"
+      },
+      {
+        "date": "2025-03-29",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 101,
+        "rolling_7day_trips": "96.0000000000000000"
+      },
+      {
+        "date": "2025-03-30",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 86,
+        "rolling_7day_trips": "100.5714285714285714"
+      },
+      {
+        "date": "2025-03-31",
+        "zone_name": "Upper East Side North",
+        "observed_trips": 99,
+        "rolling_7day_trips": "101.8571428571428571"
+      },
+      {
         "date": "2025-01-01",
         "zone_name": "Upper East Side South",
         "observed_trips": 58,
@@ -1698,251 +2406,605 @@
         "zone_name": "Upper East Side South",
         "observed_trips": 207,
         "rolling_7day_trips": "164.7142857142857143"
+      },
+      {
+        "date": "2025-02-01",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 173,
+        "rolling_7day_trips": "169.0000000000000000"
+      },
+      {
+        "date": "2025-02-02",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 126,
+        "rolling_7day_trips": "176.1428571428571429"
+      },
+      {
+        "date": "2025-02-03",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 148,
+        "rolling_7day_trips": "174.7142857142857143"
+      },
+      {
+        "date": "2025-02-04",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 194,
+        "rolling_7day_trips": "176.8571428571428571"
+      },
+      {
+        "date": "2025-02-05",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 191,
+        "rolling_7day_trips": "177.2857142857142857"
+      },
+      {
+        "date": "2025-02-06",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 190,
+        "rolling_7day_trips": "175.5714285714285714"
+      },
+      {
+        "date": "2025-02-07",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 194,
+        "rolling_7day_trips": "173.7142857142857143"
+      },
+      {
+        "date": "2025-02-08",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 126,
+        "rolling_7day_trips": "167.0000000000000000"
+      },
+      {
+        "date": "2025-02-09",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 101,
+        "rolling_7day_trips": "163.4285714285714286"
+      },
+      {
+        "date": "2025-02-10",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 159,
+        "rolling_7day_trips": "165.0000000000000000"
+      },
+      {
+        "date": "2025-02-11",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 163,
+        "rolling_7day_trips": "160.5714285714285714"
+      },
+      {
+        "date": "2025-02-12",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 166,
+        "rolling_7day_trips": "157.0000000000000000"
+      },
+      {
+        "date": "2025-02-13",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 171,
+        "rolling_7day_trips": "154.2857142857142857"
+      },
+      {
+        "date": "2025-02-14",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 181,
+        "rolling_7day_trips": "152.4285714285714286"
+      },
+      {
+        "date": "2025-02-15",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 107,
+        "rolling_7day_trips": "149.7142857142857143"
+      },
+      {
+        "date": "2025-02-16",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 86,
+        "rolling_7day_trips": "147.5714285714285714"
+      },
+      {
+        "date": "2025-02-17",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 99,
+        "rolling_7day_trips": "139.0000000000000000"
+      },
+      {
+        "date": "2025-02-18",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 129,
+        "rolling_7day_trips": "134.1428571428571429"
+      },
+      {
+        "date": "2025-02-19",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 181,
+        "rolling_7day_trips": "136.2857142857142857"
+      },
+      {
+        "date": "2025-02-20",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 202,
+        "rolling_7day_trips": "140.7142857142857143"
+      },
+      {
+        "date": "2025-02-21",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 164,
+        "rolling_7day_trips": "138.2857142857142857"
+      },
+      {
+        "date": "2025-02-22",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 119,
+        "rolling_7day_trips": "140.0000000000000000"
+      },
+      {
+        "date": "2025-02-23",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 79,
+        "rolling_7day_trips": "139.0000000000000000"
+      },
+      {
+        "date": "2025-02-24",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 171,
+        "rolling_7day_trips": "149.2857142857142857"
+      },
+      {
+        "date": "2025-02-25",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 185,
+        "rolling_7day_trips": "157.2857142857142857"
+      },
+      {
+        "date": "2025-02-26",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 187,
+        "rolling_7day_trips": "158.1428571428571429"
+      },
+      {
+        "date": "2025-02-27",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 192,
+        "rolling_7day_trips": "156.7142857142857143"
+      },
+      {
+        "date": "2025-02-28",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 189,
+        "rolling_7day_trips": "160.2857142857142857"
+      },
+      {
+        "date": "2025-03-01",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 124,
+        "rolling_7day_trips": "161.0000000000000000"
+      },
+      {
+        "date": "2025-03-02",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 82,
+        "rolling_7day_trips": "161.4285714285714286"
+      },
+      {
+        "date": "2025-03-03",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 103,
+        "rolling_7day_trips": "151.7142857142857143"
+      },
+      {
+        "date": "2025-03-04",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 150,
+        "rolling_7day_trips": "146.7142857142857143"
+      },
+      {
+        "date": "2025-03-05",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 157,
+        "rolling_7day_trips": "142.4285714285714286"
+      },
+      {
+        "date": "2025-03-06",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 158,
+        "rolling_7day_trips": "137.5714285714285714"
+      },
+      {
+        "date": "2025-03-07",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 148,
+        "rolling_7day_trips": "131.7142857142857143"
+      },
+      {
+        "date": "2025-03-08",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 128,
+        "rolling_7day_trips": "132.2857142857142857"
+      },
+      {
+        "date": "2025-03-09",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 81,
+        "rolling_7day_trips": "132.1428571428571429"
+      },
+      {
+        "date": "2025-03-10",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 127,
+        "rolling_7day_trips": "135.5714285714285714"
+      },
+      {
+        "date": "2025-03-11",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 159,
+        "rolling_7day_trips": "136.8571428571428571"
+      },
+      {
+        "date": "2025-03-12",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 177,
+        "rolling_7day_trips": "139.7142857142857143"
+      },
+      {
+        "date": "2025-03-13",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 195,
+        "rolling_7day_trips": "145.0000000000000000"
+      },
+      {
+        "date": "2025-03-14",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 134,
+        "rolling_7day_trips": "143.0000000000000000"
+      },
+      {
+        "date": "2025-03-15",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 121,
+        "rolling_7day_trips": "142.0000000000000000"
+      },
+      {
+        "date": "2025-03-16",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 93,
+        "rolling_7day_trips": "143.7142857142857143"
+      },
+      {
+        "date": "2025-03-17",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 91,
+        "rolling_7day_trips": "138.5714285714285714"
+      },
+      {
+        "date": "2025-03-18",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 142,
+        "rolling_7day_trips": "136.1428571428571429"
+      },
+      {
+        "date": "2025-03-19",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 140,
+        "rolling_7day_trips": "130.8571428571428571"
+      },
+      {
+        "date": "2025-03-20",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 159,
+        "rolling_7day_trips": "125.7142857142857143"
+      },
+      {
+        "date": "2025-03-21",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 116,
+        "rolling_7day_trips": "123.1428571428571429"
+      },
+      {
+        "date": "2025-03-22",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 84,
+        "rolling_7day_trips": "117.8571428571428571"
+      },
+      {
+        "date": "2025-03-23",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 63,
+        "rolling_7day_trips": "113.5714285714285714"
+      },
+      {
+        "date": "2025-03-24",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 108,
+        "rolling_7day_trips": "116.0000000000000000"
+      },
+      {
+        "date": "2025-03-25",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 123,
+        "rolling_7day_trips": "113.2857142857142857"
+      },
+      {
+        "date": "2025-03-26",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 154,
+        "rolling_7day_trips": "115.2857142857142857"
+      },
+      {
+        "date": "2025-03-27",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 158,
+        "rolling_7day_trips": "115.1428571428571429"
+      },
+      {
+        "date": "2025-03-28",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 121,
+        "rolling_7day_trips": "115.8571428571428571"
+      },
+      {
+        "date": "2025-03-29",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 100,
+        "rolling_7day_trips": "118.1428571428571429"
+      },
+      {
+        "date": "2025-03-30",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 80,
+        "rolling_7day_trips": "120.5714285714285714"
+      },
+      {
+        "date": "2025-03-31",
+        "zone_name": "Upper East Side South",
+        "observed_trips": 123,
+        "rolling_7day_trips": "122.7142857142857143"
       }
     ],
-    "seconds": 0.014638,
-    "row_count": 93
+    "seconds": 0.012965,
+    "row_count": 270
   },
   "04_fare_distribution": {
     "rows": [
       {
         "borough": "Manhattan",
-        "trips": 85473,
-        "median_fare_usd": 12.1,
-        "p90_fare_usd": 25.4,
+        "trips": 251128,
+        "median_fare_usd": 12.14,
+        "p90_fare_usd": 26.1,
         "p99_fare_usd": 70.0
       },
       {
         "borough": "Queens",
-        "trips": 7962,
-        "median_fare_usd": 45.7,
+        "trips": 24129,
+        "median_fare_usd": 45.0,
         "p90_fare_usd": 70.0,
-        "p99_fare_usd": 126.9
+        "p99_fare_usd": 119.2
       },
       {
         "borough": "Brooklyn",
-        "trips": 1680,
-        "median_fare_usd": 23.5,
-        "p90_fare_usd": 44.71600000000001,
-        "p99_fare_usd": 71.8426
+        "trips": 7103,
+        "median_fare_usd": 24.08,
+        "p90_fare_usd": 45.938,
+        "p99_fare_usd": 72.49599999999998
       },
       {
         "borough": "Bronx",
-        "trips": 392,
-        "median_fare_usd": 28.5,
-        "p90_fare_usd": 51.5,
-        "p99_fare_usd": 74.21449999999999
+        "trips": 1779,
+        "median_fare_usd": 26.12,
+        "p90_fare_usd": 48.468,
+        "p99_fare_usd": 73.88739999999999
       },
       {
         "borough": "Unknown",
-        "trips": 230,
-        "median_fare_usd": 13.5,
-        "p90_fare_usd": 48.010000000000005,
-        "p99_fare_usd": 88.54999999999998
+        "trips": 610,
+        "median_fare_usd": 14.2,
+        "p90_fare_usd": 47.8,
+        "p99_fare_usd": 85.0
       },
       {
         "borough": "N/A",
-        "trips": 31,
+        "trips": 98,
         "median_fare_usd": 70.0,
-        "p90_fare_usd": 225.0,
-        "p99_fare_usd": 300.0
-      },
-      {
-        "borough": "EWR",
-        "trips": 8,
-        "median_fare_usd": 120.0,
-        "p90_fare_usd": 136.64700000000002,
-        "p99_fare_usd": 145.9647
+        "p90_fare_usd": 180.0,
+        "p99_fare_usd": 302.9999999999999
       },
       {
         "borough": "Staten Island",
-        "trips": 7,
-        "median_fare_usd": 14.61,
-        "p90_fare_usd": 48.050000000000004,
-        "p99_fare_usd": 63.71
+        "trips": 28,
+        "median_fare_usd": 26.975,
+        "p90_fare_usd": 75.12800000000001,
+        "p99_fare_usd": 114.11399999999999
+      },
+      {
+        "borough": "EWR",
+        "trips": 24,
+        "median_fare_usd": 110.0,
+        "p90_fare_usd": 123.5,
+        "p99_fare_usd": 143.5983
       }
     ],
-    "seconds": 0.028916,
+    "seconds": 0.090734,
     "row_count": 8
   },
   "05_trip_efficiency": {
     "rows": [
       {
         "zone_name": "JFK Airport",
-        "observed_trips": 3942,
-        "average_duration_minutes": "37.38041603247082699105",
-        "average_distance_miles": 15.345979198376446,
-        "average_mph": 26.150319506935443
+        "observed_trips": 10879,
+        "average_duration_minutes": "39.18033213837056102000",
+        "average_distance_miles": 15.320195790054225,
+        "average_mph": 25.264517339030593
+      },
+      {
+        "zone_name": "Red Hook",
+        "observed_trips": 100,
+        "average_duration_minutes": "30.87849999999999999767",
+        "average_distance_miles": 8.066,
+        "average_mph": 15.86944916326402
+      },
+      {
+        "zone_name": "Baisley Park",
+        "observed_trips": 111,
+        "average_duration_minutes": "30.36771771771771771351",
+        "average_distance_miles": 8.615225225225226,
+        "average_mph": 543.9220610289923
+      },
+      {
+        "zone_name": "Melrose South",
+        "observed_trips": 104,
+        "average_duration_minutes": "29.3565705128205128",
+        "average_distance_miles": 5.172115384615386,
+        "average_mph": 11.267931095394378
+      },
+      {
+        "zone_name": "East New York",
+        "observed_trips": 293,
+        "average_duration_minutes": "29.16609783845278725916",
+        "average_distance_miles": 5.48047781569966,
+        "average_mph": 11.514364281914519
+      },
+      {
+        "zone_name": "Sunset Park West",
+        "observed_trips": 110,
+        "average_duration_minutes": "28.00848484848484848788",
+        "average_distance_miles": 6.024818181818179,
+        "average_mph": 13.179697396003819
+      },
+      {
+        "zone_name": "Crown Heights South",
+        "observed_trips": 103,
+        "average_duration_minutes": "27.95663430420711974369",
+        "average_distance_miles": 4.579805825242719,
+        "average_mph": 9.923943093975115
+      },
+      {
+        "zone_name": "East Flatbush/Remsen Village",
+        "observed_trips": 150,
+        "average_duration_minutes": "27.85244444444444444444",
+        "average_distance_miles": 4.6534666666666675,
+        "average_mph": 10.007493335585428
+      },
+      {
+        "zone_name": "Clinton Hill",
+        "observed_trips": 150,
+        "average_duration_minutes": "27.79688888888888889289",
+        "average_distance_miles": 4.358666666666665,
+        "average_mph": 9.978981188397144
+      },
+      {
+        "zone_name": "East Flatbush/Farragut",
+        "observed_trips": 113,
+        "average_duration_minutes": "27.78126843657817108614",
+        "average_distance_miles": 4.18646017699115,
+        "average_mph": 9.103295044981131
+      },
+      {
+        "zone_name": "Canarsie",
+        "observed_trips": 203,
+        "average_duration_minutes": "27.62857142857142857225",
+        "average_distance_miles": 5.454088669950738,
+        "average_mph": 11.762562569195309
+      },
+      {
+        "zone_name": "Flatbush/Ditmas Park",
+        "observed_trips": 208,
+        "average_duration_minutes": "27.51298076923076923173",
+        "average_distance_miles": 5.057884615384615,
+        "average_mph": 10.883742790625167
       },
       {
         "zone_name": "LaGuardia Airport",
-        "observed_trips": 2552,
-        "average_duration_minutes": "26.09153605015673981198",
-        "average_distance_miles": 9.498507053291558,
-        "average_mph": 22.92398834156959
+        "observed_trips": 7428,
+        "average_duration_minutes": "27.46630766469215580673",
+        "average_distance_miles": 9.546374528809945,
+        "average_mph": 22.19676747891445
+      },
+      {
+        "zone_name": "Flatlands",
+        "observed_trips": 119,
+        "average_duration_minutes": "26.99551820728291316415",
+        "average_distance_miles": 4.927731092436974,
+        "average_mph": 12.672051320546348
+      },
+      {
+        "zone_name": "Stuyvesant Heights",
+        "observed_trips": 176,
+        "average_duration_minutes": "26.8286931818181818",
+        "average_distance_miles": 4.489488636363635,
+        "average_mph": 9.918931774500868
+      },
+      {
+        "zone_name": "Ocean Hill",
+        "observed_trips": 133,
+        "average_duration_minutes": "26.7743107769423559",
+        "average_distance_miles": 5.0392481203007495,
+        "average_mph": 11.427182830984664
+      },
+      {
+        "zone_name": "Crown Heights North",
+        "observed_trips": 358,
+        "average_duration_minutes": "25.98226256983240223445",
+        "average_distance_miles": 4.522430167597764,
+        "average_mph": 10.275657587294706
+      },
+      {
+        "zone_name": "Prospect-Lefferts Gardens",
+        "observed_trips": 208,
+        "average_duration_minutes": "25.55761217948717948862",
+        "average_distance_miles": 4.12903846153846,
+        "average_mph": 9.553302083193106
       },
       {
         "zone_name": "East Elmhurst",
-        "observed_trips": 255,
-        "average_duration_minutes": "25.47516339869281045673",
-        "average_distance_miles": 9.146196078431373,
-        "average_mph": 22.77211666383754
+        "observed_trips": 751,
+        "average_duration_minutes": "25.51469152241455836676",
+        "average_distance_miles": 9.066937416777634,
+        "average_mph": 23.570976080132272
       },
       {
-        "zone_name": "Sunnyside",
-        "observed_trips": 104,
-        "average_duration_minutes": "19.58637820512820512212",
-        "average_distance_miles": 4.86423076923077,
-        "average_mph": 14.619296658957374
-      },
-      {
-        "zone_name": "Central Harlem North",
-        "observed_trips": 180,
-        "average_duration_minutes": "18.79388888888888889019",
-        "average_distance_miles": 3.224166666666666,
-        "average_mph": 12.562289116529683
-      },
-      {
-        "zone_name": "Seaport",
-        "observed_trips": 156,
-        "average_duration_minutes": "18.0561965811965812",
-        "average_distance_miles": 4.383846153846153,
-        "average_mph": 14.078187333640281
-      },
-      {
-        "zone_name": "World Trade Center",
-        "observed_trips": 461,
-        "average_duration_minutes": "18.01026753434562545430",
-        "average_distance_miles": 3.9925596529284197,
-        "average_mph": 16.152303872676143
-      },
-      {
-        "zone_name": "Financial District South",
-        "observed_trips": 242,
-        "average_duration_minutes": "17.83560606060606060702",
-        "average_distance_miles": 4.512520661157024,
-        "average_mph": 14.558121894887375
-      },
-      {
-        "zone_name": "Hamilton Heights",
-        "observed_trips": 110,
-        "average_duration_minutes": "17.82757575757575757545",
-        "average_distance_miles": 3.784363636363637,
-        "average_mph": 12.235984913191684
-      },
-      {
-        "zone_name": "Financial District North",
-        "observed_trips": 517,
-        "average_duration_minutes": "17.64136041263700838008",
-        "average_distance_miles": 4.179071566731138,
-        "average_mph": 13.040383520324893
-      },
-      {
-        "zone_name": "Two Bridges/Seward Park",
-        "observed_trips": 162,
-        "average_duration_minutes": "16.7705761316872428",
-        "average_distance_miles": 3.517345679012345,
-        "average_mph": 12.346604892868454
-      },
-      {
-        "zone_name": "Battery Park City",
-        "observed_trips": 590,
-        "average_duration_minutes": "16.67169491525423728887",
-        "average_distance_miles": 4.168338983050848,
-        "average_mph": 13.70276003927198
-      },
-      {
-        "zone_name": "Chinatown",
-        "observed_trips": 178,
-        "average_duration_minutes": "16.19082397003745318483",
-        "average_distance_miles": 3.165112359550562,
-        "average_mph": 11.124520752084798
-      },
-      {
-        "zone_name": "N/A",
-        "observed_trips": 230,
-        "average_duration_minutes": "15.80181159420289854681",
-        "average_distance_miles": 3.807999999999999,
-        "average_mph": 11.652621221974977
-      },
-      {
-        "zone_name": "Central Harlem",
-        "observed_trips": 275,
-        "average_duration_minutes": "15.56006060606060606242",
-        "average_distance_miles": 2.8560727272727284,
-        "average_mph": 10.227756023875639
-      },
-      {
-        "zone_name": "East Harlem North",
-        "observed_trips": 248,
-        "average_duration_minutes": "14.78931451612903225551",
-        "average_distance_miles": 3.0299999999999994,
-        "average_mph": 12.182190009804465
-      },
-      {
-        "zone_name": "East Chelsea",
-        "observed_trips": 2465,
-        "average_duration_minutes": "14.52118323191345503677",
-        "average_distance_miles": 2.4690223123732196,
-        "average_mph": 9.720252516575133
-      },
-      {
-        "zone_name": "Times Sq/Theatre District",
-        "observed_trips": 3396,
-        "average_duration_minutes": "14.46001668629760502601",
-        "average_distance_miles": 2.7380742049470017,
-        "average_mph": 9.851872825875192
-      },
-      {
-        "zone_name": "TriBeCa/Civic Center",
-        "observed_trips": 1288,
-        "average_duration_minutes": "14.31973343685300207055",
-        "average_distance_miles": 2.803190993788826,
-        "average_mph": 10.966999896574075
-      },
-      {
-        "zone_name": "Penn Station/Madison Sq West",
-        "observed_trips": 3414,
-        "average_duration_minutes": "14.31900019527436047696",
-        "average_distance_miles": 2.1747949619215006,
-        "average_mph": 8.829053528749762
+        "zone_name": "South Jamaica",
+        "observed_trips": 119,
+        "average_duration_minutes": "25.39565826330532213193",
+        "average_distance_miles": 6.869663865546218,
+        "average_mph": 18.488620046871755
       }
     ],
-    "seconds": 0.0091,
+    "seconds": 0.007311,
     "row_count": 20
   },
   "06_weather_association": {
     "rows": [
       {
         "precipitation_class": "Wet",
-        "reporting_days": 6,
-        "mean_daily_observed_trips": "2567.0000000000000000",
-        "mean_duration": "14.26858980603868146776"
+        "reporting_days": 23,
+        "mean_daily_observed_trips": "2932.3913043478260870",
+        "mean_duration": "15.07363555425915628663"
       },
       {
         "precipitation_class": "Dry",
-        "reporting_days": 26,
-        "mean_daily_observed_trips": "3091.5769230769230769",
-        "mean_duration": "14.69439551552668510183"
+        "reporting_days": 68,
+        "mean_daily_observed_trips": "3197.8529411764705882",
+        "mean_duration": "15.14366705976203380976"
       }
     ],
-    "seconds": 0.0056,
+    "seconds": 0.006653,
     "row_count": 2
   },
   "07_holiday_comparison": {
     "rows": [
       {
         "is_federal_holiday": false,
-        "days": 29,
-        "mean_daily_observed_trips": "3136.1379310344827586"
+        "days": 87,
+        "mean_daily_observed_trips": "3190.6091954022988506"
       },
       {
         "is_federal_holiday": true,
-        "days": 2,
-        "mean_daily_observed_trips": "2417.5000000000000000"
+        "days": 3,
+        "mean_daily_observed_trips": "2438.6666666666666667"
       }
     ],
-    "seconds": 0.008883,
+    "seconds": 0.014184,
     "row_count": 2
   },
   "08_week_over_week": {
@@ -1969,11 +3031,25 @@
         "percent_change": "394.4444444444444444"
       },
       {
+        "date": "2025-02-10",
+        "zone_name": "Clinton West",
+        "observed_trips": 22,
+        "prior_week_trips": 5,
+        "percent_change": "340.0000000000000000"
+      },
+      {
         "date": "2025-01-08",
         "zone_name": "Lenox Hill East",
         "observed_trips": 93,
         "prior_week_trips": 23,
         "percent_change": "304.3478260869565217"
+      },
+      {
+        "date": "2025-03-29",
+        "zone_name": "Morningside Heights",
+        "observed_trips": 31,
+        "prior_week_trips": 8,
+        "percent_change": "287.5000000000000000"
       },
       {
         "date": "2025-01-08",
@@ -1983,8 +3059,43 @@
         "percent_change": "245.4545454545454545"
       },
       {
+        "date": "2025-02-24",
+        "zone_name": "Battery Park City",
+        "observed_trips": 24,
+        "prior_week_trips": 7,
+        "percent_change": "242.8571428571428571"
+      },
+      {
+        "date": "2025-03-09",
+        "zone_name": "Manhattan Valley",
+        "observed_trips": 37,
+        "prior_week_trips": 11,
+        "percent_change": "236.3636363636363636"
+      },
+      {
+        "date": "2025-02-09",
+        "zone_name": "Central Harlem",
+        "observed_trips": 20,
+        "prior_week_trips": 6,
+        "percent_change": "233.3333333333333333"
+      },
+      {
         "date": "2025-01-14",
         "zone_name": "Battery Park City",
+        "observed_trips": 23,
+        "prior_week_trips": 7,
+        "percent_change": "228.5714285714285714"
+      },
+      {
+        "date": "2025-03-12",
+        "zone_name": "Lower East Side",
+        "observed_trips": 23,
+        "prior_week_trips": 7,
+        "percent_change": "228.5714285714285714"
+      },
+      {
+        "date": "2025-02-27",
+        "zone_name": "Financial District South",
         "observed_trips": 23,
         "prior_week_trips": 7,
         "percent_change": "228.5714285714285714"
@@ -2011,6 +3122,13 @@
         "percent_change": "210.0000000000000000"
       },
       {
+        "date": "2025-03-17",
+        "zone_name": "Little Italy/NoLiTa",
+        "observed_trips": 24,
+        "prior_week_trips": 8,
+        "percent_change": "200.0000000000000000"
+      },
+      {
         "date": "2025-01-16",
         "zone_name": "Morningside Heights",
         "observed_trips": 23,
@@ -2032,18 +3150,18 @@
         "percent_change": "158.3333333333333333"
       },
       {
+        "date": "2025-03-28",
+        "zone_name": "East Harlem South",
+        "observed_trips": 33,
+        "prior_week_trips": 13,
+        "percent_change": "153.8461538461538462"
+      },
+      {
         "date": "2025-01-11",
         "zone_name": "TriBeCa/Civic Center",
         "observed_trips": 48,
         "prior_week_trips": 19,
         "percent_change": "152.6315789473684211"
-      },
-      {
-        "date": "2025-01-10",
-        "zone_name": "Financial District North",
-        "observed_trips": 27,
-        "prior_week_trips": 11,
-        "percent_change": "145.4545454545454545"
       },
       {
         "date": "2025-01-24",
@@ -2057,6 +3175,13 @@
         "zone_name": "West Chelsea/Hudson Yards",
         "observed_trips": 81,
         "prior_week_trips": 33,
+        "percent_change": "145.4545454545454545"
+      },
+      {
+        "date": "2025-01-10",
+        "zone_name": "Financial District North",
+        "observed_trips": 27,
+        "prior_week_trips": 11,
         "percent_change": "145.4545454545454545"
       },
       {
@@ -2081,84 +3206,21 @@
         "percent_change": "138.0952380952380952"
       },
       {
+        "date": "2025-03-17",
+        "zone_name": "Clinton East",
+        "observed_trips": 71,
+        "prior_week_trips": 30,
+        "percent_change": "136.6666666666666667"
+      },
+      {
         "date": "2025-01-28",
         "zone_name": "Financial District North",
         "observed_trips": 26,
         "prior_week_trips": 11,
         "percent_change": "136.3636363636363636"
-      },
-      {
-        "date": "2025-01-08",
-        "zone_name": "TriBeCa/Civic Center",
-        "observed_trips": 59,
-        "prior_week_trips": 25,
-        "percent_change": "136.0000000000000000"
-      },
-      {
-        "date": "2025-01-08",
-        "zone_name": "Union Sq",
-        "observed_trips": 101,
-        "prior_week_trips": 43,
-        "percent_change": "134.8837209302325581"
-      },
-      {
-        "date": "2025-01-11",
-        "zone_name": "Gramercy",
-        "observed_trips": 84,
-        "prior_week_trips": 36,
-        "percent_change": "133.3333333333333333"
-      },
-      {
-        "date": "2025-01-08",
-        "zone_name": "Midtown East",
-        "observed_trips": 137,
-        "prior_week_trips": 59,
-        "percent_change": "132.2033898305084746"
-      },
-      {
-        "date": "2025-01-13",
-        "zone_name": "Battery Park City",
-        "observed_trips": 23,
-        "prior_week_trips": 10,
-        "percent_change": "130.0000000000000000"
-      },
-      {
-        "date": "2025-01-12",
-        "zone_name": "Manhattan Valley",
-        "observed_trips": 26,
-        "prior_week_trips": 12,
-        "percent_change": "116.6666666666666667"
-      },
-      {
-        "date": "2025-01-12",
-        "zone_name": "Flatiron",
-        "observed_trips": 54,
-        "prior_week_trips": 25,
-        "percent_change": "116.0000000000000000"
-      },
-      {
-        "date": "2025-01-09",
-        "zone_name": "Yorkville East",
-        "observed_trips": 54,
-        "prior_week_trips": 25,
-        "percent_change": "116.0000000000000000"
-      },
-      {
-        "date": "2025-01-11",
-        "zone_name": "East Village",
-        "observed_trips": 137,
-        "prior_week_trips": 64,
-        "percent_change": "114.0625000000000000"
-      },
-      {
-        "date": "2025-01-09",
-        "zone_name": "Union Sq",
-        "observed_trips": 109,
-        "prior_week_trips": 51,
-        "percent_change": "113.7254901960784314"
       }
     ],
-    "seconds": 0.007223,
+    "seconds": 0.010399,
     "row_count": 30
   },
   "09_unusual_demand": {
@@ -2209,6 +3271,15 @@
         "robust_score": 10.791852151625523
       },
       {
+        "date": "2025-03-26",
+        "zone_name": "Greenwich Village North",
+        "observed_trips": 22,
+        "median_trips": 46.0,
+        "mad": 1.5,
+        "n": 8,
+        "robust_score": -10.791852151625523
+      },
+      {
         "date": "2025-01-25",
         "zone_name": "Upper East Side North",
         "observed_trips": 150,
@@ -2216,6 +3287,42 @@
         "mad": 2.0,
         "n": 3,
         "robust_score": 10.117361392148927
+      },
+      {
+        "date": "2025-02-06",
+        "zone_name": "Gramercy",
+        "observed_trips": 65,
+        "median_trips": 85.0,
+        "mad": 1.0,
+        "n": 5,
+        "robust_score": -10.0
+      },
+      {
+        "date": "2025-02-19",
+        "zone_name": "Lincoln Square East",
+        "observed_trips": 79,
+        "median_trips": 108.0,
+        "mad": 2.0,
+        "n": 7,
+        "robust_score": -9.78011601241063
+      },
+      {
+        "date": "2025-02-07",
+        "zone_name": "Clinton East",
+        "observed_trips": 91,
+        "median_trips": 72.0,
+        "mad": 1.0,
+        "n": 5,
+        "robust_score": 9.5
+      },
+      {
+        "date": "2025-02-14",
+        "zone_name": "Upper West Side North",
+        "observed_trips": 92,
+        "median_trips": 65.0,
+        "mad": 2.0,
+        "n": 6,
+        "robust_score": 9.105625252934034
       },
       {
         "date": "2025-01-22",
@@ -2236,6 +3343,24 @@
         "robust_score": 9.0
       },
       {
+        "date": "2025-02-23",
+        "zone_name": "Greenwich Village South",
+        "observed_trips": 89,
+        "median_trips": 71.0,
+        "mad": 1.0,
+        "n": 7,
+        "robust_score": 9.0
+      },
+      {
+        "date": "2025-03-27",
+        "zone_name": "Yorkville East",
+        "observed_trips": 27,
+        "median_trips": 47.0,
+        "mad": 1.5,
+        "n": 8,
+        "robust_score": -8.993210126354603
+      },
+      {
         "date": "2025-01-24",
         "zone_name": "Morningside Heights",
         "observed_trips": 27,
@@ -2243,6 +3368,24 @@
         "mad": 1.0,
         "n": 3,
         "robust_score": 8.5
+      },
+      {
+        "date": "2025-02-09",
+        "zone_name": "Financial District North",
+        "observed_trips": 28,
+        "median_trips": 11.0,
+        "mad": 1.0,
+        "n": 5,
+        "robust_score": 8.5
+      },
+      {
+        "date": "2025-02-02",
+        "zone_name": "Gramercy",
+        "observed_trips": 77,
+        "median_trips": 59.0,
+        "mad": 1.5,
+        "n": 4,
+        "robust_score": 8.093889113719142
       },
       {
         "date": "2025-01-23",
@@ -2263,6 +3406,15 @@
         "robust_score": -8.0
       },
       {
+        "date": "2025-02-01",
+        "zone_name": "Lenox Hill West",
+        "observed_trips": 108,
+        "median_trips": 73.0,
+        "mad": 3.0,
+        "n": 4,
+        "robust_score": 7.869058860560277
+      },
+      {
         "date": "2025-01-31",
         "zone_name": "Greenwich Village North",
         "observed_trips": 84,
@@ -2270,6 +3422,33 @@
         "mad": 2.5,
         "n": 4,
         "robust_score": 7.824092809928505
+      },
+      {
+        "date": "2025-02-21",
+        "zone_name": "LaGuardia Airport",
+        "observed_trips": 103,
+        "median_trips": 80.0,
+        "mad": 2.0,
+        "n": 7,
+        "robust_score": 7.7566437339808445
+      },
+      {
+        "date": "2025-02-18",
+        "zone_name": "JFK Airport",
+        "observed_trips": 162,
+        "median_trips": 100.0,
+        "mad": 5.5,
+        "n": 6,
+        "robust_score": 7.603350379554346
+      },
+      {
+        "date": "2025-02-08",
+        "zone_name": "Lenox Hill West",
+        "observed_trips": 119,
+        "median_trips": 74.0,
+        "mad": 4.0,
+        "n": 5,
+        "robust_score": 7.588021044111696
       },
       {
         "date": "2025-01-23",
@@ -2281,13 +3460,13 @@
         "robust_score": 7.4193983542425475
       },
       {
-        "date": "2025-01-22",
-        "zone_name": "TriBeCa/Civic Center",
-        "observed_trips": 44,
-        "median_trips": 58.0,
-        "mad": 1.0,
-        "n": 3,
-        "robust_score": -7.0
+        "date": "2025-02-12",
+        "zone_name": "JFK Airport",
+        "observed_trips": 90,
+        "median_trips": 106.5,
+        "mad": 1.5,
+        "n": 6,
+        "robust_score": -7.419398354242547
       },
       {
         "date": "2025-01-25",
@@ -2299,142 +3478,25 @@
         "robust_score": 7.0
       },
       {
-        "date": "2025-01-23",
-        "zone_name": "Clinton West",
-        "observed_trips": 23,
-        "median_trips": 10.0,
-        "mad": 0.0,
-        "n": 3,
-        "robust_score": 6.5
-      },
-      {
-        "date": "2025-01-25",
-        "zone_name": "Manhattan Valley",
-        "observed_trips": 34,
-        "median_trips": 21.0,
+        "date": "2025-01-22",
+        "zone_name": "TriBeCa/Civic Center",
+        "observed_trips": 44,
+        "median_trips": 58.0,
         "mad": 1.0,
         "n": 3,
-        "robust_score": 6.5
+        "robust_score": -7.0
       },
       {
-        "date": "2025-01-24",
-        "zone_name": "Clinton West",
-        "observed_trips": 31,
-        "median_trips": 12.0,
-        "mad": 2.0,
-        "n": 3,
-        "robust_score": 6.4076622150276545
-      },
-      {
-        "date": "2025-01-24",
-        "zone_name": "Sutton Place/Turtle Bay North",
-        "observed_trips": 70,
-        "median_trips": 51.0,
-        "mad": 2.0,
-        "n": 3,
-        "robust_score": 6.4076622150276545
-      },
-      {
-        "date": "2025-01-26",
-        "zone_name": "Times Sq/Theatre District",
-        "observed_trips": 76,
-        "median_trips": 122.0,
-        "mad": 5.0,
-        "n": 3,
-        "robust_score": -6.205314987184676
-      },
-      {
-        "date": "2025-01-25",
-        "zone_name": "Midtown East",
-        "observed_trips": 88,
-        "median_trips": 76.0,
-        "mad": 1.0,
-        "n": 3,
-        "robust_score": 6.0
-      },
-      {
-        "date": "2025-01-31",
-        "zone_name": "World Trade Center",
-        "observed_trips": 25,
-        "median_trips": 14.5,
-        "mad": 1.0,
-        "n": 4,
-        "robust_score": 5.25
-      },
-      {
-        "date": "2025-01-30",
-        "zone_name": "SoHo",
-        "observed_trips": 31,
-        "median_trips": 20.5,
-        "mad": 1.0,
-        "n": 4,
-        "robust_score": 5.25
-      },
-      {
-        "date": "2025-01-28",
-        "zone_name": "Sutton Place/Turtle Bay North",
-        "observed_trips": 46,
-        "median_trips": 61.0,
-        "mad": 2.0,
-        "n": 3,
-        "robust_score": -5.058680696074464
-      },
-      {
-        "date": "2025-01-27",
-        "zone_name": "Flatiron",
+        "date": "2025-02-01",
+        "zone_name": "Alphabet City",
         "observed_trips": 26,
-        "median_trips": 36.0,
-        "mad": 1.0,
-        "n": 3,
-        "robust_score": -5.0
-      },
-      {
-        "date": "2025-01-27",
-        "zone_name": "Manhattan Valley",
-        "observed_trips": 31,
-        "median_trips": 21.0,
-        "mad": 0.0,
-        "n": 3,
-        "robust_score": 5.0
-      },
-      {
-        "date": "2025-01-26",
-        "zone_name": "Midtown North",
-        "observed_trips": 61,
-        "median_trips": 71.0,
-        "mad": 1.0,
-        "n": 3,
-        "robust_score": -5.0
-      },
-      {
-        "date": "2025-01-29",
-        "zone_name": "Greenwich Village North",
-        "observed_trips": 47,
-        "median_trips": 37.0,
+        "median_trips": 12.5,
         "mad": 1.0,
         "n": 4,
-        "robust_score": 5.0
-      },
-      {
-        "date": "2025-01-28",
-        "zone_name": "Lincoln Square East",
-        "observed_trips": 92,
-        "median_trips": 102.0,
-        "mad": 1.0,
-        "n": 3,
-        "robust_score": -5.0
-      },
-      {
-        "date": "2025-01-24",
-        "zone_name": "Lenox Hill East",
-        "observed_trips": 68,
-        "median_trips": 82.0,
-        "mad": 2.0,
-        "n": 3,
-        "robust_score": -4.721435316336167
+        "robust_score": 6.75
       }
     ],
-    "seconds": 0.006686,
+    "seconds": 0.007642,
     "row_count": 30
   },
   "10_zone_flow": {
@@ -2442,264 +3504,300 @@
       {
         "pickup_borough": "Manhattan",
         "dropoff_borough": "Manhattan",
-        "observed_trips": 81068,
-        "flow_share": "0.84637148554545169811"
+        "observed_trips": 237907,
+        "flow_share": "0.83505733610858584972"
       },
       {
         "pickup_borough": "Queens",
         "dropoff_borough": "Manhattan",
-        "observed_trips": 4227,
-        "flow_share": "0.04413100445799358968"
+        "observed_trips": 12526,
+        "flow_share": "0.04396645828872688216"
       },
       {
         "pickup_borough": "Queens",
         "dropoff_borough": "Queens",
-        "observed_trips": 2097,
-        "flow_share": "0.02189323783970015556"
+        "observed_trips": 6869,
+        "flow_share": "0.02411029873744730589"
       },
       {
         "pickup_borough": "Manhattan",
         "dropoff_borough": "Queens",
-        "observed_trips": 2089,
-        "flow_share": "0.02180971571155633046"
+        "observed_trips": 6244,
+        "flow_share": "0.02191653884359018459"
       },
       {
         "pickup_borough": "Manhattan",
         "dropoff_borough": "Brooklyn",
-        "observed_trips": 1598,
-        "flow_share": "0.01668354509672906466"
-      },
-      {
-        "pickup_borough": "Queens",
-        "dropoff_borough": "Brooklyn",
-        "observed_trips": 1234,
-        "flow_share": "0.01288328826618502239"
+        "observed_trips": 4909,
+        "flow_share": "0.01723066771031137350"
       },
       {
         "pickup_borough": "Brooklyn",
         "dropoff_borough": "Brooklyn",
-        "observed_trips": 974,
-        "flow_share": "0.01016881910151070649"
+        "observed_trips": 4318,
+        "flow_share": "0.01515624835468007961"
+      },
+      {
+        "pickup_borough": "Queens",
+        "dropoff_borough": "Brooklyn",
+        "observed_trips": 3598,
+        "flow_share": "0.01262903695695667587"
       },
       {
         "pickup_borough": "Brooklyn",
         "dropoff_borough": "Manhattan",
-        "observed_trips": 496,
-        "flow_share": "0.00517837194491715649"
+        "observed_trips": 1871,
+        "flow_share": "0.00656723961825067831"
+      },
+      {
+        "pickup_borough": "Bronx",
+        "dropoff_borough": "Bronx",
+        "observed_trips": 864,
+        "flow_share": "0.00303265367726808448"
       },
       {
         "pickup_borough": "Manhattan",
         "dropoff_borough": "Bronx",
-        "observed_trips": 255,
-        "flow_share": "0.00266226783458442521"
-      },
-      {
-        "pickup_borough": "Queens",
-        "dropoff_borough": "N/A",
-        "observed_trips": 219,
-        "flow_share": "0.00228641825793721224"
-      },
-      {
-        "pickup_borough": "Manhattan",
-        "dropoff_borough": "Unknown",
-        "observed_trips": 201,
-        "flow_share": "0.00209849346961360575"
+        "observed_trips": 781,
+        "flow_share": "0.00274132236336385877"
       },
       {
         "pickup_borough": "Brooklyn",
         "dropoff_borough": "Queens",
-        "observed_trips": 181,
-        "flow_share": "0.00188968814925404299"
+        "observed_trips": 778,
+        "flow_share": "0.00273079231587334459"
       },
       {
         "pickup_borough": "Bronx",
         "dropoff_borough": "Manhattan",
-        "observed_trips": 178,
-        "flow_share": "0.00185836735120010858"
+        "observed_trips": 696,
+        "flow_share": "0.00244297101779929027"
+      },
+      {
+        "pickup_borough": "Queens",
+        "dropoff_borough": "N/A",
+        "observed_trips": 604,
+        "flow_share": "0.00212004956142352202"
       },
       {
         "pickup_borough": "Manhattan",
         "dropoff_borough": "EWR",
-        "observed_trips": 174,
-        "flow_share": "0.00181660628712819603"
+        "observed_trips": 514,
+        "flow_share": "0.00180414813670809655"
+      },
+      {
+        "pickup_borough": "Manhattan",
+        "dropoff_borough": "Unknown",
+        "observed_trips": 486,
+        "flow_share": "0.00170586769346329752"
       },
       {
         "pickup_borough": "Queens",
         "dropoff_borough": "Bronx",
-        "observed_trips": 157,
-        "flow_share": "0.00163912176482256768"
-      },
-      {
-        "pickup_borough": "Bronx",
-        "dropoff_borough": "Bronx",
-        "observed_trips": 151,
-        "flow_share": "0.00157648016871469885"
+        "observed_trips": 458,
+        "flow_share": "0.00160758725021849849"
       },
       {
         "pickup_borough": "Unknown",
         "dropoff_borough": "Unknown",
-        "observed_trips": 113,
-        "flow_share": "0.00117975006003152960"
-      },
-      {
-        "pickup_borough": "Unknown",
-        "dropoff_borough": "Manhattan",
-        "observed_trips": 93,
-        "flow_share": "0.00097094473967196684"
+        "observed_trips": 310,
+        "flow_share": "0.00108810490735313216"
       },
       {
         "pickup_borough": "Manhattan",
         "dropoff_borough": "N/A",
-        "observed_trips": 84,
-        "flow_share": "0.00087698234551016360"
+        "observed_trips": 270,
+        "flow_share": "0.00094770427414627640"
+      },
+      {
+        "pickup_borough": "Unknown",
+        "dropoff_borough": "Manhattan",
+        "observed_trips": 253,
+        "flow_share": "0.00088803400503336270"
+      },
+      {
+        "pickup_borough": "Brooklyn",
+        "dropoff_borough": "Bronx",
+        "observed_trips": 119,
+        "flow_share": "0.00041769188379039589"
       },
       {
         "pickup_borough": "Bronx",
         "dropoff_borough": "Brooklyn",
+        "observed_trips": 110,
+        "flow_share": "0.00038610174131885335"
+      },
+      {
+        "pickup_borough": "Bronx",
+        "dropoff_borough": "Queens",
+        "observed_trips": 106,
+        "flow_share": "0.00037206167799816777"
+      },
+      {
+        "pickup_borough": "N/A",
+        "dropoff_borough": "N/A",
+        "observed_trips": 79,
+        "flow_share": "0.00027729125058354013"
+      },
+      {
+        "pickup_borough": "Queens",
+        "dropoff_borough": "Unknown",
         "observed_trips": 37,
-        "flow_share": "0.00038628984266519111"
-      },
-      {
-        "pickup_borough": "Brooklyn",
-        "dropoff_borough": "Bronx",
-        "observed_trips": 26,
-        "flow_share": "0.00027144691646743159"
-      },
-      {
-        "pickup_borough": "Bronx",
-        "dropoff_borough": "Queens",
-        "observed_trips": 26,
-        "flow_share": "0.00027144691646743159"
-      },
-      {
-        "pickup_borough": "N/A",
-        "dropoff_borough": "N/A",
-        "observed_trips": 25,
-        "flow_share": "0.00026100665044945345"
-      },
-      {
-        "pickup_borough": "Queens",
-        "dropoff_borough": "Unknown",
-        "observed_trips": 16,
-        "flow_share": "0.00016704425628765021"
+        "flow_share": "0.00012987058571634158"
       },
       {
         "pickup_borough": "Unknown",
         "dropoff_borough": "Queens",
-        "observed_trips": 12,
-        "flow_share": "0.00012528319221573766"
+        "observed_trips": 25,
+        "flow_share": "0.000087750395754284851825"
       },
       {
         "pickup_borough": "EWR",
         "dropoff_borough": "EWR",
-        "observed_trips": 7,
-        "flow_share": "0.000073081862125846966581"
-      },
-      {
-        "pickup_borough": "Unknown",
-        "dropoff_borough": "Brooklyn",
-        "observed_trips": 7,
-        "flow_share": "0.000073081862125846966581"
-      },
-      {
-        "pickup_borough": "Queens",
-        "dropoff_borough": "EWR",
-        "observed_trips": 6,
-        "flow_share": "0.000062641596107868828498"
+        "observed_trips": 22,
+        "flow_share": "0.000077220348263770669606"
       },
       {
         "pickup_borough": "Queens",
         "dropoff_borough": "Staten Island",
-        "observed_trips": 6,
-        "flow_share": "0.000062641596107868828498"
+        "observed_trips": 19,
+        "flow_share": "0.000066690300773256487387"
       },
       {
-        "pickup_borough": "Staten Island",
-        "dropoff_borough": "Brooklyn",
-        "observed_trips": 4,
-        "flow_share": "0.000041761064071912552332"
+        "pickup_borough": "Queens",
+        "dropoff_borough": "EWR",
+        "observed_trips": 18,
+        "flow_share": "0.000063180284943085093314"
       },
       {
         "pickup_borough": "Manhattan",
         "dropoff_borough": "Staten Island",
-        "observed_trips": 4,
-        "flow_share": "0.000041761064071912552332"
+        "observed_trips": 17,
+        "flow_share": "0.000059670269112913699241"
       },
       {
-        "pickup_borough": "N/A",
-        "dropoff_borough": "Manhattan",
-        "observed_trips": 3,
-        "flow_share": "0.000031320798053934414249"
-      },
-      {
-        "pickup_borough": "Unknown",
-        "dropoff_borough": "N/A",
-        "observed_trips": 3,
-        "flow_share": "0.000031320798053934414249"
+        "pickup_borough": "Staten Island",
+        "dropoff_borough": "Brooklyn",
+        "observed_trips": 16,
+        "flow_share": "0.000056160253282742305168"
       },
       {
         "pickup_borough": "Unknown",
-        "dropoff_borough": "Bronx",
-        "observed_trips": 2,
-        "flow_share": "0.000020880532035956276166"
+        "dropoff_borough": "Brooklyn",
+        "observed_trips": 14,
+        "flow_share": "0.000049140221622399517022"
+      },
+      {
+        "pickup_borough": "Brooklyn",
+        "dropoff_borough": "Staten Island",
+        "observed_trips": 8,
+        "flow_share": "0.000028080126641371152584"
       },
       {
         "pickup_borough": "Staten Island",
         "dropoff_borough": "Staten Island",
-        "observed_trips": 2,
-        "flow_share": "0.000020880532035956276166"
-      },
-      {
-        "pickup_borough": "Staten Island",
-        "dropoff_borough": "Manhattan",
-        "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
+        "observed_trips": 7,
+        "flow_share": "0.000024570110811199758511"
       },
       {
         "pickup_borough": "Brooklyn",
         "dropoff_borough": "N/A",
-        "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
+        "observed_trips": 7,
+        "flow_share": "0.000024570110811199758511"
       },
       {
         "pickup_borough": "N/A",
-        "dropoff_borough": "Unknown",
-        "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
-      },
-      {
-        "pickup_borough": "N/A",
-        "dropoff_borough": "Bronx",
-        "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
+        "dropoff_borough": "EWR",
+        "observed_trips": 6,
+        "flow_share": "0.000021060094981028364438"
       },
       {
         "pickup_borough": "N/A",
         "dropoff_borough": "Queens",
+        "observed_trips": 6,
+        "flow_share": "0.000021060094981028364438"
+      },
+      {
+        "pickup_borough": "Unknown",
+        "dropoff_borough": "N/A",
+        "observed_trips": 5,
+        "flow_share": "0.000017550079150856970365"
+      },
+      {
+        "pickup_borough": "N/A",
+        "dropoff_borough": "Manhattan",
+        "observed_trips": 5,
+        "flow_share": "0.000017550079150856970365"
+      },
+      {
+        "pickup_borough": "Staten Island",
+        "dropoff_borough": "Manhattan",
+        "observed_trips": 4,
+        "flow_share": "0.000014040063320685576292"
+      },
+      {
+        "pickup_borough": "Unknown",
+        "dropoff_borough": "Bronx",
+        "observed_trips": 2,
+        "flow_share": "0.000007020031660342788146"
+      },
+      {
+        "pickup_borough": "Bronx",
+        "dropoff_borough": "N/A",
+        "observed_trips": 2,
+        "flow_share": "0.000007020031660342788146"
+      },
+      {
+        "pickup_borough": "Brooklyn",
+        "dropoff_borough": "EWR",
+        "observed_trips": 2,
+        "flow_share": "0.000007020031660342788146"
+      },
+      {
+        "pickup_borough": "Bronx",
+        "dropoff_borough": "Unknown",
         "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
+        "flow_share": "0.000003510015830171394073"
       },
       {
         "pickup_borough": "EWR",
         "dropoff_borough": "Manhattan",
         "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
+        "flow_share": "0.000003510015830171394073"
       },
       {
-        "pickup_borough": "Brooklyn",
-        "dropoff_borough": "Staten Island",
+        "pickup_borough": "N/A",
+        "dropoff_borough": "Bronx",
         "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
+        "flow_share": "0.000003510015830171394073"
       },
       {
-        "pickup_borough": "Brooklyn",
+        "pickup_borough": "N/A",
+        "dropoff_borough": "Unknown",
+        "observed_trips": 1,
+        "flow_share": "0.000003510015830171394073"
+      },
+      {
+        "pickup_borough": "EWR",
+        "dropoff_borough": "Unknown",
+        "observed_trips": 1,
+        "flow_share": "0.000003510015830171394073"
+      },
+      {
+        "pickup_borough": "Staten Island",
+        "dropoff_borough": "Queens",
+        "observed_trips": 1,
+        "flow_share": "0.000003510015830171394073"
+      },
+      {
+        "pickup_borough": "Unknown",
         "dropoff_borough": "EWR",
         "observed_trips": 1,
-        "flow_share": "0.000010440266017978138083"
+        "flow_share": "0.000003510015830171394073"
       }
     ],
-    "seconds": 0.016845,
-    "row_count": 43
+    "seconds": 0.03048,
+    "row_count": 49
   },
   "11_provider_mix": {
     "rows": [
@@ -3152,10 +4250,814 @@
         "vendor_id": 2,
         "observed_trips": 2731,
         "within_day_share": "0.75755894590846047157"
+      },
+      {
+        "pickup_date": "2025-02-01",
+        "vendor_id": 1,
+        "observed_trips": 820,
+        "within_day_share": "0.20505126281570392598"
+      },
+      {
+        "pickup_date": "2025-02-01",
+        "vendor_id": 2,
+        "observed_trips": 3179,
+        "within_day_share": "0.79494873718429607402"
+      },
+      {
+        "pickup_date": "2025-02-02",
+        "vendor_id": 1,
+        "observed_trips": 679,
+        "within_day_share": "0.21365638766519823789"
+      },
+      {
+        "pickup_date": "2025-02-02",
+        "vendor_id": 2,
+        "observed_trips": 2499,
+        "within_day_share": "0.78634361233480176211"
+      },
+      {
+        "pickup_date": "2025-02-03",
+        "vendor_id": 1,
+        "observed_trips": 605,
+        "within_day_share": "0.23323053199691595991"
+      },
+      {
+        "pickup_date": "2025-02-03",
+        "vendor_id": 2,
+        "observed_trips": 1988,
+        "within_day_share": "0.76638396299151888975"
+      },
+      {
+        "pickup_date": "2025-02-03",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00038550501156515035"
+      },
+      {
+        "pickup_date": "2025-02-04",
+        "vendor_id": 1,
+        "observed_trips": 789,
+        "within_day_share": "0.23808086904043452022"
+      },
+      {
+        "pickup_date": "2025-02-04",
+        "vendor_id": 2,
+        "observed_trips": 2524,
+        "within_day_share": "0.76161738080869040435"
+      },
+      {
+        "pickup_date": "2025-02-04",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00030175015087507544"
+      },
+      {
+        "pickup_date": "2025-02-05",
+        "vendor_id": 1,
+        "observed_trips": 819,
+        "within_day_share": "0.24095322153574580759"
+      },
+      {
+        "pickup_date": "2025-02-05",
+        "vendor_id": 2,
+        "observed_trips": 2580,
+        "within_day_share": "0.75904677846425419241"
+      },
+      {
+        "pickup_date": "2025-02-06",
+        "vendor_id": 1,
+        "observed_trips": 764,
+        "within_day_share": "0.22477199176228302442"
+      },
+      {
+        "pickup_date": "2025-02-06",
+        "vendor_id": 2,
+        "observed_trips": 2635,
+        "within_day_share": "0.77522800823771697558"
+      },
+      {
+        "pickup_date": "2025-02-07",
+        "vendor_id": 1,
+        "observed_trips": 839,
+        "within_day_share": "0.22523489932885906040"
+      },
+      {
+        "pickup_date": "2025-02-07",
+        "vendor_id": 2,
+        "observed_trips": 2886,
+        "within_day_share": "0.77476510067114093960"
+      },
+      {
+        "pickup_date": "2025-02-08",
+        "vendor_id": 1,
+        "observed_trips": 799,
+        "within_day_share": "0.20982142857142857143"
+      },
+      {
+        "pickup_date": "2025-02-08",
+        "vendor_id": 2,
+        "observed_trips": 3009,
+        "within_day_share": "0.79017857142857142857"
+      },
+      {
+        "pickup_date": "2025-02-09",
+        "vendor_id": 1,
+        "observed_trips": 653,
+        "within_day_share": "0.19811893203883495146"
+      },
+      {
+        "pickup_date": "2025-02-09",
+        "vendor_id": 2,
+        "observed_trips": 2643,
+        "within_day_share": "0.80188106796116504854"
+      },
+      {
+        "pickup_date": "2025-02-10",
+        "vendor_id": 1,
+        "observed_trips": 679,
+        "within_day_share": "0.23535528596187175043"
+      },
+      {
+        "pickup_date": "2025-02-10",
+        "vendor_id": 2,
+        "observed_trips": 2205,
+        "within_day_share": "0.76429809358752166378"
+      },
+      {
+        "pickup_date": "2025-02-10",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00034662045060658579"
+      },
+      {
+        "pickup_date": "2025-02-11",
+        "vendor_id": 1,
+        "observed_trips": 746,
+        "within_day_share": "0.22355409050044950554"
+      },
+      {
+        "pickup_date": "2025-02-11",
+        "vendor_id": 2,
+        "observed_trips": 2591,
+        "within_day_share": "0.77644590949955049446"
+      },
+      {
+        "pickup_date": "2025-02-12",
+        "vendor_id": 1,
+        "observed_trips": 748,
+        "within_day_share": "0.22530120481927710843"
+      },
+      {
+        "pickup_date": "2025-02-12",
+        "vendor_id": 2,
+        "observed_trips": 2571,
+        "within_day_share": "0.77439759036144578313"
+      },
+      {
+        "pickup_date": "2025-02-12",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00030120481927710843"
+      },
+      {
+        "pickup_date": "2025-02-13",
+        "vendor_id": 1,
+        "observed_trips": 910,
+        "within_day_share": "0.24462365591397849462"
+      },
+      {
+        "pickup_date": "2025-02-13",
+        "vendor_id": 2,
+        "observed_trips": 2809,
+        "within_day_share": "0.75510752688172043011"
+      },
+      {
+        "pickup_date": "2025-02-13",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00026881720430107527"
+      },
+      {
+        "pickup_date": "2025-02-14",
+        "vendor_id": 1,
+        "observed_trips": 944,
+        "within_day_share": "0.23086329175837613108"
+      },
+      {
+        "pickup_date": "2025-02-14",
+        "vendor_id": 2,
+        "observed_trips": 3144,
+        "within_day_share": "0.76889214966984592810"
+      },
+      {
+        "pickup_date": "2025-02-14",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00024455857177794082"
+      },
+      {
+        "pickup_date": "2025-02-15",
+        "vendor_id": 1,
+        "observed_trips": 826,
+        "within_day_share": "0.21360227566589087148"
+      },
+      {
+        "pickup_date": "2025-02-15",
+        "vendor_id": 2,
+        "observed_trips": 3040,
+        "within_day_share": "0.78613912593741918800"
+      },
+      {
+        "pickup_date": "2025-02-15",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00025859839668994052"
+      },
+      {
+        "pickup_date": "2025-02-16",
+        "vendor_id": 1,
+        "observed_trips": 626,
+        "within_day_share": "0.21205962059620596206"
+      },
+      {
+        "pickup_date": "2025-02-16",
+        "vendor_id": 2,
+        "observed_trips": 2326,
+        "within_day_share": "0.78794037940379403794"
+      },
+      {
+        "pickup_date": "2025-02-17",
+        "vendor_id": 1,
+        "observed_trips": 568,
+        "within_day_share": "0.22893994357114066909"
+      },
+      {
+        "pickup_date": "2025-02-17",
+        "vendor_id": 2,
+        "observed_trips": 1913,
+        "within_day_share": "0.77106005642885933091"
+      },
+      {
+        "pickup_date": "2025-02-18",
+        "vendor_id": 1,
+        "observed_trips": 699,
+        "within_day_share": "0.22643343051506316812"
+      },
+      {
+        "pickup_date": "2025-02-18",
+        "vendor_id": 2,
+        "observed_trips": 2388,
+        "within_day_share": "0.77356656948493683188"
+      },
+      {
+        "pickup_date": "2025-02-19",
+        "vendor_id": 1,
+        "observed_trips": 802,
+        "within_day_share": "0.23798219584569732938"
+      },
+      {
+        "pickup_date": "2025-02-19",
+        "vendor_id": 2,
+        "observed_trips": 2568,
+        "within_day_share": "0.76201780415430267062"
+      },
+      {
+        "pickup_date": "2025-02-20",
+        "vendor_id": 1,
+        "observed_trips": 848,
+        "within_day_share": "0.23315919714050041243"
+      },
+      {
+        "pickup_date": "2025-02-20",
+        "vendor_id": 2,
+        "observed_trips": 2789,
+        "within_day_share": "0.76684080285949958757"
+      },
+      {
+        "pickup_date": "2025-02-21",
+        "vendor_id": 1,
+        "observed_trips": 824,
+        "within_day_share": "0.23375886524822695035"
+      },
+      {
+        "pickup_date": "2025-02-21",
+        "vendor_id": 2,
+        "observed_trips": 2701,
+        "within_day_share": "0.76624113475177304965"
+      },
+      {
+        "pickup_date": "2025-02-22",
+        "vendor_id": 1,
+        "observed_trips": 693,
+        "within_day_share": "0.18489861259338313767"
+      },
+      {
+        "pickup_date": "2025-02-22",
+        "vendor_id": 2,
+        "observed_trips": 3055,
+        "within_day_share": "0.81510138740661686233"
+      },
+      {
+        "pickup_date": "2025-02-23",
+        "vendor_id": 1,
+        "observed_trips": 586,
+        "within_day_share": "0.20446615491974877879"
+      },
+      {
+        "pickup_date": "2025-02-23",
+        "vendor_id": 2,
+        "observed_trips": 2280,
+        "within_day_share": "0.79553384508025122121"
+      },
+      {
+        "pickup_date": "2025-02-24",
+        "vendor_id": 1,
+        "observed_trips": 642,
+        "within_day_share": "0.24017957351290684624"
+      },
+      {
+        "pickup_date": "2025-02-24",
+        "vendor_id": 2,
+        "observed_trips": 2031,
+        "within_day_share": "0.75982042648709315376"
+      },
+      {
+        "pickup_date": "2025-02-25",
+        "vendor_id": 1,
+        "observed_trips": 683,
+        "within_day_share": "0.21905067350865939705"
+      },
+      {
+        "pickup_date": "2025-02-25",
+        "vendor_id": 2,
+        "observed_trips": 2435,
+        "within_day_share": "0.78094932649134060295"
+      },
+      {
+        "pickup_date": "2025-02-26",
+        "vendor_id": 1,
+        "observed_trips": 767,
+        "within_day_share": "0.21958202118522759805"
+      },
+      {
+        "pickup_date": "2025-02-26",
+        "vendor_id": 2,
+        "observed_trips": 2726,
+        "within_day_share": "0.78041797881477240195"
+      },
+      {
+        "pickup_date": "2025-02-27",
+        "vendor_id": 1,
+        "observed_trips": 862,
+        "within_day_share": "0.21945010183299389002"
+      },
+      {
+        "pickup_date": "2025-02-27",
+        "vendor_id": 2,
+        "observed_trips": 3066,
+        "within_day_share": "0.78054989816700610998"
+      },
+      {
+        "pickup_date": "2025-02-28",
+        "vendor_id": 1,
+        "observed_trips": 867,
+        "within_day_share": "0.21916076845298281092"
+      },
+      {
+        "pickup_date": "2025-02-28",
+        "vendor_id": 2,
+        "observed_trips": 3089,
+        "within_day_share": "0.78083923154701718908"
+      },
+      {
+        "pickup_date": "2025-03-01",
+        "vendor_id": 1,
+        "observed_trips": 732,
+        "within_day_share": "0.20049301561216105177"
+      },
+      {
+        "pickup_date": "2025-03-01",
+        "vendor_id": 2,
+        "observed_trips": 2919,
+        "within_day_share": "0.79950698438783894823"
+      },
+      {
+        "pickup_date": "2025-03-02",
+        "vendor_id": 1,
+        "observed_trips": 604,
+        "within_day_share": "0.20649572649572649573"
+      },
+      {
+        "pickup_date": "2025-03-02",
+        "vendor_id": 2,
+        "observed_trips": 2320,
+        "within_day_share": "0.79316239316239316239"
+      },
+      {
+        "pickup_date": "2025-03-02",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00034188034188034188"
+      },
+      {
+        "pickup_date": "2025-03-03",
+        "vendor_id": 1,
+        "observed_trips": 573,
+        "within_day_share": "0.23198380566801619433"
+      },
+      {
+        "pickup_date": "2025-03-03",
+        "vendor_id": 2,
+        "observed_trips": 1896,
+        "within_day_share": "0.76761133603238866397"
+      },
+      {
+        "pickup_date": "2025-03-03",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00040485829959514170"
+      },
+      {
+        "pickup_date": "2025-03-04",
+        "vendor_id": 1,
+        "observed_trips": 639,
+        "within_day_share": "0.22019297036526533425"
+      },
+      {
+        "pickup_date": "2025-03-04",
+        "vendor_id": 2,
+        "observed_trips": 2263,
+        "within_day_share": "0.77980702963473466575"
+      },
+      {
+        "pickup_date": "2025-03-05",
+        "vendor_id": 1,
+        "observed_trips": 759,
+        "within_day_share": "0.22277663633695333138"
+      },
+      {
+        "pickup_date": "2025-03-05",
+        "vendor_id": 2,
+        "observed_trips": 2647,
+        "within_day_share": "0.77692985030818902260"
+      },
+      {
+        "pickup_date": "2025-03-05",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00029351335485764602"
+      },
+      {
+        "pickup_date": "2025-03-06",
+        "vendor_id": 1,
+        "observed_trips": 744,
+        "within_day_share": "0.22620857403466099118"
+      },
+      {
+        "pickup_date": "2025-03-06",
+        "vendor_id": 2,
+        "observed_trips": 2545,
+        "within_day_share": "0.77379142596533900882"
+      },
+      {
+        "pickup_date": "2025-03-07",
+        "vendor_id": 1,
+        "observed_trips": 710,
+        "within_day_share": "0.22313010685103708360"
+      },
+      {
+        "pickup_date": "2025-03-07",
+        "vendor_id": 2,
+        "observed_trips": 2472,
+        "within_day_share": "0.77686989314896291640"
+      },
+      {
+        "pickup_date": "2025-03-08",
+        "vendor_id": 1,
+        "observed_trips": 660,
+        "within_day_share": "0.19796040791841631674"
+      },
+      {
+        "pickup_date": "2025-03-08",
+        "vendor_id": 2,
+        "observed_trips": 2673,
+        "within_day_share": "0.80173965206958608278"
+      },
+      {
+        "pickup_date": "2025-03-08",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00029994001199760048"
+      },
+      {
+        "pickup_date": "2025-03-09",
+        "vendor_id": 1,
+        "observed_trips": 557,
+        "within_day_share": "0.20869239415511427501"
+      },
+      {
+        "pickup_date": "2025-03-09",
+        "vendor_id": 2,
+        "observed_trips": 2112,
+        "within_day_share": "0.79130760584488572499"
+      },
+      {
+        "pickup_date": "2025-03-10",
+        "vendor_id": 1,
+        "observed_trips": 547,
+        "within_day_share": "0.23089911355002110595"
+      },
+      {
+        "pickup_date": "2025-03-10",
+        "vendor_id": 2,
+        "observed_trips": 1821,
+        "within_day_share": "0.76867876741241029970"
+      },
+      {
+        "pickup_date": "2025-03-10",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00042211903756859434"
+      },
+      {
+        "pickup_date": "2025-03-11",
+        "vendor_id": 1,
+        "observed_trips": 664,
+        "within_day_share": "0.22936096718480138169"
+      },
+      {
+        "pickup_date": "2025-03-11",
+        "vendor_id": 2,
+        "observed_trips": 2231,
+        "within_day_share": "0.77063903281519861831"
+      },
+      {
+        "pickup_date": "2025-03-12",
+        "vendor_id": 1,
+        "observed_trips": 724,
+        "within_day_share": "0.22331893892658852560"
+      },
+      {
+        "pickup_date": "2025-03-12",
+        "vendor_id": 2,
+        "observed_trips": 2518,
+        "within_day_share": "0.77668106107341147440"
+      },
+      {
+        "pickup_date": "2025-03-13",
+        "vendor_id": 1,
+        "observed_trips": 786,
+        "within_day_share": "0.21973720995247414034"
+      },
+      {
+        "pickup_date": "2025-03-13",
+        "vendor_id": 2,
+        "observed_trips": 2789,
+        "within_day_share": "0.77970366228683254124"
+      },
+      {
+        "pickup_date": "2025-03-13",
+        "vendor_id": 6,
+        "observed_trips": 2,
+        "within_day_share": "0.00055912776069331842"
+      },
+      {
+        "pickup_date": "2025-03-14",
+        "vendor_id": 1,
+        "observed_trips": 679,
+        "within_day_share": "0.21232020012507817386"
+      },
+      {
+        "pickup_date": "2025-03-14",
+        "vendor_id": 2,
+        "observed_trips": 2518,
+        "within_day_share": "0.78736710444027517198"
+      },
+      {
+        "pickup_date": "2025-03-14",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00031269543464665416"
+      },
+      {
+        "pickup_date": "2025-03-15",
+        "vendor_id": 1,
+        "observed_trips": 682,
+        "within_day_share": "0.19173460781557492269"
+      },
+      {
+        "pickup_date": "2025-03-15",
+        "vendor_id": 2,
+        "observed_trips": 2875,
+        "within_day_share": "0.80826539218442507731"
+      },
+      {
+        "pickup_date": "2025-03-16",
+        "vendor_id": 1,
+        "observed_trips": 549,
+        "within_day_share": "0.19920174165457184325"
+      },
+      {
+        "pickup_date": "2025-03-16",
+        "vendor_id": 2,
+        "observed_trips": 2207,
+        "within_day_share": "0.80079825834542815675"
+      },
+      {
+        "pickup_date": "2025-03-17",
+        "vendor_id": 1,
+        "observed_trips": 560,
+        "within_day_share": "0.22143139580862000791"
+      },
+      {
+        "pickup_date": "2025-03-17",
+        "vendor_id": 2,
+        "observed_trips": 1969,
+        "within_day_share": "0.77856860419137999209"
+      },
+      {
+        "pickup_date": "2025-03-18",
+        "vendor_id": 1,
+        "observed_trips": 636,
+        "within_day_share": "0.22625400213447171825"
+      },
+      {
+        "pickup_date": "2025-03-18",
+        "vendor_id": 2,
+        "observed_trips": 2175,
+        "within_day_share": "0.77374599786552828175"
+      },
+      {
+        "pickup_date": "2025-03-19",
+        "vendor_id": 1,
+        "observed_trips": 630,
+        "within_day_share": "0.21859819569743233865"
+      },
+      {
+        "pickup_date": "2025-03-19",
+        "vendor_id": 2,
+        "observed_trips": 2251,
+        "within_day_share": "0.78105482303955586398"
+      },
+      {
+        "pickup_date": "2025-03-19",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00034698126301179736"
+      },
+      {
+        "pickup_date": "2025-03-20",
+        "vendor_id": 1,
+        "observed_trips": 754,
+        "within_day_share": "0.21085011185682326622"
+      },
+      {
+        "pickup_date": "2025-03-20",
+        "vendor_id": 2,
+        "observed_trips": 2822,
+        "within_day_share": "0.78914988814317673378"
+      },
+      {
+        "pickup_date": "2025-03-21",
+        "vendor_id": 1,
+        "observed_trips": 660,
+        "within_day_share": "0.21359223300970873786"
+      },
+      {
+        "pickup_date": "2025-03-21",
+        "vendor_id": 2,
+        "observed_trips": 2430,
+        "within_day_share": "0.78640776699029126214"
+      },
+      {
+        "pickup_date": "2025-03-22",
+        "vendor_id": 1,
+        "observed_trips": 638,
+        "within_day_share": "0.20157977883096366509"
+      },
+      {
+        "pickup_date": "2025-03-22",
+        "vendor_id": 2,
+        "observed_trips": 2527,
+        "within_day_share": "0.79842022116903633491"
+      },
+      {
+        "pickup_date": "2025-03-23",
+        "vendor_id": 1,
+        "observed_trips": 556,
+        "within_day_share": "0.20669144981412639405"
+      },
+      {
+        "pickup_date": "2025-03-23",
+        "vendor_id": 2,
+        "observed_trips": 2134,
+        "within_day_share": "0.79330855018587360595"
+      },
+      {
+        "pickup_date": "2025-03-24",
+        "vendor_id": 1,
+        "observed_trips": 567,
+        "within_day_share": "0.22680000000000000000"
+      },
+      {
+        "pickup_date": "2025-03-24",
+        "vendor_id": 2,
+        "observed_trips": 1933,
+        "within_day_share": "0.77320000000000000000"
+      },
+      {
+        "pickup_date": "2025-03-25",
+        "vendor_id": 1,
+        "observed_trips": 596,
+        "within_day_share": "0.21339061940565699964"
+      },
+      {
+        "pickup_date": "2025-03-25",
+        "vendor_id": 2,
+        "observed_trips": 2197,
+        "within_day_share": "0.78660938059434300036"
+      },
+      {
+        "pickup_date": "2025-03-26",
+        "vendor_id": 1,
+        "observed_trips": 692,
+        "within_day_share": "0.22431118314424635332"
+      },
+      {
+        "pickup_date": "2025-03-26",
+        "vendor_id": 2,
+        "observed_trips": 2392,
+        "within_day_share": "0.77536466774716369530"
+      },
+      {
+        "pickup_date": "2025-03-26",
+        "vendor_id": 6,
+        "observed_trips": 1,
+        "within_day_share": "0.00032414910858995138"
+      },
+      {
+        "pickup_date": "2025-03-27",
+        "vendor_id": 1,
+        "observed_trips": 676,
+        "within_day_share": "0.20993788819875776398"
+      },
+      {
+        "pickup_date": "2025-03-27",
+        "vendor_id": 2,
+        "observed_trips": 2544,
+        "within_day_share": "0.79006211180124223602"
+      },
+      {
+        "pickup_date": "2025-03-28",
+        "vendor_id": 1,
+        "observed_trips": 633,
+        "within_day_share": "0.20057034220532319392"
+      },
+      {
+        "pickup_date": "2025-03-28",
+        "vendor_id": 2,
+        "observed_trips": 2523,
+        "within_day_share": "0.79942965779467680608"
+      },
+      {
+        "pickup_date": "2025-03-29",
+        "vendor_id": 1,
+        "observed_trips": 703,
+        "within_day_share": "0.18667020711630377058"
+      },
+      {
+        "pickup_date": "2025-03-29",
+        "vendor_id": 2,
+        "observed_trips": 3063,
+        "within_day_share": "0.81332979288369622942"
+      },
+      {
+        "pickup_date": "2025-03-30",
+        "vendor_id": 1,
+        "observed_trips": 580,
+        "within_day_share": "0.18739903069466882068"
+      },
+      {
+        "pickup_date": "2025-03-30",
+        "vendor_id": 2,
+        "observed_trips": 2515,
+        "within_day_share": "0.81260096930533117932"
+      },
+      {
+        "pickup_date": "2025-03-31",
+        "vendor_id": 1,
+        "observed_trips": 580,
+        "within_day_share": "0.22559315441462465967"
+      },
+      {
+        "pickup_date": "2025-03-31",
+        "vendor_id": 2,
+        "observed_trips": 1991,
+        "within_day_share": "0.77440684558537534033"
       }
     ],
-    "seconds": 0.012074,
-    "row_count": 75
+    "seconds": 0.02062,
+    "row_count": 209
   },
   "12_refresh_and_rejections": {
     "rows": [
@@ -3168,9 +5070,29 @@
         "sample_fraction": "0.02756166073803545438",
         "elapsed_seconds": 7.0874060850001115,
         "rejection_rate": "0.04217000000000000000"
+      },
+      {
+        "month": "2025-02-01",
+        "source_rows": 3577543,
+        "accepted_rows": 94764,
+        "rejected_rows": 5236,
+        "modeled_rows": 94764,
+        "sample_fraction": "0.02648857050774791526",
+        "elapsed_seconds": 4.939753876999021,
+        "rejection_rate": "0.05236000000000000000"
+      },
+      {
+        "month": "2025-03-01",
+        "source_rows": 4145257,
+        "accepted_rows": 94352,
+        "rejected_rows": 5648,
+        "modeled_rows": 94352,
+        "sample_fraction": "0.02276143553946112388",
+        "elapsed_seconds": 7.2082261290015595,
+        "rejection_rate": "0.05648000000000000000"
       }
     ],
-    "seconds": 0.005692,
-    "row_count": 1
+    "seconds": 0.006639,
+    "row_count": 3
   }
 }

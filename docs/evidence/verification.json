@@ -1,21 +1,26 @@
 {
-  "generated_at": "2026-10-29T05:01:32.242819+00:00",
+  "generated_at": "2026-10-29T20:56:14.758083+00:00",
   "environment": {
     "system": "Darwin",
     "machine": "arm64",
     "python": "3.12.14"
   },
   "warehouse": {
-    "raw_rows": 95783
+    "raw_rows": 284899
+  },
+  "coverage": {
+    "start": "2025-01-01",
+    "end": "2025-03-31",
+    "months": 3
   },
   "checks": [
     {
       "status": "pass",
-      "checks": 44
+      "checks": 68
     },
     {
       "status": "warning",
-      "checks": 6
+      "checks": 12
     }
   ],
   "runs": [
@@ -48,56 +53,86 @@
       "rejected_rows": 4217,
       "duplicate_rows": 0,
       "elapsed_seconds": 7.0874060850001115
+    },
+    {
+      "partition_month": "2025-02-01",
+      "status": "published",
+      "source_rows": 3577543,
+      "selected_rows": 100000,
+      "accepted_rows": 94764,
+      "rejected_rows": 5236,
+      "duplicate_rows": 0,
+      "elapsed_seconds": 7.693112169999949
+    },
+    {
+      "partition_month": "2025-03-01",
+      "status": "published",
+      "source_rows": 4145257,
+      "selected_rows": 100000,
+      "accepted_rows": 94352,
+      "rejected_rows": 5648,
+      "duplicate_rows": 0,
+      "elapsed_seconds": 7.2082261290015595
+    },
+    {
+      "partition_month": "2025-02-01",
+      "status": "published",
+      "source_rows": 3577543,
+      "selected_rows": 100000,
+      "accepted_rows": 94764,
+      "rejected_rows": 5236,
+      "duplicate_rows": 0,
+      "elapsed_seconds": 4.939753876999021
     }
   ],
   "queries": {
     "01_zone_ranking": {
-      "seconds": 0.039323,
+      "seconds": 0.028137,
       "row_count": 20
     },
     "02_weekday_hour": {
-      "seconds": 0.07138,
+      "seconds": 0.092003,
       "row_count": 168
     },
     "03_rolling_demand": {
-      "seconds": 0.014638,
-      "row_count": 93
+      "seconds": 0.012965,
+      "row_count": 270
     },
     "04_fare_distribution": {
-      "seconds": 0.028916,
+      "seconds": 0.090734,
       "row_count": 8
     },
     "05_trip_efficiency": {
-      "seconds": 0.0091,
+      "seconds": 0.007311,
       "row_count": 20
     },
     "06_weather_association": {
-      "seconds": 0.0056,
+      "seconds": 0.006653,
       "row_count": 2
     },
     "07_holiday_comparison": {
-      "seconds": 0.008883,
+      "seconds": 0.014184,
       "row_count": 2
     },
     "08_week_over_week": {
-      "seconds": 0.007223,
+      "seconds": 0.010399,
       "row_count": 30
     },
     "09_unusual_demand": {
-      "seconds": 0.006686,
+      "seconds": 0.007642,
       "row_count": 30
     },
     "10_zone_flow": {
-      "seconds": 0.016845,
-      "row_count": 43
+      "seconds": 0.03048,
+      "row_count": 49
     },
     "11_provider_mix": {
-      "seconds": 0.012074,
-      "row_count": 75
+      "seconds": 0.02062,
+      "row_count": 209
     },
     "12_refresh_and_rejections": {
-      "seconds": 0.005692,
-      "row_count": 1
+      "seconds": 0.006639,
+      "row_count": 3
     }
   }
 }

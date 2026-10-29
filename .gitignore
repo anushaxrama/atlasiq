@@ -13,3 +13,5 @@ artifacts/
 node_modules/
 playwright-report/
 test-results/
+
+warehouse/.user.yml

@@ -1,1 +1,136 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173b3c"><meta name="description" content="AtlasIQ — urban mobility analytics from real NYC yellow-taxi trips, NOAA weather and a tested batch warehouse."><title>AtlasIQ · Mobility intelligence</title><link rel="icon" href="/static/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/style.css"><script type="module" src="/static/app.js"></script></head><body><a class="skip" href="#content">Skip to analytics</a><aside class="sidebar"><a class="brand" href="#overview"><span class="brandmark" aria-hidden="true">▦</span>atlas<span>IQ</span></a><div class="workspace"><i></i> NYC / MOBILITY INTELLIGENCE</div><div class="nav-label">THE OBSERVATORY</div><nav aria-label="Main navigation"><a href="#overview"><span>01</span>Overview<b>↗</b></a><a href="#demand"><span>02</span>Demand explorer<b>↗</b></a><a href="#zones"><span>03</span>Zone comparison<b>↗</b></a><a href="#weather"><span>04</span>Weather & demand<b>↗</b></a><div class="nav-label">THE FOUNDATION</div><a href="#quality"><span>05</span>Data quality<b>↗</b></a><a href="#runs"><span>06</span>Pipeline runs<b>↗</b></a><a href="#methodology"><span>07</span>Methodology<b>↗</b></a></nav><div class="sidebar-foot"><div class="city-grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><strong>A city in context.</strong><p>Observed trips.<br>Considered decisions.</p><a href="/docs" target="_blank" rel="noopener">API documentation ↗</a></div></aside><div class="app-shell"><header><div><span>Workspace</span><i>/</i><strong id="breadcrumb">Overview</strong></div><div class="header-tools"><span class="batch-pill">BATCH WAREHOUSE</span><a href="#methodology" class="info" aria-label="Read data methodology">i</a></div></header><main id="content" tabindex="-1"><section class="page-heading"><div><div class="eyebrow" id="eyebrow">01 / THE BIG PICTURE</div><h1 id="title">Movement, with meaning.</h1><p id="subtitle">A closer look at the patterns moving New York.</p></div><div class="scope-stamp"><span>NEW YORK CITY</span><strong>Yellow taxi</strong><span>40.7128° N / 74.0060° W</span></div></section><form class="filters" id="filters"><label>From<input type="date" id="start" required></label><label>Through<input type="date" id="end" required></label><label class="zone-select">Pickup zone<select id="zone" aria-label="Pickup zone"><option value="">All pickup zones</option></select></label><button class="primary" type="submit">Apply view <span>↗</span></button><button type="button" id="reset">Reset</button></form><div class="coverage-note" id="coverage-note" role="status">Connecting to the modeled warehouse…</div><div id="view" aria-live="polite" aria-busy="true"><div class="empty">Loading real warehouse results…</div></div><footer><div><strong>AtlasIQ</strong><span>Urban mobility & economic activity intelligence.</span></div><div><a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank" rel="noopener">NYC TLC ↗</a><a href="https://www.ncei.noaa.gov/products/land-based-station/global-summary-of-the-day" target="_blank" rel="noopener">NOAA GSOD ↗</a><a href="#methodology">Definitions & limitations</a></div></footer></main></div></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#123c36" />
+    <meta
+      name="description"
+      content="AtlasIQ — urban mobility analytics from real NYC yellow-taxi trips, NOAA weather and a tested batch warehouse."
+    />
+    <title>AtlasIQ · Mobility intelligence</title>
+    <link rel="icon" href="/static/icon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/static/fonts/dm-sans.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script type="module" src="/static/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to analytics</a>
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="AtlasIQ overview"
+        ><svg class="brandmark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 23 16 3l12 20-12 7Z" />
+          <path d="m4 23 12-8 12 8M16 3v12" /></svg
+        ><span>Atlas<span>IQ</span></span></a
+      >
+      <div class="workspace">
+        <span class="workspace-icon" aria-hidden="true">NY</span>
+        <div>New York City<small>Mobility workspace</small></div>
+      </div>
+      <div class="nav-label">EXPLORE</div>
+      <nav aria-label="Main navigation">
+        <a href="#overview"><span data-icon="overview"></span>Overview<b>↗</b></a>
+        <a href="#demand"><span data-icon="demand"></span>Demand explorer<b>↗</b></a>
+        <a href="#zones"><span data-icon="zones"></span>Zone comparison<b>↗</b></a>
+        <a href="#weather"><span data-icon="weather"></span>Weather & demand<b>↗</b></a>
+        <div class="nav-label">WAREHOUSE</div>
+        <a href="#quality"><span data-icon="quality"></span>Data quality<b>↗</b></a>
+        <a href="#runs"><span data-icon="runs"></span>Pipeline runs<b>↗</b></a>
+        <a href="#methodology"><span data-icon="methodology"></span>Methodology<b>↗</b></a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="city-grid" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <span class="nav-label">THE URBAN OBSERVATORY</span
+        ><strong>Find the pattern.<br />Keep the context.</strong>
+        <p>Real trips. Transparent methods.<br />A more considered view of a city.</p>
+        <a href="https://github.com/anushaxrama/atlasiq" target="_blank" rel="noopener"
+          >Explore the project <span>↗</span></a
+        >
+      </div>
+      <a class="rail-bottom" href="/docs" target="_blank" rel="noopener"
+        ><span data-icon="code"></span>API documentation <b>↗</b></a
+      >
+    </aside>
+    <div class="app-shell">
+      <header>
+        <div class="breadcrumbs">
+          <span>Workspace</span><i>/</i><strong id="breadcrumb">Overview</strong>
+        </div>
+        <div class="header-tools">
+          <span class="batch-pill"><i></i> Historical dataset</span
+          ><a href="#methodology" class="info" aria-label="Read data methodology">?</a
+          ><span class="avatar" aria-label="New York workspace">NY</span>
+        </div>
+      </header>
+      <main id="content" tabindex="-1">
+        <section class="page-heading">
+          <div>
+            <div class="eyebrow" id="eyebrow">MOBILITY INTELLIGENCE / OVERVIEW</div>
+            <h1 id="title">The city, in motion.</h1>
+            <p id="subtitle">Understand how New York moves. One observed trip at a time.</p>
+          </div>
+          <button id="export" class="export-button" type="button">
+            <span data-icon="download"></span>Export daily data
+          </button>
+        </section>
+        <form class="filters" id="filters">
+          <div class="filter-context">
+            <span data-icon="filter"></span><strong>View controls</strong>
+          </div>
+          <label>From<input type="date" id="start" required /></label
+          ><span class="date-connector" aria-hidden="true">→</span
+          ><label>Through<input type="date" id="end" required /></label
+          ><label class="zone-select"
+            >Pickup zone<select id="zone" aria-label="Pickup zone">
+              <option value="">All pickup zones</option>
+            </select></label
+          ><button class="primary" type="submit">Apply view <span>↗</span></button
+          ><button type="button" id="reset" aria-label="Reset">Reset</button>
+        </form>
+        <div class="dataset-bar">
+          <div id="dataset-label"><i></i>Connecting to warehouse</div>
+          <div class="range-presets" aria-label="Date shortcuts">
+            <button type="button" id="full-range" class="selected" aria-pressed="true">
+              Full coverage</button
+            ><button type="button" id="last-week" aria-pressed="false">Last 7 days</button>
+          </div>
+        </div>
+        <details class="coverage-details">
+          <summary>
+            About this sample <span>Source coverage & processing details</span
+            ><b aria-hidden="true">+</b>
+          </summary>
+          <div class="coverage-note" id="coverage-note" role="status">
+            Connecting to the modeled warehouse…
+          </div>
+        </details>
+        <div id="action-status" role="status"></div>
+        <div id="view" aria-live="polite" aria-busy="true">
+          <div class="empty">Loading real warehouse results…</div>
+        </div>
+        <footer>
+          <div>
+            <strong>AtlasIQ<span class="footer-dot">.</span></strong
+            ><span>A city in context.</span>
+          </div>
+          <div>
+            <a
+              href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page"
+              target="_blank"
+              rel="noopener"
+              >NYC TLC ↗</a
+            ><a
+              href="https://www.ncei.noaa.gov/products/land-based-station/global-summary-of-the-day"
+              target="_blank"
+              rel="noopener"
+              >NOAA GSOD ↗</a
+            ><a href="#methodology">Definitions & limitations</a>
+          </div>
+          <span>OBSERVED. NEVER EXTRAPOLATED.</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

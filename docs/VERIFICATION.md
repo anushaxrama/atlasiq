@@ -38,3 +38,7 @@ A real Lighthouse 13.6.0 mobile/simulated-throttling run against the Docker-serv
 The final Compose-based Airflow run also completed successfully. Actual DAG/task states were extracted from its persisted metadata database into `evidence/airflow-execution.json`, with all five tasks marked success. The final Docker-served dashboard regression passed all eight browser tests.
 
 dbt source freshness also passed for the loaded partition manifest; the actual freshness output is retained in `evidence/source-freshness.json`. It measures ingestion recency, not whether historical trip observations are current.
+
+## Product interface refinement
+
+The redesigned interface was rebuilt into the local API image and verified against the existing real-data warehouse. All **10 desktop/mobile Playwright checks passed**, including all seven routes, bounded filters, zone comparisons, empty states, and outage recovery. New checks verify that the seven-day shortcut selects the expected dates, the cumulative chart agrees with the filtered API total, keyboard inspection updates the chart readout, and exported CSV rows sum to that same filtered total. TypeScript build/type checks and formatting passed. Screenshots in `portfolio/screenshots/` were refreshed from the running application. Earlier Lighthouse results above describe the previous interface; they are not a measurement of this redesign.

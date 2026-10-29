@@ -4,6 +4,10 @@ Project 02: an independent batch data platform for a new engineering portfolio. 
 
 AtlasIQ is **in development**, with a verified local vertical slice and container execution. It is not affiliated with NYC/TLC/NOAA, does not measure all mobility or the city economy, and has not been publicly deployed. No SignalFlow code or streaming infrastructure is used.
 
+![AtlasIQ mobility dashboard](portfolio/screenshots/overview.png)
+
+The dashboard includes daily/cumulative demand charts, keyboard point inspection, date shortcuts, filtered CSV exports, zone comparisons, and inspectable quality checks. All counts remain explicitly labeled as observations from the accepted sample.
+
 ## Quickstart
 
 Requirements: Docker Compose; Python 3.12+ with uv; Node 24/pnpm 11.25 for frontend development. The committed compiled dashboard assets also work in Docker without a local Node install.

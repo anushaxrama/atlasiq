@@ -69,3 +69,45 @@ test('API interruption surfaces an error and retry recovers', async ({ page }) =
   await settled(page);
   await expect(page.locator('.kpi-value').first()).toBeVisible();
 });
+
+test('date shortcuts, chart inspection and CSV export preserve the selected data', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await settled(page);
+  await page.getByRole('button', { name: 'Last 7 days', exact: true }).click();
+  await settled(page);
+  await expect(page.getByLabel('From', { exact: true })).toHaveValue('2025-01-25');
+  await expect(page.getByLabel('Through', { exact: true })).toHaveValue('2025-01-31');
+  await expect(page.getByRole('button', { name: 'Last 7 days', exact: true })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  );
+  await page.getByLabel('Pickup zone', { exact: true }).selectOption('161');
+  await page.getByRole('button', { name: 'Apply view' }).click();
+  await settled(page);
+  const response = await page.request.get('/api/summary?start=2025-01-25&end=2025-01-31&zone=161');
+  const summary = await response.json();
+  await page.getByRole('button', { name: 'Cumulative', exact: true }).click();
+  await expect(page.locator('.chart-readout')).toContainText(
+    summary.observed_trips.toLocaleString('en-US'),
+  );
+  await expect(page.getByRole('button', { name: 'Cumulative', exact: true })).toBeFocused();
+  await page.locator('[data-chart-date]').first().focus();
+  await expect(page.locator('.chart-readout')).toContainText('Jan 25');
+  const downloaded = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Export daily data' }).click();
+  const file = await downloaded;
+  expect(file.suggestedFilename()).toBe('atlasiq-daily-2025-01-25-2025-01-31-zone-161.csv');
+  const { readFile } = await import('node:fs/promises');
+  const csv = await readFile(await file.path(), 'utf8');
+  const rows = csv.trim().split(/\r?\n/);
+  expect(rows[0]).toBe('nyc_pickup_date,observed_sample_trips,average_base_fare_usd');
+  expect(rows).toHaveLength(8);
+  expect(rows.slice(1).reduce((sum, row) => sum + Number(row.split(',')[1]), 0)).toBe(
+    summary.observed_trips,
+  );
+  await page.getByRole('button', { name: 'Full coverage', exact: true }).click();
+  await settled(page);
+  await expect(page.getByLabel('From', { exact: true })).toHaveValue('2025-01-01');
+});

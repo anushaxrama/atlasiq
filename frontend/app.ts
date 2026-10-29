@@ -75,7 +75,8 @@ const esc = (value: unknown) =>
   );
 const fmt = (value: number | null | undefined, digits = 0) =>
   value == null ? '—' : value.toLocaleString('en-US', { maximumFractionDigits: digits });
-const money = (value: number | null | undefined) => (value == null ? '—' : '$' + fmt(value, 2));
+const money = (value: number | null | undefined) =>
+  value == null ? '—' : value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 const dateLabel = (value: string) =>
   new Date(value + 'T12:00:00Z').toLocaleDateString('en-US', {
     month: 'short',
@@ -84,44 +85,44 @@ const dateLabel = (value: string) =>
   });
 const pageInfo: Record<string, [string, string, string, string]> = {
   overview: [
-    '01 / THE BIG PICTURE',
-    'Movement, with meaning.',
-    'A closer look at the patterns moving New York.',
+    'MOBILITY INTELLIGENCE / OVERVIEW',
+    'The city, in motion.',
+    'Understand how New York moves. One observed trip at a time.',
     'Overview',
   ],
   demand: [
     '02 / FOLLOW THE PATTERN',
-    'Every trip tells a little more.',
+    'Find the rhythm.',
     'Explore observed demand across days, hours and pickup zones.',
     'Demand explorer',
   ],
   zones: [
     '03 / A SENSE OF PLACE',
-    'Different places. Different rhythms.',
+    'Place makes a difference.',
     'Compare real TLC pickup zones, with the local context intact.',
     'Zone comparison',
   ],
   weather: [
     '04 / THE CONDITIONS AROUND US',
-    'The weather is part of the picture.',
+    'A change in conditions.',
     'Daily station weather alongside observed trips. Association, not causation.',
     'Weather & demand',
   ],
   quality: [
     '05 / TRUST THE FOUNDATION',
-    'Clarity starts with quality.',
+    'Confidence, by design.',
     'Inspect the gates, warnings and limits behind the modeled data.',
     'Data quality',
   ],
   runs: [
     '06 / BEHIND THE REFRESH',
-    'A pipeline you can follow.',
+    'Behind every refresh.',
     'Real extraction, validation and publication runs—with their outcomes.',
     'Pipeline runs',
   ],
   methodology: [
     '07 / DEFINITIONS & BOUNDARIES',
-    'Know what the numbers mean.',
+    'The context behind the counts.',
     'A useful analytical product makes its assumptions visible.',
     'Methodology',
   ],
@@ -130,6 +131,7 @@ let meta: Meta;
 let version = 0;
 let offset = 0;
 let currentPage = 'overview';
+let appliedFilters: URLSearchParams | null = null;
 async function api<T>(path: string, params?: URLSearchParams): Promise<T> {
   const response = await fetch('/api/' + path + (params ? '?' + params : ''), {
     signal: AbortSignal.timeout(20000),
@@ -164,36 +166,136 @@ function panel(
 ): string {
   return `<article class="panel"><div class="panel-head"><div><div class="eyebrow">ATLAS / ANALYTICS</div><h2>${esc(title)}</h2><p>${esc(subtitle)}</p></div><span class="tag">${esc(tag)}</span></div>${content}</article>`;
 }
+const iconPaths: Record<string, string> = {
+  overview:
+    '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+  demand: '<path d="M3 18V6m0 12h18M6 14l4-5 4 3 6-7"/>',
+  zones: '<path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2Zm6-2v16m6-14v16"/>',
+  weather:
+    '<path d="M8 17h10a4 4 0 0 0 .5-8A6 6 0 0 0 7 8a4.5 4.5 0 0 0 1 9Zm1 3-1 2m6-2-1 2m6-2-1 2"/>',
+  quality: '<path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6Zm-4 9 3 3 5-6"/>',
+  runs: '<path d="M3 11a9 9 0 1 1 2.5 7M3 4v7h7m2-5v6l4 2"/>',
+  methodology:
+    '<path d="M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-2H4Zm16 0h-4a3 3 0 0 0-3 3v14a4 4 0 0 1 4-2h3Z"/>',
+  code: '<path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/>',
+  download: '<path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/>',
+  filter: '<path d="M4 6h16M7 12h10m-7 6h4"/>',
+  fare: '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18m-5 5h2"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  median: '<path d="M4 8h16M4 16h16m-7-11 3 3-3 3m-2 2-3 3 3 3"/>',
+  insight: '<path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/>',
+};
+const icon = (name: string) =>
+  `<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true">${iconPaths[name] ?? iconPaths.overview}</svg>`;
+document.querySelectorAll<HTMLElement>('[data-icon]').forEach((el) => {
+  el.innerHTML = icon(el.dataset.icon!);
+});
 function kpis(s: Summary): string {
   return `<div class="kpi-grid">${[
-    ['Trips observed', fmt(s.observed_trips), 'Accepted trips in this selected sample', '↗'],
-    ['Average fare', money(s.average_fare_usd), 'Observed fare amount · not profit', '$'],
+    ['Trips observed', fmt(s.observed_trips), 'Accepted trips · selected sample', 'demand'],
+    ['Average fare', money(s.average_fare_usd), 'Base fare · USD, excluding tips', 'fare'],
     [
       'Trip duration',
-      fmt(s.average_duration_minutes, 1) + ' min',
-      'Mean elapsed pickup-to-dropoff time',
-      '◷',
+      fmt(s.average_duration_minutes, 1) + ' <span class="unit">min</span>',
+      'Mean pickup-to-dropoff time',
+      'clock',
     ],
-    ['Median fare', money(s.median_fare_usd), '90th percentile ' + money(s.p90_fare_usd), '↔'],
+    ['Median fare', money(s.median_fare_usd), '90th percentile ' + money(s.p90_fare_usd), 'median'],
   ]
     .map(
-      ([label, value, note, icon]) =>
-        `<article class="kpi"><div class="kpi-label">${label}<span aria-hidden="true">${icon}</span></div><div class="kpi-value">${value}</div><div class="kpi-note">${note}</div></article>`,
+      ([label, value, note, symbol]) =>
+        `<article class="kpi"><div class="kpi-label">${label}<span>${icon(symbol)}</span></div><div class="kpi-value">${value}</div><div class="kpi-note">${note}</div></article>`,
     )
     .join('')}</div>`;
 }
-function line(rows: Trend[]): string {
+function line(rows: Trend[], cumulative = false): string {
   if (!rows.length) return empty();
-  const max = Math.max(...rows.map((r) => r.observed_trips), 1) * 1.15;
-  const x = (i: number) => 45 + (i / Math.max(rows.length - 1, 1)) * 620,
-    y = (n: number) => 220 - (n / max) * 190;
-  const path = rows.map((r, i) => `${i ? 'L' : 'M'}${x(i)},${y(r.observed_trips)}`).join(' ');
+  let running = 0;
+  const values = rows.map((r) => (cumulative ? (running += r.observed_trips) : r.observed_trips));
+  const rawMax = Math.max(...values, 1);
+  const step = Math.max(1, Math.ceil(rawMax / 4 / 100) * 100);
+  const max = step * 4;
+  const x = (i: number) => 47 + (i / Math.max(rows.length - 1, 1)) * 618;
+  const y = (n: number) => 220 - (n / max) * 190;
+  const path = values.map((v, i) => `${i ? 'L' : 'M'}${x(i)},${y(v)}`).join(' ');
   let grid = '';
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i <= 4; i++) {
     const n = (max * i) / 4;
-    grid += `<line class="grid" x1="45" x2="665" y1="${y(n)}" y2="${y(n)}"/><text x="35" y="${y(n) + 4}" text-anchor="end">${fmt(n)}</text>`;
+    grid += `<line class="grid" x1="47" x2="665" y1="${y(n)}" y2="${y(n)}"/><text x="35" y="${y(n) + 4}" text-anchor="end">${n >= 1000 ? fmt(n / 1000, 1) + 'k' : fmt(n)}</text>`;
   }
-  return `<svg class="chart" viewBox="0 0 700 260" role="img" aria-label="Daily observed trip demand"><title>Observed trip counts by NYC pickup date</title>${grid}<path d="${path} L${x(rows.length - 1)},220 L45,220Z" fill="#dfeadb"/><path d="${path}" fill="none" stroke="#478579" stroke-width="2.5"/>${rows.map((r, i) => `<circle class="chart-point" tabindex="0" role="img" aria-label="${esc(r.date)}: ${r.observed_trips} observed trips" cx="${x(i)}" cy="${y(r.observed_trips)}" r="3" fill="#40766d"><title>${esc(r.date)} · ${fmt(r.observed_trips)} trips</title></circle>`).join('')}${[0, Math.floor((rows.length - 1) / 2), rows.length - 1].map((i) => `<text x="${x(i)}" y="248" text-anchor="${i === 0 ? 'start' : i === rows.length - 1 ? 'end' : 'middle'}">${dateLabel(rows[i].date)}</text>`).join('')}</svg><div class="chart-caption"><span>NYC LOCAL PICKUP DATE</span><span>Keyboard: tab to inspect each daily point</span></div>`;
+  const total = rows.reduce((sum, r) => sum + r.observed_trips, 0);
+  const label = cumulative ? 'Cumulative trips' : 'Daily observed trip demand';
+  return `<div class="trend-visual"><div class="chart-tools"><div class="chart-readout"><strong>${fmt(cumulative ? total : total / rows.length)} trips</strong> / ${cumulative ? 'selected window' : 'daily average'}</div><div class="chart-mode" aria-label="Chart aggregation"><button type="button" data-chart-mode="daily" aria-pressed="${!cumulative}">Daily</button><button type="button" data-chart-mode="cumulative" aria-pressed="${cumulative}">Cumulative</button></div></div><svg class="chart" viewBox="0 0 700 260" role="img" aria-label="${label}"><title>${label} by NYC pickup date</title><defs><linearGradient id="demand-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8fba65" stop-opacity=".35"/><stop offset="100%" stop-color="#8fba65" stop-opacity=".03"/></linearGradient></defs>${grid}<path d="${path} L${x(rows.length - 1)},220 L47,220Z" fill="url(#demand-fill)"/><path d="${path}" fill="none" stroke="#287650" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>${rows.map((r, i) => `<circle class="chart-point" tabindex="0" role="img" aria-label="${esc(r.date)}: ${values[i]} ${cumulative ? 'cumulative' : 'observed'} trips" data-chart-date="${esc(r.date)}" data-chart-trips="${values[i]}" cx="${x(i)}" cy="${y(values[i])}" r="3" fill="#fff" stroke="#287650" stroke-width="1.6"><title>${esc(r.date)} · ${fmt(values[i])} trips</title></circle>`).join('')}${[...new Set([0, Math.floor((rows.length - 1) / 3), Math.floor((2 * (rows.length - 1)) / 3), rows.length - 1])].map((i) => `<text x="${x(i)}" y="248" text-anchor="${i === 0 ? 'start' : i === rows.length - 1 ? 'end' : 'middle'}">${dateLabel(rows[i].date)}</text>`).join('')}</svg><div class="chart-caption"><span class="chart-legend"><i></i>${cumulative ? 'CUMULATIVE' : 'OBSERVED'} TRIPS · NYC LOCAL DATE</span><span>Hover or tab to inspect · ${rows.length} days</span></div></div>`;
+}
+function bindTrend(rows: Trend[]): void {
+  document.querySelectorAll<HTMLButtonElement>('[data-chart-mode]').forEach((button) =>
+    button.addEventListener('click', () => {
+      button.closest('.trend-visual')!.outerHTML = line(
+        rows,
+        button.dataset.chartMode === 'cumulative',
+      );
+      bindTrend(rows);
+      document
+        .querySelector<HTMLButtonElement>(`[data-chart-mode="${button.dataset.chartMode}"]`)
+        ?.focus();
+    }),
+  );
+  document.querySelectorAll<SVGCircleElement>('[data-chart-date]').forEach((point) => {
+    const inspect = () => {
+      const readout = point.closest('.trend-visual')!.querySelector('.chart-readout')!;
+      const cumulative =
+        point
+          .closest('.trend-visual')!
+          .querySelector('[data-chart-mode="cumulative"]')
+          ?.getAttribute('aria-pressed') === 'true';
+      readout.innerHTML = `<strong>${fmt(Number(point.dataset.chartTrips))} trips</strong> · ${dateLabel(point.dataset.chartDate!)}${cumulative ? ' · cumulative' : ''}`;
+    };
+    point.addEventListener('pointerenter', inspect);
+    point.addEventListener('focus', inspect);
+  });
+}
+function observations(
+  trends: Trend[],
+  zones: Zone[],
+  hours: { hour: number; observed_trips: number }[],
+): string {
+  const peak = trends.reduce<Trend | null>(
+    (best, r) => (!best || r.observed_trips > best.observed_trips ? r : best),
+    null,
+  );
+  const hour = hours.reduce<{ hour: number; observed_trips: number } | null>(
+    (best, r) => (!best || r.observed_trips > best.observed_trips ? r : best),
+    null,
+  );
+  return `<div class="overview-notes" aria-label="Observed highlights">${[
+    [
+      'Busiest observed day',
+      peak && peak.observed_trips ? dateLabel(peak.date) : 'No observations',
+      peak ? fmt(peak.observed_trips) + ' trips in this view' : 'Try a different window',
+    ],
+    [
+      'Leading pickup zone',
+      zones[0]?.zone_name ?? 'No observations',
+      zones[0]
+        ? zones[0].borough + ' · ' + fmt(zones[0].observed_trips) + ' trips'
+        : 'Try a different zone',
+    ],
+    [
+      'Peak pickup hour',
+      hour && hour.observed_trips
+        ? String(hour.hour).padStart(2, '0') +
+          ':00–' +
+          String((hour.hour + 1) % 24).padStart(2, '0') +
+          ':00'
+        : 'No observations',
+      'NYC local time · selected dates combined',
+    ],
+  ]
+    .map(
+      ([label, value, note]) =>
+        `<article class="insight-card"><span>${esc(label)}</span><strong>${esc(value)}</strong><small>${esc(note)}</small></article>`,
+    )
+    .join('')}</div>`;
 }
 function bars(rows: { label: string; value: number }[], unit: string): string {
   if (!rows.length) return empty();
@@ -292,6 +394,15 @@ async function render(): Promise<void> {
     else link.removeAttribute('aria-current');
   });
   $('view').setAttribute('aria-busy', 'true');
+  $('action-status').textContent = '';
+  $('filters').hidden = ['quality', 'runs', 'methodology'].includes(currentPage);
+  $('export').hidden = ['quality', 'runs', 'methodology'].includes(currentPage);
+  document.querySelector<HTMLElement>('.range-presets')!.hidden = [
+    'quality',
+    'runs',
+    'methodology',
+  ].includes(currentPage);
+  let trendRows: Trend[] = [];
   try {
     let html = '';
     const p = params();
@@ -400,21 +511,23 @@ async function render(): Promise<void> {
         api<Zone[]>('zones', currentPage === 'zones' ? params(false) : p),
         api<{ hour: number; observed_trips: number }[]>('hourly', p),
       ]);
+      trendRows = trends;
       html = kpis(s);
       if (currentPage === 'overview')
         html +=
-          `<div class="two-col">${panel('The rhythm of the city.', 'Observed daily trips across your selected pickup window.', line(trends), 'DAILY / NYC LOCAL')}${panel(
-            'Where journeys begin.',
-            'Top pickup zones in this selected sample.',
+          `<div class="two-col">${panel('Demand over time', 'Daily pickup volume across the selected sample.', line(trends), 'DAILY / NYC LOCAL')}${panel(
+            'Where journeys begin',
+            'Leading pickup zones · selected sample',
             bars(
               zones.slice(0, 5).map((z) => ({ label: z.zone_name, value: z.observed_trips })),
               '',
-            ),
+            ) + `<a href="#zones" class="inline-link">Compare pickup zones <span>↗</span></a>`,
+            'TOP 5',
           )}</div>` +
-          context() +
+          observations(trends, zones, hours) +
           panel(
-            'A little geographic context.',
-            'Official TLC zone names and boroughs. Select a zone to drill into demand.',
+            'The neighborhood view',
+            'A closer look at the top pickup zones. Select a place to explore its demand.',
             zoneTable(zones.slice(0, 8)),
           );
       else if (currentPage === 'demand') {
@@ -474,6 +587,10 @@ async function render(): Promise<void> {
     }
     if (request !== version) return;
     $('view').innerHTML = html;
+    if (['overview', 'demand', 'zones', 'weather'].includes(currentPage))
+      appliedFilters = new URLSearchParams(p);
+    if (trendRows.length) bindTrend(trendRows);
+    syncPresets();
     document.querySelectorAll<HTMLAnchorElement>('[data-zone]').forEach((link) =>
       link.addEventListener('click', () => {
         $<HTMLSelectElement>('zone').value = link.dataset.zone!;
@@ -544,6 +661,47 @@ async function render(): Promise<void> {
     if (request === version) $('view').setAttribute('aria-busy', 'false');
   }
 }
+function syncPresets(): void {
+  if (!meta) return;
+  const end = $<HTMLInputElement>('end').value;
+  const start = $<HTMLInputElement>('start').value;
+  const week = new Date((meta.coverage.end ?? end) + 'T12:00:00Z');
+  week.setUTCDate(week.getUTCDate() - 6);
+  const weekStart = [meta.coverage.start ?? '', week.toISOString().slice(0, 10)].sort().at(-1)!;
+  for (const [id, active] of [
+    ['full-range', start === meta.coverage.start && end === meta.coverage.end],
+    ['last-week', start === weekStart && end === meta.coverage.end],
+  ] as const) {
+    $(id).setAttribute('aria-pressed', String(active));
+    $(id).classList.toggle('selected', active);
+  }
+}
+async function exportDaily(): Promise<void> {
+  const button = $<HTMLButtonElement>('export');
+  button.disabled = true;
+  $('action-status').textContent = 'Preparing observed daily data…';
+  try {
+    const p = appliedFilters ? new URLSearchParams(appliedFilters) : params();
+    const rows = await api<Trend[]>('trends', p);
+    const csv = [
+      'nyc_pickup_date,observed_sample_trips,average_base_fare_usd',
+      ...rows.map((r) => `${r.date},${r.observed_trips},${r.average_fare_usd ?? ''}`),
+    ].join('\r\n');
+    const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `atlasiq-daily-${p.get('start')}-${p.get('end')}${p.get('zone') ? '-zone-' + p.get('zone') : ''}.csv`;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    $('action-status').textContent =
+      `Exported ${rows.length} daily rows for the selected dates and pickup zone. Counts represent the accepted sample.`;
+  } catch (error) {
+    $('action-status').textContent =
+      error instanceof Error ? error.message : 'Export unavailable. Try again.';
+  } finally {
+    button.disabled = false;
+  }
+}
 async function initialize(): Promise<void> {
   try {
     meta = await api<Meta>('meta');
@@ -563,6 +721,8 @@ async function initialize(): Promise<void> {
       .at(-1);
     $('coverage-note').textContent =
       `${fmt(meta.coverage.observed_trips)} accepted sample trips · ${fmt(sourceRows)} source records scanned · pickup coverage ${meta.coverage.start} – ${meta.coverage.end} · warehouse refreshed ${last ? new Date(last).toISOString().slice(0, 16).replace('T', ' ') + ' UTC' : 'not yet'}. No city-wide extrapolation.`;
+    $('dataset-label').innerHTML =
+      `<i></i><strong>${esc(new Date((meta.coverage.start ?? '2025-01-01') + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' }))}</strong><span>Yellow taxi · accepted sample · NYC</span>`;
     $('filters').addEventListener('submit', (event) => {
       event.preventDefault();
       if (start.value > end.value) {
@@ -579,6 +739,19 @@ async function initialize(): Promise<void> {
       offset = 0;
       void render();
     });
+    $('export').addEventListener('click', () => void exportDaily());
+    for (const id of ['full-range', 'last-week'])
+      $(id).addEventListener('click', () => {
+        end.value = meta.coverage.end ?? '';
+        const week = new Date(end.value + 'T12:00:00Z');
+        week.setUTCDate(week.getUTCDate() - 6);
+        start.value =
+          id === 'full-range'
+            ? (meta.coverage.start ?? '')
+            : [meta.coverage.start ?? '', week.toISOString().slice(0, 10)].sort().at(-1)!;
+        offset = 0;
+        void render();
+      });
     window.addEventListener('hashchange', () => {
       offset = 0;
       void render();
